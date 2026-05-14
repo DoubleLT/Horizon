@@ -44,12 +44,6 @@
     },
     "rss": [
       {
-        "name": "Anthropic Blog",
-        "url": "https://www.anthropic.com/rss.xml",
-        "enabled": true,
-        "category": "ai"
-      },
-      {
         "name": "OpenAI Blog",
         "url": "https://openai.com/blog/rss.xml",
         "enabled": true,
@@ -60,6 +54,12 @@
         "url": "https://deepmind.google/blog/rss.xml",
         "enabled": true,
         "category": "ai"
+      },
+      {
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
+        "enabled": true,
+        "category": "ai-tools"
       }
     ]
   },
