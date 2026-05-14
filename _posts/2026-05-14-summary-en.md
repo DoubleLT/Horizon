@@ -5,129 +5,103 @@ date: 2026-05-14
 lang: en
 ---
 
-> From 9 items, 8 important content pieces were selected
+> From 12 items, 7 important content pieces were selected
 
 ---
 
-1. [LLMs Enable Personal Software Cocoon](#item-1) ⭐️ 9.0/10
-2. [YellowKey Zero-Day Exploit Bypasses BitLocker Encryption](#item-2) ⭐️ 9.0/10
-3. [Anthropic Launches Claude for Small Business](#item-3) ⭐️ 7.0/10
-4. [MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and 8GB Gamble](#item-4) ⭐️ 7.0/10
-5. [OpenAI Builds Secure Sandbox for Codex on Windows](#item-5) ⭐️ 7.0/10
-6. [Cisco Lays Off Thousands Despite Record Revenue](#item-6) ⭐️ 6.0/10
-7. [Free Locality Domains Under .city.state.us Guide](#item-7) ⭐️ 6.0/10
-8. [Princeton Ends 133-Year Honor System, Mandates Proctoring](#item-8) ⭐️ 6.0/10
+1. [MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and 8GB Gamble](#item-1) ⭐️ 8.0/10
+2. [LLMs Enable Personal Software Renaissance](#item-2) ⭐️ 8.0/10
+3. [Free Locality Domains: A 2025 Guide](#item-3) ⭐️ 7.0/10
+4. [OpenAI Builds Secure Sandbox for Codex on Windows](#item-4) ⭐️ 7.0/10
+5. [Anthropic Launches Claude for Small Business](#item-5) ⭐️ 6.0/10
+6. [Cisco Lays Off 4,000 Despite Record Revenue](#item-6) ⭐️ 6.0/10
+7. [Princeton Ends 133-Year Unproctored Exam Tradition](#item-7) ⭐️ 6.0/10
 
 ---
 
 <a id="item-1"></a>
-## [LLMs Enable Personal Software Cocoon](https://sockpuppet.org/blog/2026/05/12/emacsification/) ⭐️ 9.0/10
+## [MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and 8GB Gamble](https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/) ⭐️ 8.0/10
 
-A blog post argues that LLMs make it easier to build personal software than to install existing solutions, leading to an 'Emacsification' where everyone has their own customized software cocoon. This paradigm shift could democratize software creation, allowing individuals to reclaim control over tools like podcast apps, feed readers, and note-taking apps, potentially reducing reliance on commercial software. The post highlights that AI coding agents enable a new era of personal, bespoke native software, analogous to Emacs culture where developers build highly customized tools for their own needs.
+A detailed analysis of the MacBook Neo's benchmarks, wafer economics, and the controversial 8GB memory configuration reveals performance trade-offs and Apple's design choices. This analysis matters because it highlights how Apple's memory and I/O decisions affect real-world performance and longevity, especially for budget-conscious buyers. The discussion around 8GB RAM challenges the notion that more memory is always necessary, influencing future purchasing decisions. The MacBook Neo features a single USB 2.0 port and one USB 3.0 port, with no Thunderbolt support, limiting external storage speeds to 10 Gb/s. The 8GB unified memory uses compression and swap to maintain performance, but heavy swap may reduce SSD lifespan over time.
 
-hackernews · rdslw · May 13, 07:06 · [Discussion](https://news.ycombinator.com/item?id=48118727)
+hackernews · tosh · May 13, 18:30 · [Discussion](https://news.ycombinator.com/item?id=48125617)
 
-**Background**: Emacs is a highly extensible text editor known for its customization capabilities, often described as an operating system in itself. The term 'Emacsification' draws a parallel between Emacs's culture of personal software and the new ease of building software with LLMs.
+**Background**: Wafer economics refers to the cost of manufacturing silicon wafers, which has risen sharply with advanced nodes—TSMC's 2nm wafers now cost around $32,000. Apple's MacBook Neo uses an older or lower-cost chip to keep the price low, but the 8GB memory configuration has sparked debate about whether it is sufficient for modern workloads. macOS uses memory compression and swap to make 8GB feel adequate, but heavy users may experience slowdowns.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://sockpuppet.org/blog/2026/05/12/emacsification/">The Emacsification of Software — Quarrelsome</a></li>
-<li><a href="https://app.daily.dev/posts/the-emacsification-of-software-quarrelsome-pozvlprov">The Emacsification of Software — Quarrelsome | daily.dev</a></li>
+<li><a href="https://siliconanalysts.com/guide/semiconductor-costs">Semiconductor Manufacturing Costs: $2,500 to $20,000/Wafer by ...</a></li>
+<li><a href="https://www.zdnet.com/article/is-8gb-of-ram-enough-for-a-mac-in-2026/">No, seriously, 8GB of RAM is enough for a MacBook in 2026 - here's why | ZDNET</a></li>
+<li><a href="https://markellisreviews.com/tech-opinion/8gb-vs-16gb-m1-macbook-does-it-even-matter/">8GB vs 16GB M1 MacBook – Does It Even Matter?</a></li>
 
 </ul>
 </details>
 
-**Discussion**: tptacek lists several app categories that can now be built personally with LLMs, while dang agrees that software production is now so easy that everything is a .emacs file. shaokind shares a personal experience of building software with LLMs but notes that Emacs setups can be brittle.
+**Discussion**: Commenters generally praised the MacBook Neo's value, with one user noting it's good enough for 90% of users at half the cost of an Air. Another shared a positive experience with an 8GB M1 Air, expecting 10 years of use. However, some criticized the I/O limitations and Apple's update policy, which effectively makes 7-year-old Macs obsolete.
 
-**Tags**: `#LLM`, `#software development`, `#customization`, `#Emacs`, `#future of software`
+**Tags**: `#Apple`, `#MacBook`, `#benchmarks`, `#memory`, `#hardware`
 
 ---
 
 <a id="item-2"></a>
-## [YellowKey Zero-Day Exploit Bypasses BitLocker Encryption](https://www.tomshardware.com/tech-industry/cyber-security/microsoft-bitlocker-protected-drives-can-now-be-opened-with-just-some-files-on-a-usb-stick-yellowkey-zero-day-exploit-demonstrates-an-apparent-backdoor) ⭐️ 9.0/10
+## [LLMs Enable Personal Software Renaissance](https://sockpuppet.org/blog/2026/05/12/emacsification/) ⭐️ 8.0/10
 
-A researcher published proof-of-concept exploits for two unpatched Windows vulnerabilities, YellowKey and GreenPlasma, which allow attackers with physical access to bypass BitLocker full-disk encryption using a USB stick. This exploit undermines the security of BitLocker, a widely used encryption tool in Windows, potentially exposing sensitive data on millions of devices if attackers gain physical access. The YellowKey exploit targets the Windows Recovery Environment (WinRE) and affects Windows 11, Windows Server 2022, and Windows Server 2025; Microsoft has not yet released a patch.
+An essay by tptacek argues that large language models (LLMs) have made building personal software so easy that individuals can now create custom solutions for everyday apps, a phenomenon he calls the "Emacsification of Software." This shift could empower individuals to reclaim control over software they use daily, reducing reliance on prepackaged professional apps and fostering a culture of personal customization similar to Emacs. The essay lists specific app categories—such as podcast apps, feed readers, and note-taking tools—where LLM-assisted development can produce better-than-replacement-grade results, though not necessarily the best globally competitive products.
 
-hackernews · cookiengineer · May 14, 02:45 · [Discussion](https://news.ycombinator.com/item?id=48130519)
+hackernews · rdslw · May 13, 07:06 · [Discussion](https://news.ycombinator.com/item?id=48118727)
 
-**Background**: BitLocker is a full-disk encryption feature included in Windows that protects data on lost or stolen devices. The exploit leverages a flaw in the recovery environment to decrypt the drive without the original password.
+**Background**: Emacs is a highly customizable text editor where users often maintain a personal configuration file (`.emacs`) to tailor the editor to their needs. LLMs like Claude and GPT-4 now allow users to generate code from natural language descriptions, dramatically lowering the barrier to creating personal software.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://cybersecuritynews.com/windows-bitlocker-0-day-vulnerability/">Windows BitLocker 0-Day Vulnerability Enables Access to ...</a></li>
-<li><a href="https://www.bleepingcomputer.com/news/security/windows-bitlocker-zero-day-gives-access-to-protected-drives-poc-released/">Windows BitLocker zero-day gives access to protected drives ...</a></li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Customization.html">Customization (GNU Emacs Manual)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe coding - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed alarm at the simplicity and danger of the exploit, with some questioning Microsoft's commitment to security and suggesting a possible backdoor. Others provided links to primary sources and additional technical details.
+**Discussion**: The community largely agrees with the thesis, with dang noting that software production is now so easy that everything is a personal .emacs file. Some commenters, like shaokind, share personal experiences but caution that Emacs setups can be brittle across platforms.
 
-**Tags**: `#security`, `#zero-day`, `#encryption`, `#BitLocker`, `#exploit`
+**Tags**: `#LLM`, `#personal software`, `#software engineering`, `#AI-assisted development`, `#Emacs`
 
 ---
 
 <a id="item-3"></a>
-## [Anthropic Launches Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) ⭐️ 7.0/10
+## [Free Locality Domains: A 2025 Guide](https://fredchan.org/blog/locality-domains-guide/) ⭐️ 7.0/10
 
-Anthropic has launched Claude for Small Business, a new subscription plan priced at $200 per user per month that offers higher usage limits and team management features, along with integrations into tools like QuickBooks, PayPal, and Google Workspace. This plan makes advanced AI capabilities accessible to small businesses, enabling them to automate tasks such as invoicing, marketing, and payroll without needing a dedicated developer, potentially leveling the playing field with larger enterprises. The plan includes a toggle-install plugin that works inside existing business tools, and it comes with a free AI training course in partnership with PayPal. It also supports Model Context Protocol (MCP) for connecting to custom data sources.
+A detailed guide published in 2025 explains how to register free *.city.state.us locality domains, including steps to set up nameservers via Amazon Lightsail and submit the Interim .US Domain Template to delegated registrars. This guide fills a niche but valuable gap for US residents seeking free, locally branded domains, and the community discussion reveals real-world challenges like registrar unavailability and delegation issues that affect usability. The process requires finding a delegated locality registrar from an archived list, setting up free nameservers via Amazon Lightsail, and emailing the completed Interim .US Domain Template v2.0 to the registrar. Community comments note that some localities are no longer delegated, making registration impossible, and that WHOIS privacy is forbidden for .us domains.
 
-hackernews · neilfrndes · May 14, 03:59 · [Discussion](https://news.ycombinator.com/item?id=48130950)
+hackernews · speckx · May 13, 14:45 · [Discussion](https://news.ycombinator.com/item?id=48122635)
 
-**Background**: Anthropic previously offered Free, Pro, Max, Team, and Enterprise tiers for Claude, but none were specifically tailored for small businesses. Claude for Small Business fills this gap by combining higher usage limits with pre-built integrations for common small business software, reducing the technical barrier to entry.
+**Background**: Locality domains are second-level domains under the .us TLD, such as myproject.denver.co.us, tied to specific cities and states. They are free to register but require delegation from a local registrar, and the process can be complex due to outdated lists and unresponsive registrars.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://claude.com/solutions/small-business">Claude for Small Business | Claude by Anthropic</a></li>
-<li><a href="https://9to5mac.com/2026/05/13/anthropics-latest-claude-release-turns-your-mac-into-a-small-business-powerhouse/">Anthropic’s latest Claude release turns your Mac into a small ...</a></li>
-<li><a href="https://xeber.world/en/article/anthropic-launches-ai-powered-tools-for-small-businesses-with-claude-for-small-b-4462e3">Anthropic Launches AI Tools for Small Businesses with Claude for ...</a></li>
+<li><a href="https://fredchan.org/blog/locality-domains-guide/">Setting up a free *.city.state.us locality domain | Frederick ...</a></li>
+<li><a href="https://nameocean.net/article/claim-your-free-local-domain-a-developers-guide-to-citystateus-addresses/">Claim Your Free Local Domain: A Developer's Guide to .City ...</a></li>
+<li><a href="https://app.daily.dev/posts/setting-up-a-free-city-state-us-locality-domain-lkq0sfimy">Setting up a free *.city.state.us locality domain</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members are enthusiastic about the practical applications, with users sharing how they already use Claude Code to automate invoice categorization and other tedious tasks. Some note that the real power lies in Claude acting as a central hub with MCP, maintaining context across different tools.
+**Discussion**: Community comments highlight mixed experiences: some successfully registered multiple domains, while others faced dead registrars or bureaucratic hurdles like needing notarized letters from local governments. There is also discussion about a newer online registration portal at localitymanagement.us, though it appears overwhelmed by traffic.
 
-**Tags**: `#AI`, `#small business`, `#Anthropic`, `#Claude`, `#productivity`
+**Tags**: `#domains`, `#DNS`, `#guide`, `#hackernews`, `#internet infrastructure`
 
 ---
 
 <a id="item-4"></a>
-## [MacBook Neo Deep Dive: Benchmarks, Wafer Economics, and 8GB Gamble](https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/) ⭐️ 7.0/10
-
-A detailed analysis of the MacBook Neo reveals its performance benchmarks, the economics of using smaller wafers, and the controversial decision to offer only 8GB of unified memory in the base model. This analysis matters because it challenges the assumption that 8GB of RAM is insufficient for modern computing, especially with Apple's efficient memory management, and it highlights how wafer economics affect pricing and availability. The MacBook Neo uses a smaller, cheaper wafer to reduce costs, but this also limits yields and performance scaling. The 8GB configuration, while controversial, may be sufficient for many users due to Apple's unified memory architecture and efficient macOS memory management.
-
-hackernews · tosh · May 13, 18:30 · [Discussion](https://news.ycombinator.com/item?id=48125617)
-
-**Background**: Wafer economics refers to the cost and yield of semiconductor wafers; smaller wafers are cheaper but produce fewer chips per wafer, affecting per-chip cost. Apple's unified memory architecture integrates RAM directly into the SoC, reducing latency and improving efficiency compared to traditional separate RAM modules. The 8GB vs 16GB debate has been ongoing, with some arguing that 8GB is insufficient for future-proofing, while others find it adequate for everyday tasks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Wafer_(electronics)">Wafer (electronics) - Wikipedia</a></li>
-<li><a href="https://anysilicon.com/wafer-cost/">Understanding Wafer Cost - AnySilicon</a></li>
-<li><a href="https://windowsnews.ai/article/macbook-neo-8gb-ram-controversy-how-apples-unified-memory-challenges-windows-laptop-assumptions.405116">MacBook Neo 8 GB RAM Controversy : How Apple's Unified Memory ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments are mixed: some users praise the 8GB M1 Air as surprisingly capable and long-lasting, while others criticize Apple for not offering more RAM and for planned obsolescence after 7 years. There is also discussion about the I/O limitations and the value proposition of the Neo as a budget-friendly option.
-
-**Tags**: `#Apple`, `#MacBook`, `#hardware`, `#benchmarks`, `#memory`
-
----
-
-<a id="item-5"></a>
 ## [OpenAI Builds Secure Sandbox for Codex on Windows](https://openai.com/index/building-codex-windows-sandbox) ⭐️ 7.0/10
 
-OpenAI has detailed how they built a secure sandbox for Codex on Windows, enabling safe coding agents with controlled file access and network restrictions. This development addresses critical security and usability challenges for AI coding agents on Windows, making it safer to deploy autonomous coding tools in enterprise environments. On Windows, Codex uses the native Windows sandbox when running in PowerShell, and the Linux sandbox implementation when running in WSL2. The sandbox reduces approval fatigue by allowing routine tasks to run autonomously within clear limits.
+OpenAI detailed the design and implementation of a custom sandbox for Codex on Windows, enabling safe code execution with controlled file access and network restrictions. This sandbox was built after standard Windows security tools like AppContainer and Mandatory Integrity Control proved insufficient. This sandbox allows Windows users to safely run Codex coding agents without compromising security, addressing a critical gap in the deployment of AI coding assistants. It sets a precedent for secure code execution environments on Windows, which is essential for broader adoption of AI agents in development workflows. The sandbox uses Security Identifiers (SIDs) and write-restricted tokens to enforce access controls, and it restricts network access to prevent data exfiltration. It was developed because existing Windows isolation mechanisms were inadequate for the needs of an AI coding agent.
 
 rss · OpenAI Blog · May 13, 11:00
 
-**Background**: Codex is an AI coding agent that can execute commands and modify files. Sandboxing is a security technique that isolates the agent's operations to prevent unintended damage. On macOS, sandboxing uses the built-in Seatbelt framework, while Windows requires a different approach.
+**Background**: Codex is OpenAI's AI coding agent that can write and execute code. Running such agents safely requires a sandbox—an isolated environment that prevents malicious or erroneous code from affecting the host system. On Windows, standard sandboxing tools like AppContainer were not designed for the complex needs of AI agents, prompting OpenAI to build a custom solution.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developers.openai.com/codex/concepts/sandboxing">Sandbox – Codex | OpenAI Developers</a></li>
-<li><a href="https://developers.openai.com/codex/windows">Windows – Codex | OpenAI Developers</a></li>
-<li><a href="https://developers.openai.com/codex/security">Security – Codex | OpenAI Developers</a></li>
+<li><a href="https://di.gg/ai/7myibjmi">OpenAI develops custom Windows sandbox for Codex · KRO · Digg</a></li>
 
 </ul>
 </details>
@@ -136,56 +110,64 @@ rss · OpenAI Blog · May 13, 11:00
 
 ---
 
-<a id="item-6"></a>
-## [Cisco Lays Off Thousands Despite Record Revenue](https://blogs.cisco.com/news/our-path-forward) ⭐️ 6.0/10
+<a id="item-5"></a>
+## [Anthropic Launches Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) ⭐️ 6.0/10
 
-Cisco announced it will lay off fewer than 4,000 employees, about 5% of its workforce, in Q4 FY26, despite reporting record quarterly revenue of $15.8 billion, up 12% year-over-year. This layoff highlights the ongoing trend of tech companies cutting jobs even during strong financial performance, raising questions about corporate priorities and the human cost of shareholder value maximization. The layoffs represent less than 5% of Cisco's total employee base, and the company framed the decision as part of a strategic realignment to invest in priority areas. The announcement came alongside praise for employee contributions, which some community members found contradictory.
+Anthropic has launched 'Claude for Small Business', a new plan that provides higher usage limits and team management features for small business teams. This plan makes advanced AI assistance more accessible to small businesses, potentially boosting productivity and automating tasks like invoice processing and data categorization. The plan includes higher usage caps and team management tools, but specific pricing and feature details have not been fully disclosed. Some users express concerns about over-reliance on a third-party AI service.
 
-hackernews · ahmedomran8 · May 14, 01:38 · [Discussion](https://news.ycombinator.com/item?id=48130123)
+hackernews · neilfrndes · May 14, 03:59 · [Discussion](https://news.ycombinator.com/item?id=48130950)
 
-**Background**: Cisco is a major networking hardware and software company. Layoffs in the tech industry have become common even among profitable companies, often driven by shifts toward AI and automation, cost optimization, and shareholder pressure. The practice of announcing layoffs alongside record earnings has drawn criticism for perceived hypocrisy.
-
-**Discussion**: Community comments were highly critical, pointing out the irony of laying off workers after praising their record performance. Some noted the corporate language used to soften the blow, while others called for restrictions on H-1B visas. A satirical comment compared the situation to a parody of corporate decision-making.
-
-**Tags**: `#layoffs`, `#Cisco`, `#tech industry`, `#corporate culture`
-
----
-
-<a id="item-7"></a>
-## [Free Locality Domains Under .city.state.us Guide](https://fredchan.org/blog/locality-domains-guide/) ⭐️ 6.0/10
-
-A 2025 guide details how to obtain free fourth-level locality domains under the .city.state.us namespace, including steps to request delegation from local managers and set up nameservers via Amazon Lightsail. This guide provides a practical, cost-free way for individuals and small organizations to own a unique geographic domain, though the process involves bureaucratic hurdles and registrar quirks that can be challenging. The .us TLD forbids WHOIS privacy services, which poses a privacy risk for personal domain owners. Additionally, if a locality is no longer delegated, obtaining the domain becomes extremely difficult, as one commenter experienced with Boston.
-
-hackernews · speckx · May 13, 14:45 · [Discussion](https://news.ycombinator.com/item?id=48122635)
-
-**Background**: Locality domains are fourth-level domains under the .us ccTLD, structured as organization-name.locality.state.us. They are managed by delegated local registrars, often small consultancies or ISPs, and registration typically requires an Interim .US Domain Template form.
+**Background**: Claude is a series of large language models developed by Anthropic, an AI safety company founded by former OpenAI employees. The models are designed to be helpful, harmless, and honest, and are used for tasks like coding, analysis, and content generation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/.us">.us - Wikipedia</a></li>
-<li><a href="https://fredchan.org/blog/locality-domains-guide/">Setting up a free *.city.state.us locality domain | Frederick's Perch</a></li>
-<li><a href="https://norrismclaughlin.com/articles/how-to-obtain-the-geographic-domain-in-the-united-states/">HOW TO OBTAIN THE GEOGRAPHIC DOMAIN IN THE UNITED STATES - Norris McLaughlin, P.A., Attorneys at Law</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Anthropic">Anthropic - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters shared mixed experiences: some successfully obtained domains through persistent outreach, while others faced dead ends when localities were no longer delegated. One user noted that the localitymanagement.us site was overwhelmed by traffic from the post, and another highlighted the lack of WHOIS privacy as a major drawback.
+**Discussion**: Community comments highlight practical use cases like automating invoice categorization with Claude Code, but also express skepticism about relying on a third-party service for critical business operations. Some users note the potential for a killer app that makes AI accessible to non-technical users.
 
-**Tags**: `#domains`, `#DNS`, `#tutorial`, `#networking`
+**Tags**: `#AI`, `#Small Business`, `#Claude`, `#Product Launch`
 
 ---
 
-<a id="item-8"></a>
-## [Princeton Ends 133-Year Honor System, Mandates Proctoring](https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent) ⭐️ 6.0/10
+<a id="item-6"></a>
+## [Cisco Lays Off 4,000 Despite Record Revenue](https://blogs.cisco.com/news/our-path-forward) ⭐️ 6.0/10
 
-Princeton University's faculty voted to mandate proctoring for all in-person exams, ending a 133-year tradition of an honor system that relied on students to self-regulate without proctors. This policy shift reflects growing concerns about AI-enabled cheating and a broader societal transition from high-trust to low-trust norms, potentially influencing other institutions to reconsider their academic integrity policies. Under the old honor system, students took exams without proctors and were expected to report violations; a survey found 29.9% of respondents admitted to cheating, and 44.6% of seniors knew of unreported violations.
+Cisco announced layoffs of fewer than 4,000 employees, about 5% of its workforce, as part of an AI-focused restructuring, despite reporting record Q3 FY26 revenue of $15.8 billion. The layoffs highlight the ongoing tension in the tech industry between strong financial performance and workforce reductions driven by AI investment shifts, affecting employee morale and sparking debate about corporate messaging and H-1B visa policies. The cuts represent less than 5% of Cisco's total employee base, and the company raised its annual revenue forecast due to a surge in hyperscaler orders. This is part of a broader restructuring that has seen Cisco lay off 12% of its workforce over the past year.
+
+hackernews · ahmedomran8 · May 14, 01:38 · [Discussion](https://news.ycombinator.com/item?id=48130123)
+
+**Background**: Cisco, a major networking equipment company, has been shifting investment toward artificial intelligence and related growth areas. The company has undergone multiple restructuring rounds, including layoffs in February and September 2024, costing nearly $2 billion. H-1B visa programs have come under scrutiny as tech layoffs raise concerns about foreign worker displacement.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.reuters.com/technology/cisco-raises-annual-revenue-forecast-2026-05-13/">Cisco to cut about 4,000 jobs in AI-focused restructuring as orders surge | Reuters</a></li>
+<li><a href="https://www.visaverge.com/h1b/tech-layoffs-in-2025-reshape-h-1b-sponsorship-and-talent-strategy/">Tech Layoffs in 2025 Reshape H-1B Sponsorship and Talent ...</a></li>
+<li><a href="https://www.futuriom.com/articles/news/cisco-forges-on-with-restructuring/2024/10">Cisco Shrinks Campus and Cuts Staff, Ending an Era - Futuriom</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments express irony and criticism: users note the contradiction between praising record revenue and announcing layoffs, mock the phrasing 'fewer than 4,000' as an attempt to soften the blow, and call for reducing H-1B visas alongside layoffs. One commenter humorously compares the situation to a market where layoffs happen regardless of revenue performance.
+
+**Tags**: `#layoffs`, `#Cisco`, `#corporate restructuring`, `#tech industry`
+
+---
+
+<a id="item-7"></a>
+## [Princeton Ends 133-Year Unproctored Exam Tradition](https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent) ⭐️ 6.0/10
+
+Princeton University's faculty voted to mandate proctoring for all in-person exams, ending a 133-year-old honor code tradition that allowed unproctored exams. This policy shift reflects growing concerns about AI-enabled cheating and signals a broader erosion of trust in academic honor systems across universities. The decision was prompted by a survey showing 29.9% of Princeton students admitted to cheating, and 44.6% of seniors knew of unreported violations. Proctors will now monitor exams and report violations to a student-run honor committee.
 
 hackernews · bookofjoe · May 13, 20:12 · [Discussion](https://news.ycombinator.com/item?id=48126848)
 
-**Background**: Princeton's honor code, established in 1893, was one of the oldest in the US, relying on student self-governance. The rise of AI tools like ChatGPT has made cheating easier and harder to detect, prompting many universities to update policies.
+**Background**: Princeton's honor code, established in 1893, relied on students' integrity and peer reporting rather than proctors. The rise of generative AI tools like ChatGPT has made cheating easier and harder to detect, prompting many institutions to reconsider their policies.
 
-**Discussion**: Commenters expressed mixed reactions: some lamented the loss of trust and the shift to a low-trust society, while others argued that proctoring is necessary given the ease of AI-assisted cheating and the high rate of unreported violations.
+**Discussion**: Comments reveal mixed reactions: some alumni recall the honor system fondly, while others argue that AI has made proctoring necessary. Some commenters lament a broader societal shift from high-trust to low-trust norms, while others note that proctoring is already common elsewhere.
 
-**Tags**: `#education`, `#academic integrity`, `#AI cheating`, `#policy change`, `#trust`
+**Tags**: `#education`, `#AI cheating`, `#academic policy`, `#proctoring`, `#honor code`
 
 ---
