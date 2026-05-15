@@ -16,7 +16,7 @@
   },
   "sources": {
     "hackernews": {
-      "enabled": true,
+      "enabled": false,
       "fetch_top_stories": 20,
       "min_score": 100
     },
@@ -68,7 +68,7 @@
     ]
   },
   "filtering": {
-    "ai_score_threshold": 6.0,
+    "ai_score_threshold": 0.0,
     "time_window_hours": 24
   }
 }
