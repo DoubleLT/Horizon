@@ -5,58 +5,57 @@ date: 2026-05-15
 lang: en
 ---
 
-> From 18 items, 13 important content pieces were selected
+> From 16 items, 12 important content pieces were selected
 
 ---
 
 1. [First Public macOS Kernel Exploit on Apple M5](#item-1) ⭐️ 9.0/10
-2. [Bun Rewritten from Zig to Rust in Major PR](#item-2) ⭐️ 9.0/10
-3. [Mullvad VPN Exit IPs Enable User Fingerprinting](#item-3) ⭐️ 8.0/10
-4. [Removing Modem and GPS from 2024 RAV4 Hybrid](#item-4) ⭐️ 8.0/10
-5. [RTX 5090 eGPU Works with M4 MacBook Air for Gaming and LLMs](#item-5) ⭐️ 8.0/10
-6. [Nginx Rift Exploit Enables RCE via Rewrite Directives](#item-6) ⭐️ 8.0/10
-7. [arXiv Imposes 1-Year Ban for Hallucinated References](#item-7) ⭐️ 8.0/10
-8. [HDD Firmware Hacking Deep Dive](#item-8) ⭐️ 8.0/10
-9. [Antirez Releases DS4: Minimal LLM Runtime for DeepSeek V4](#item-9) ⭐️ 7.0/10
-10. [Codex Now Available in ChatGPT Mobile App](#item-10) ⭐️ 7.0/10
-11. [GGUF Format: Single-File LLM Storage and Missing Features](#item-11) ⭐️ 7.0/10
-12. [World Labs' image-blaster turns single images into 3D worlds](#item-12) ⭐️ 7.0/10
-13. [Coding Agents Reduce Platform Lock-In Risk](#item-13) ⭐️ 6.0/10
+2. [Bun Rewritten from Zig to Rust, Merged into Main](#item-2) ⭐️ 9.0/10
+3. [Removing Modem and GPS from 2024 RAV4 Hybrid](#item-3) ⭐️ 8.0/10
+4. [Antirez Launches DS4: Specialized LLM Runtime for DeepSeek V4](#item-4) ⭐️ 8.0/10
+5. [Frontier AI access may be limited by economics and security](#item-5) ⭐️ 8.0/10
+6. [UK ditches Palantir for in-house refugee system](#item-6) ⭐️ 8.0/10
+7. [RTX 5090 eGPU on M4 MacBook Air: Gaming & LLM Breakthrough](#item-7) ⭐️ 8.0/10
+8. [Mullvad VPN Exit IPs Enable User Fingerprinting](#item-8) ⭐️ 8.0/10
+9. [Critical Nginx RCE Exploit Published with ASLR Bypass Claim](#item-9) ⭐️ 8.0/10
+10. [World Labs' image-blaster turns single image into 3D world](#item-10) ⭐️ 8.0/10
+11. [Codex Now Available in ChatGPT Mobile App](#item-11) ⭐️ 7.0/10
+12. [Coding Agents Reduce Technology Lock-In](#item-12) ⭐️ 6.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [First Public macOS Kernel Exploit on Apple M5](https://blog.calif.io/p/first-public-kernel-memory-corruption) ⭐️ 9.0/10
 
-Calif researchers published the first public kernel memory corruption exploit targeting Apple's M5 chip, bypassing hardware and software protections built over five years. This exploit demonstrates that even Apple's latest M5 hardware with Memory Tagging Extension (MTE) can be compromised, highlighting the ongoing challenge of memory corruption vulnerabilities and potentially driving higher bug bounty payouts. The exploit was developed in one week and is valued between $100,000 and $1.5 million on Apple's bug bounty platform, depending on how it is packaged. The full 55-page technical report is forthcoming.
+Security researchers at Calif have demonstrated the first public macOS kernel memory corruption exploit on Apple's M5 chip, surviving MIE (Memory Integrity Engine). This marks a significant security milestone as it is the first public kernel exploit for Apple's latest M5 silicon, potentially leading to high bug bounty payouts and highlighting the growing role of LLMs in vulnerability research. The exploit was developed in just five days with the help of Anthropic's Mythos Preview model, and the team shared a 20-second video of the exploit in action. The vulnerability report was presented to Apple at a meeting at Apple Park.
 
 hackernews · quadrige · May 14, 18:25 · [Discussion](https://news.ycombinator.com/item?id=48139219)
 
-**Background**: Memory corruption is the most common vulnerability class in operating systems. Apple spent five years adding hardware and software mitigations, including MTE, to make such exploits harder. MTE, specified by Arm in 2019, uses tags to detect memory errors at runtime.
+**Background**: The Apple M5 is Apple's latest ARM-based system-on-a-chip, built on third-generation 3nm technology, featuring a next-generation GPU with Neural Accelerators. Kernel memory corruption exploits are critical vulnerabilities that allow attackers to gain unauthorized access to protected parts of the operating system. MIE (Memory Integrity Engine) is a hardware security feature designed to prevent such memory corruption attacks.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://blog.calif.io/p/first-public-kernel-memory-corruption">First public macOS kernel memory corruption exploit on Apple M5</a></li>
-<li><a href="https://news.ycombinator.com/item?id=48139219">First public macOS kernel memory corruption exploit on Apple M5</a></li>
-<li><a href="https://www.reddit.com/r/apple/comments/1td7vvc/first_public_macos_kernel_memory_corruption/">First public macOS kernel memory corruption exploit on Apple M5</a></li>
+<li><a href="https://9to5mac.com/2026/05/14/calif-team-details-how-anthropic-mythos-helped-build-a-working-macos-exploit-in-five-days/">Anthropic Mythos helped Calif build a macOS exploit in five days - 9to5Mac</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apple_M5">Apple M5 - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed surprise that Apple still does not fully adopt Swift for kernel code, and noted that LLMs may accelerate the discovery of complex vulnerabilities. Some were curious how the bug bypassed MTE, while others debated the exploit's potential bounty value.
+**Discussion**: Commenters expressed excitement about the exploit and its implications, with some noting the potential for high bug bounty payouts (up to $1.5 million). There was also discussion about the role of LLMs like Anthropic's Mythos in accelerating vulnerability discovery, with one commenter noting that LLMs will produce 'amazing Rube Goldberg style vulnerabilities' in the future.
 
-**Tags**: `#macOS`, `#kernel exploit`, `#Apple M5`, `#security`, `#vulnerability`
+**Tags**: `#security`, `#macOS`, `#kernel exploit`, `#Apple M5`, `#bug bounty`
 
 ---
 
 <a id="item-2"></a>
-## [Bun Rewritten from Zig to Rust in Major PR](https://github.com/oven-sh/bun/pull/30412) ⭐️ 9.0/10
+## [Bun Rewritten from Zig to Rust, Merged into Main](https://github.com/oven-sh/bun/pull/30412) ⭐️ 9.0/10
 
-A massive pull request has been merged that rewrites the Bun JavaScript runtime from Zig to Rust, replacing over 1 million lines of code. This rewrite promises improved memory safety and performance, addressing common bugs like use-after-free and double-free, and could set a new standard for JavaScript runtime development. The Rust codebase now contains 1,443 files with 929,213 lines of code, and the PR itself shows +1,009,257 -4,024 changes. The rewrite was prepared with detailed mapping instructions from Zig to Rust idioms.
+Bun's core has been rewritten from Zig to Rust and merged into the main branch, marking a major architectural shift for the JavaScript runtime. This rewrite promises to eliminate entire classes of memory bugs like use-after-free and double-free, improving safety and reliability for Bun users. It also positions Bun to leverage Rust's ecosystem and tooling, potentially accelerating development. The migration added over 1 million lines of Rust code, with the codebase now containing 1,443 Rust files and 1,298 Zig files. The Bun team had already prepared the codebase with internal smart pointer types that map 1-to-1 to Rust equivalents, facilitating the rewrite.
 
 hackernews · Chaoses · May 14, 08:15 · [Discussion](https://news.ycombinator.com/item?id=48132488)
 
-**Background**: Bun is a fast all-in-one JavaScript runtime, bundler, test runner, and package manager designed as a drop-in replacement for Node.js. It was originally written in Zig, a systems programming language focused on robustness and optimality. Rust is another systems language known for memory safety without garbage collection.
+**Background**: Bun is a fast all-in-one JavaScript runtime, bundler, and package manager designed as a drop-in replacement for Node.js. It was originally written in Zig, a low-level language focused on simplicity and performance. Rust is a systems programming language known for its memory safety guarantees through ownership and borrowing, which can prevent common bugs at compile time.
 
 <details><summary>References</summary>
 <ul>
@@ -67,264 +66,239 @@ hackernews · Chaoses · May 14, 08:15 · [Discussion](https://news.ycombinator.
 </ul>
 </details>
 
-**Discussion**: Community comments highlight the extensive preparation for the rewrite, with detailed mapping from Zig to Rust idioms. Some note the high number of unsafe blocks in the Rust code (10,428 occurrences), while maintainers acknowledge that Rust won't catch all bugs but will eliminate many common memory errors.
+**Discussion**: The community is highly engaged, with comments noting the extensive preparation (e.g., detailed Zig-to-Rust mapping instructions) and the scale of the rewrite (over 1M lines of Rust). Some users express concerns about software complexity, while others appreciate the safety improvements, though Bun's creator notes that Rust won't catch all bugs, especially those crossing the JS boundary.
 
-**Tags**: `#Bun`, `#Rust`, `#JavaScript runtime`, `#rewrite`, `#memory safety`
+**Tags**: `#Bun`, `#Rust`, `#Zig`, `#JavaScript Runtime`, `#Memory Safety`
 
 ---
 
 <a id="item-3"></a>
-## [Mullvad VPN Exit IPs Enable User Fingerprinting](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector/) ⭐️ 8.0/10
-
-A researcher discovered that Mullvad VPN deterministically assigns exit IPs based on a user's WireGuard key, which rotates infrequently (every 1-30 days) or never with third-party clients, creating a fingerprinting vector that links sessions across different servers. This undermines the privacy expectations of VPN users who assume each connection gets a random IP, and it enables website operators to track users across sessions even when they switch servers, similar to a persistent identifier. The exit IP is derived from the WireGuard public key via a hash function, producing a deterministic IP within a /24 subnet; overlapping IP ranges between sessions indicate the same user with >99% confidence.
-
-hackernews · RGBCube · May 15, 02:35 · [Discussion](https://news.ycombinator.com/item?id=48143880)
-
-**Background**: Mullvad is a popular VPN service that uses WireGuard, a modern VPN protocol. WireGuard uses public-key cryptography for authentication, and Mullvad assigns each user a unique WireGuard key. Normally, VPN exit IPs are expected to be random per connection to prevent tracking, but Mullvad's deterministic assignment breaks this assumption.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://tailscale.com/docs/features/exit-nodes/mullvad-exit-nodes">Use Mullvad VPN endpoints as exit nodes for your tailnet.</a></li>
-<li><a href="https://wiki.archlinux.org/title/WireGuard">WireGuard - ArchWiki</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Comments highlight that VPNs are not designed for anonymity like Tor, and that deterministic IP assignment is a known trade-off. Some users note that even Tor can be deanonymized by controlling exit nodes, while others express concern about the fingerprinting risk.
-
-**Tags**: `#privacy`, `#VPN`, `#fingerprinting`, `#security`, `#networking`
-
----
-
-<a id="item-4"></a>
 ## [Removing Modem and GPS from 2024 RAV4 Hybrid](https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/) ⭐️ 8.0/10
 
-A detailed guide describes physically removing the Data Communication Module (DCM) and GPS from a 2024 Toyota RAV4 Hybrid to prevent telemetry data collection, noting that Bluetooth connections can still leak data via the phone's internet, while wired USB CarPlay does not. This matters because modern vehicles increasingly collect and share sensitive data with manufacturers and third parties, often without meaningful user consent. The guide empowers owners to take control of their privacy through hardware modification, sparking broader discussion about automotive data rights. The DCM is located behind interior panels and contains an eSIM and GPS receiver; removing it disables telematics but may affect hands-free microphone and front right speaker. The author warns that Bluetooth pairing allows the car to use the phone's internet to send telemetry, whereas wired USB CarPlay does not.
+A detailed guide was published on physically removing the modem (DCM) and GPS from a 2024 RAV4 Hybrid to prevent telemetry data collection by Toyota. This highlights growing privacy concerns in modern vehicles and provides a practical, if extreme, method for users to regain control over their data, potentially influencing automotive privacy discussions. Even after modem removal, connecting a phone via Bluetooth allows the car to use the phone's internet to send telemetry, but wired USB CarPlay does not. The author notes that CarPlay and Android Auto also capture their own telemetry.
 
 hackernews · arkadiyt · May 14, 17:08 · [Discussion](https://news.ycombinator.com/item?id=48138136)
 
-**Background**: Toyota vehicles from 2022 onward are equipped with a Data Communication Module (DCM) that includes an eSIM and GPS for connected services. This module continuously collects telemetry such as location, speed, and driving behavior, which can be shared with insurers or other third parties. Physical removal is a drastic but effective privacy measure.
+**Background**: Modern vehicles are equipped with telematics systems that collect and transmit data about driving behavior, location, and vehicle status to manufacturers. This data is often shared with third parties, including insurance companies, raising privacy concerns. Physical removal of the modem and GPS is a drastic measure to stop all data transmission at the hardware level.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/">Removing the Modem and GPS from my 2024 RAV4 Hybrid</a></li>
-<li><a href="https://www.justanswer.com/car/qkdpr-2024-toyota-rav4-hybrid-telematics-control-module-location.html">2024 Toyota RAV4 Hybrid Telematics Module: Location & Guide</a></li>
-<li><a href="https://www.rav4world.com/threads/telematics-which-trims-and-how-can-i-opt-out.310379/">Telematics: Which trims and how can I opt out? | Toyota RAV4 Forums</a></li>
+<li><a href="https://www.cryptogon.com/?p=75142">cryptogon.com » “Removing the Modem and GPS from my 2024 RAV4 ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that CarPlay and Android Auto also capture vehicle telemetry, so even with the modem removed, data may still be collected via the phone. Some shared alternative approaches, such as pulling a fuse on the Ford Maverick, and others expressed frustration with Toyota's refusal to fix GPS issues.
+**Discussion**: The community discussion (832 points, 427 comments) includes debate on Bluetooth vs USB telemetry risks, with some users noting that other vehicles like the Ford Maverick have a simpler fuse removal option. There are also concerns about Toyota sharing data with insurance companies, and some users express frustration with Toyota's handling of GPS issues.
 
-**Tags**: `#privacy`, `#automotive`, `#telemetry`, `#hardware hacking`, `#Toyota`
+**Tags**: `#privacy`, `#automotive`, `#telemetry`, `#hardware hacking`, `#security`
+
+---
+
+<a id="item-4"></a>
+## [Antirez Launches DS4: Specialized LLM Runtime for DeepSeek V4](https://antirez.com/news/165) ⭐️ 8.0/10
+
+Antirez announced DS4 (DwarfStar4), a small LLM inference runtime specifically designed for DeepSeek V4, optimized for MacBooks with 96GB RAM and supporting Metal, CUDA, and ROCm backends. DS4 provides a focused, high-performance inference solution for DeepSeek V4, a 1-trillion-parameter open-source model, enabling efficient local deployment on consumer hardware. This could accelerate adoption of large open-source models by reducing the barrier to running them locally. DS4's primary target is Metal on MacBooks with 96GB RAM, with CUDA support for DGX Spark and ROCm support in a separate branch maintained by the community. The project acknowledges llama.cpp and GGML as foundational dependencies.
+
+hackernews · caust1c · May 14, 22:29 · [Discussion](https://news.ycombinator.com/item?id=48142108)
+
+**Background**: LLM inference runtimes are software frameworks that execute trained language models to generate text. DeepSeek V4 is a 1-trillion-parameter open-source model that rivals proprietary models like GPT-5.5 and Claude Opus 4.7. DS4 is model-specific, unlike general-purpose runtimes like llama.cpp, aiming to maximize performance for DeepSeek V4.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=48143570">DwarfStar4 is a small LLM inference runtime that can... | Hacker News</a></li>
+<li><a href="https://deepseek.ai/deepseek-v4">DeepSeek V 4 : 1T Parameter AI Model Guide | Independent DeepSeek ...</a></li>
+<li><a href="https://www.mindstudio.ai/blog/deepseek-v4-open-source-frontier-model">DeepSeek V 4 : The Open-Source Model Closing the Gap... | MindStudio</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters noted DS4's narrow focus and hardware requirements, with some praising its performance closeness to Claude. Others questioned the need for a model-specific runtime versus using llama.cpp, given the effort required for a single model that may become obsolete.
+
+**Tags**: `#LLM inference`, `#DeepSeek`, `#open source`, `#machine learning`, `#runtime`
 
 ---
 
 <a id="item-5"></a>
-## [RTX 5090 eGPU Works with M4 MacBook Air for Gaming and LLMs](https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/) ⭐️ 8.0/10
+## [Frontier AI access may be limited by economics and security](https://writing.antonleicht.me/p/cut-off) ⭐️ 8.0/10
 
-A developer successfully connected an NVIDIA RTX 5090 eGPU to an M4 MacBook Air via Thunderbolt 5, enabling gaming and LLM inference that are otherwise impossible on Apple Silicon. The setup overcomes Apple's official lack of eGPU support for M-series Macs. This breakthrough demonstrates that eGPUs can work with Apple Silicon, potentially unlocking high-performance gaming and AI workloads on MacBooks. It also highlights the growing demand for local LLM inference, where the RTX 5090's CUDA cores significantly accelerate prompt processing compared to Apple's unified memory. The setup uses a Thunderbolt 5 enclosure (e.g., Gigabyte Aorus RTX 5090 AI Box) and requires custom driver workarounds, as Apple does not officially support eGPUs on M-series Macs. The RTX 5090's 32GB VRAM provides ample memory for large language models, and the eGPU enables playable frame rates in games like Doom that lack modern macOS graphics API support.
+An article argues that access to frontier AI models will soon be constrained by economic costs and security regulations, potentially limiting availability to a few powerful entities. This matters because restricted access could centralize AI power, stifle innovation, and create geopolitical divides, affecting startups, researchers, and nations without massive resources. The article does not mention open-weight models, which commenters argue are only months behind frontier models and could undercut the doom scenario. Additionally, datacenter availability is highlighted as a more fundamental bottleneck than model access.
 
-hackernews · allenleee · May 14, 15:47 · [Discussion](https://news.ycombinator.com/item?id=48137145)
+hackernews · thoughtpeddler · May 15, 01:08 · [Discussion](https://news.ycombinator.com/item?id=48143284)
 
-**Background**: Apple Silicon Macs use a unified memory architecture where the CPU and GPU share memory, which is efficient for many tasks but limits GPU performance for gaming and AI. Apple officially only supports eGPUs on Intel-based Macs and only with AMD GPUs. Thunderbolt 5 offers up to 80 Gbps bandwidth, reducing the bottleneck that previously made eGPUs less effective on Apple Silicon.
+**Background**: Frontier AI models are the most advanced AI systems at a given time, trained on massive datasets to achieve state-of-the-art performance. Open-weight models make trained parameters publicly available, allowing others to use and modify them. The debate centers on whether open-weight models and sufficient datacenter capacity can democratize access to cutting-edge AI.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://support.apple.com/en-au/102363">Use an external graphics processor with your Mac – Apple Support (AU)</a></li>
-<li><a href="https://egpu.io/forums/thunderbolt-enclosures/tb5-thunderbolt-5-enclosure-gigabyte-aorus-rtx-5090-80-ai-box/">TB5/Thunderbolt 5 Enclosure: Gigabyte Aorus RTX 5090/80 AI Box | Thunderbolt & USB4 Enclosures</a></li>
-<li><a href="https://www.techradar.com/pro/want-to-run-a-geforce-rtx-5090-on-your-ultra-thin-laptop-this-thunderbolt-5-egpu-enclosure-can-make-it-happen-but-it-wont-be-cheap">This monstrous Gigabyte RTX 5090 AI Box turns slim laptops into desktop-class gaming and AI beasts | TechRadar</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/frontier-models/">What Are Frontier AI Models and How They Work - NVIDIA</a></li>
+<li><a href="https://www.ai21.com/glossary/foundational-llm/open-weights-model/">What is an Open-Weights Model? | AI21</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed surprise that eGPUs work on Apple Silicon at all, with many noting Apple's official stance that they don't. Some highlighted the LLM performance improvements as the most practical benefit, while others discussed the technical challenges of VM GPU passthrough and OpenGL/Vulkan workarounds. Overall sentiment was positive and impressed by the achievement.
+**Discussion**: Commenters are skeptical of the doom scenario, noting that open-weight models like Qwen, Llama, and DeepSeek are close behind frontier models. They also argue that datacenter shortages, not model access, are the real bottleneck, and that only the US and China may have sufficient infrastructure.
 
-**Tags**: `#eGPU`, `#Apple Silicon`, `#gaming`, `#LLM`, `#hardware`
+**Tags**: `#AI`, `#geopolitics`, `#open-source`, `#datacenters`, `#frontier models`
 
 ---
 
 <a id="item-6"></a>
-## [Nginx Rift Exploit Enables RCE via Rewrite Directives](https://github.com/DepthFirstDisclosures/Nginx-Rift) ⭐️ 8.0/10
+## [UK ditches Palantir for in-house refugee system](https://www.bbc.com/news/articles/c2l2j1lxdk5o) ⭐️ 8.0/10
 
-A new exploit called Nginx Rift (CVE-2026-42945) has been disclosed that allows unauthenticated remote code execution via specially crafted rewrite and set directives in Nginx configuration. The vulnerability has been present for 18 years and affects Nginx Open Source and Nginx Plus. This vulnerability is critical because Nginx powers over 30% of all web servers, and the exploit requires only specific rewrite and set directives to be present, which are common in many configurations. Successful exploitation could lead to full server compromise, and the community discussion highlights potential ASLR bypass techniques, increasing the severity. The exploit requires a rewrite directive with a question mark in the replacement string followed by a set directive referencing an unnamed regex capture group (e.g., $1). The published proof-of-concept assumes ASLR is disabled, but the researchers claim a reliable ASLR bypass exists.
+The UK government has replaced Palantir's Foundry-based refugee case management software with an internally-built system, saving millions of pounds. The new system was developed by the Home Office's own digital team. This move signals a shift away from expensive, controversial vendors like Palantir toward in-house development, potentially influencing other government procurement decisions. It also demonstrates that complex data integration challenges can be solved by internal teams at lower cost. The Palantir system was used for the Homes for Ukraine scheme, matching refugees with accommodation. The new system is open-source and built using standard government digital tools, with the Home Office claiming significant cost savings.
 
-hackernews · hetsaraiya · May 14, 17:17 · [Discussion](https://news.ycombinator.com/item?id=48138268)
+hackernews · cdrnsf · May 14, 22:44 · [Discussion](https://news.ycombinator.com/item?id=48142251)
 
-**Background**: Nginx's rewrite module compiles rewrite, set, if, and return directives into bytecode that runs per request. The vulnerability stems from a bug in the bytecode compiler that can cause memory corruption when processing certain patterns. ASLR (Address Space Layout Randomization) is a defense technique that randomizes memory addresses to make exploitation harder, but it can be bypassed using techniques like ROP (Return-Oriented Programming).
+**Background**: Palantir's Foundry platform is a data integration and analysis tool often used by governments and large enterprises. The UK government had contracted Palantir to manage data for the Homes for Ukraine scheme, which involved matching tens of thousands of visa applications with accommodation offers. Critics have long questioned Palantir's high costs and ethical concerns.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://devops-daily.com/posts/nginx-rift-cve-2026-42945-rewrite-rce">NGINX Rift (CVE-2026-42945): The 18-Year-Old Rewrite Bug That...</a></li>
-<li><a href="https://thehackernews.com/2026/05/18-year-old-nginx-rewrite-module-flaw.html">18-Year-Old NGINX Rewrite Module Flaw Enables Unauthenticated...</a></li>
-<li><a href="https://depthfirst.com/research/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability">NGINX Rift: Achieving NGINX Remote Code Execution via... | depthfirst</a></li>
+<li><a href="https://www.bbc.com/news/articles/c2l2j1lxdk5o">UK saves 'millions' of pounds by ditching Palantir for refugee system</a></li>
+<li><a href="https://blog.palantir.com/ensuring-the-resettling-and-safeguarding-of-refugees-fleeing-the-war-in-ukraine-a5a5fcb306fa">Ensuring the Resettling and Safeguarding of Refugees ... | Palantir Blog</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion is active, with users debating the severity and mitigations. Some argue that ASLR bypass is likely and should be assumed, while others note that the published PoC disables ASLR. Mitigations include using named captures instead of unnamed ones, and F5 has released patches for versions 1.31.0 and 1.30.1.
+**Discussion**: Commenters expressed skepticism about Palantir's value, with one noting that the data integration challenges were standard work for government digital teams. Another pointed out that Palantir's high cost stems from its consulting-heavy model, which may not be justified in the long term. Some also questioned whether the Palantir system was actually effective, citing anecdotal evidence that matching happened through Facebook groups instead.
 
-**Tags**: `#nginx`, `#security`, `#exploit`, `#vulnerability`, `#ASLR`
+**Tags**: `#government`, `#palantir`, `#software procurement`, `#UK`, `#refugee system`
 
 ---
 
 <a id="item-7"></a>
-## [arXiv Imposes 1-Year Ban for Hallucinated References](https://twitter.com/tdietterich/status/2055000956144935055) ⭐️ 8.0/10
+## [RTX 5090 eGPU on M4 MacBook Air: Gaming & LLM Breakthrough](https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/) ⭐️ 8.0/10
 
-arXiv has introduced a new policy that imposes a 1-year ban on authors who submit papers containing hallucinated references, followed by a requirement that future submissions must first be accepted at a reputable peer-reviewed venue. This policy directly addresses the growing problem of AI-generated hallucinated citations in academic papers, helping to preserve research integrity and trust in preprint repositories. The ban applies to authors found to have submitted papers with fabricated references, and after the ban, authors must have their work accepted at a reputable venue before resubmitting to arXiv.
+A developer successfully connected an RTX 5090 eGPU to an M4 MacBook Air via Thunderbolt, enabling playable gaming and significantly faster LLM inference on macOS. This is one of the first documented instances of a modern Nvidia GPU working with Apple Silicon through a custom driver and VM passthrough. This achievement challenges Apple's official stance that eGPUs are unsupported on Apple Silicon, opening new possibilities for Mac users in gaming and AI workloads. It also highlights the growing demand for GPU acceleration on Macs, especially for local LLM inference where prompt processing speed is a bottleneck. The setup uses a custom driver (TinyGPU) and a Linux VM with GPU passthrough, bypassing macOS's lack of eGPU support. Performance is limited by Thunderbolt bandwidth, but LLM prompt processing speed improved dramatically compared to Apple's unified memory. The author notes that only a 1.5 GB PCIe window is available, complicating the setup.
 
-hackernews · gjuggler · May 14, 20:39 · [Discussion](https://news.ycombinator.com/item?id=48140922)
+hackernews · allenleee · May 14, 15:47 · [Discussion](https://news.ycombinator.com/item?id=48137145)
 
-**Background**: Hallucinated references are non-existent citations fabricated by AI language models, which have become a significant issue in academic publishing. arXiv is a widely used preprint repository that relies on voluntary moderation to maintain quality standards.
+**Background**: Apple Silicon Macs use unified memory, which is great for many tasks but limits GPU performance for gaming and AI. Apple officially dropped eGPU support with the transition to Apple Silicon, leaving users without a straightforward way to add discrete graphics. Thunderbolt-based eGPUs have been possible on Intel Macs, but on Apple Silicon, they require complex workarounds like VM passthrough and custom drivers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://info.arxiv.org/help/moderation/index.html">Content Moderation - arXiv info</a></li>
-<li><a href="https://ref-check.org/">ref-check.org — Academic Reference Verification Tool</a></li>
-<li><a href="https://arxiv.org/pdf/2604.16407">26-19 How unique are hallucinated citations 2026-03-31</a></li>
+<li><a href="https://www.compute-market.com/blog/nvidia-egpu-mac-local-ai-setup-2026">Nvidia eGPU on Mac for Local AI 2026 — TinyGPU Setup</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/gpus/copprlink-destroys-every-egpu-standard-in-new-test-achieves-near-native-level-performance-with-an-rtx-5090-setup-requires-usd2-300-worth-of-additional-hardware">'CopprLink' destroys every eGPU standard in new test ...</a></li>
+<li><a href="https://egpu.io/setup-guide-external-graphics-card-mac/">The Beginner’s External Graphics Card Setup Guide for Mac | eGPU .io</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community largely supports the policy, with some praising it as a necessary step for science. Others discuss alternatives to arXiv and emphasize the need to address the root cause, such as improving tools for correct citation creation.
+**Discussion**: Commenters praised the technical achievement, with many noting the LLM inference improvements as the most practical benefit. Some expressed frustration with Apple's lack of official support, while others highlighted the complexity of the setup. One commenter suggested that adding Vulkan support via MoltenVK might be easier than the eGPU hack for some games.
 
-**Tags**: `#arXiv`, `#research integrity`, `#academic publishing`, `#AI ethics`, `#policy`
+**Tags**: `#eGPU`, `#Apple Silicon`, `#gaming`, `#LLM inference`, `#hardware hacking`
 
 ---
 
 <a id="item-8"></a>
-## [HDD Firmware Hacking Deep Dive](https://icode4.coffee/?p=1465) ⭐️ 8.0/10
+## [Mullvad VPN Exit IPs Enable User Fingerprinting](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector/) ⭐️ 8.0/10
 
-A technical article details methods for reverse engineering HDD firmware, including dumping, analyzing, and modifying firmware, as well as bypassing obfuscation and extracting decrypted firmware. This work exposes security weaknesses in HDD firmware, enabling researchers to find vulnerabilities and potentially improve device security. It also empowers users to understand and control their hardware. The article covers techniques such as using seccomp to intercept syscalls during firmware updates to capture decrypted firmware, and reverse engineering obfuscation algorithms. It also references a related decompilation of Samsung 840 EVO SSD firmware.
+A security researcher discovered that Mullvad VPN assigns exit IPs deterministically based on a user's WireGuard public key using a seeded random number generator, causing the same relative IP position across different servers and enabling cross-session user tracking. This undermines the anonymity promise of a highly trusted VPN service, as forum moderators or adversaries could link multiple accounts to the same user with high confidence, even when different servers are used. The deterministic assignment reduces the number of unique exit IP combinations from trillions to just 284 observed combinations, making it trivial to correlate users across sessions. Mullvad's co-founder confirmed they are testing a patch for the unintended behavior.
 
-hackernews · jsploit · May 14, 16:19 · [Discussion](https://news.ycombinator.com/item?id=48137553)
+hackernews · RGBCube · May 15, 02:35 · [Discussion](https://news.ycombinator.com/item?id=48143880)
 
-**Background**: Hard disk drives (HDDs) and solid-state drives (SSDs) run firmware that controls their operation. Manufacturers often obfuscate or encrypt this firmware to prevent reverse engineering. Tools like hdd_firmware_tools on GitHub can extract firmware from Seagate drives, but many vendors keep firmware proprietary.
+**Background**: VPNs typically assign a random exit IP from a pool to each connection, providing anonymity by mixing users. Mullvad uses a seeded RNG based on the user's WireGuard public key to assign IPs, which was intended to keep the same IP per server for consistency but inadvertently made the assignment predictable across servers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://icode4.coffee/?p=1465">HDD Firmware Hacking Part 1 – I Code 4 Coffee</a></li>
-<li><a href="https://github.com/eurecom-s3/hdd_firmware_tools">GitHub - eurecom-s3/hdd_firmware_tools: Tools for viewing and extracting HDD firmware files · GitHub</a></li>
+<li><a href="https://app.daily.dev/posts/mullvad-exit-ips-as-a-fingerprinting-vector-qalnhy2qk">Mullvad exit IPs as a fingerprinting vector | daily.dev</a></li>
+<li><a href="https://thecodersblog.com/mullvad-exit-ips-a-privacy-paradox/">Mullvad Exit IPs: A Privacy Paradox? - The Coders Blog | Home</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters shared practical tips, such as using seccomp to capture decrypted firmware during updates, and referenced a decompiled Samsung SSD firmware manual. Some expressed frustration with vendor obfuscation practices and the lack of support for LVFS/fwupd.
+**Discussion**: Mullvad's co-founder acknowledged the issue and stated they are testing a patch, while some commenters questioned the statistical methodology used to claim >99% confidence in linking users. Others expressed surprise that such a simple oversight occurred in a privacy-focused service.
 
-**Tags**: `#firmware`, `#reverse engineering`, `#hardware hacking`, `#security`, `#storage`
+**Tags**: `#VPN`, `#privacy`, `#fingerprinting`, `#security`, `#Mullvad`
 
 ---
 
 <a id="item-9"></a>
-## [Antirez Releases DS4: Minimal LLM Runtime for DeepSeek V4](https://antirez.com/news/165) ⭐️ 7.0/10
+## [Critical Nginx RCE Exploit Published with ASLR Bypass Claim](https://github.com/DepthFirstDisclosures/Nginx-Rift) ⭐️ 8.0/10
 
-Antirez has released DS4 (DwarfStar4), a minimal and self-contained LLM inference runtime specifically designed for DeepSeek V4 Flash, optimized for MacBooks with 96GB RAM and supporting Metal, CUDA, and ROCm backends. DS4 demonstrates that a single developer can build a highly optimized inference engine for a specific model, outperforming general-purpose runtimes on desktop hardware, which could accelerate the trend toward local, private AI inference. DS4 is not a generic GGUF runner but a purpose-built engine with custom loading, prompt rendering, tool calling, and KV state handling, and it currently requires 96GB of VRAM to run DeepSeek V4 Flash.
+A proof-of-concept exploit for a critical heap buffer overflow vulnerability in Nginx's rewrite module has been published, enabling unauthenticated remote code execution. The exploit, tracked as CVE-2026-42945, affects Nginx versions since 2008 and assumes ASLR is disabled, but the author claims a reliable ASLR bypass is possible. Nginx serves about 34% of all websites and is a critical component in enterprise Kubernetes environments, making this vulnerability extremely high-impact. If the ASLR bypass claim is validated, the exploit could affect a vast number of production deployments using rewrite rules with unnamed captures. The vulnerability requires a rewrite directive with a question mark in the replacement string and a subsequent set directive referencing a regex capture group (e.g., set $var $1). F5 has patched versions 1.31.0 and 1.30.1, and a mitigation is to use named captures instead of unnamed ones.
 
-hackernews · caust1c · May 14, 22:29 · [Discussion](https://news.ycombinator.com/item?id=48142108)
+hackernews · hetsaraiya · May 14, 17:17 · [Discussion](https://news.ycombinator.com/item?id=48138268)
 
-**Background**: DeepSeek V4 is a 1-trillion-parameter multimodal model with an Engram memory architecture, and running such large models locally typically requires significant hardware resources. DS4 builds on llama.cpp and GGML but is self-contained, targeting high-end Apple Silicon Macs and NVIDIA DGX Spark systems.
+**Background**: Address Space Layout Randomization (ASLR) is a security technique that randomizes memory addresses to make exploitation harder. The published exploit disables ASLR to demonstrate the vulnerability, but ASLR bypass techniques such as memory disclosure or brute force can be used to overcome this protection. The vulnerability was discovered by an LLM-powered AI agent, highlighting the growing role of AI in security research.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/antirez/ds4">GitHub - antirez/ds4: DeepSeek 4 Flash local inference engine for Metal and CUDA · GitHub</a></li>
-<li><a href="https://pasqualepillitteri.it/en/news/2253/ds4-antirez-deepseek-v4-flash-inference-engine">DwarfStar4 (DS4) Roadmap by antirez: DeepSeek V4 Flash on Apple Silicon and CUDA</a></li>
-<li><a href="https://www.knightli.com/en/2026/05/11/deepseek-v4-flash-ds4-metal/">Running DeepSeek 4 Locally: Antirez's ds4 Experiment on Apple Silicon Mac</a></li>
+<li><a href="https://cybersecuritynews.com/18-year-old-nginx-rce-vulnerability/">Critical 18-Year-Old NGINX Vulnerability Enables Remote Code ...</a></li>
+<li><a href="https://dailysecurityreview.com/cyber-security/18-year-nginx-flaw-cve-2026-42945-enables-unauthenticated-rce/">18-Year NGINX Flaw CVE-2026-42945 Enables Unauthenticated RCE</a></li>
+<li><a href="https://www.csoonline.com/article/4171437/ai-agent-finds-18-year-old-remote-code-execution-flaw-in-nginx.html">AI agent finds 18-year-old remote code execution flaw in Nginx</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight DS4's narrow focus and performance, with one user noting it feels close to Claude in quality despite being slower, and another discussing the potential saturation of model intelligence for coding tasks.
+**Discussion**: Community comments express concern that the exploit is serious despite the ASLR precondition, with one security professional noting that the ASLR bypass claim is credible and should be taken seriously. Others point out specific preconditions required for exploitation, such as the use of unnamed captures in rewrite rules, and note that F5 has provided patches and mitigations.
 
-**Tags**: `#LLM`, `#inference`, `#DeepSeek`, `#open source`, `#AI`
+**Tags**: `#nginx`, `#security`, `#exploit`, `#vulnerability`, `#aslr`
 
 ---
 
 <a id="item-10"></a>
-## [Codex Now Available in ChatGPT Mobile App](https://openai.com/index/work-with-codex-from-anywhere/) ⭐️ 7.0/10
+## [World Labs' image-blaster turns single image into 3D world](https://twitter.com/drfeifei/status/tweet-2055022392569905411) ⭐️ 8.0/10
 
-OpenAI has integrated its Codex coding agent into the ChatGPT mobile app, allowing developers to interact with coding agents remotely for free. This integration significantly improves developer workflow by enabling 'vibe coding' on the go, reducing the need to be tethered to a desktop. It also lowers the barrier to entry for AI-assisted coding, as Codex is free on the mobile app. Codex is available on the free tier of ChatGPT, though interactions may be used for training. The mobile app provides a remote interface to the same Codex agent that runs locally or via CLI.
-
-hackernews · OpenAI Blog · May 14, 20:06 · [Discussion](https://news.ycombinator.com/item?id=48140529)
-
-**Background**: Codex is a suite of AI-driven coding agents from OpenAI that automate software engineering tasks. It can be run locally via CLI or desktop app, and now via the ChatGPT mobile app, enabling remote access to coding assistance.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/openai/codex">GitHub - openai / codex : Lightweight coding agent that runs in your...</a></li>
-<li><a href="https://github.com/openai/codex/releases">Releases · openai / codex</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community members are excited about the free access and remote capabilities, with some sharing workflows for using Codex from anywhere. However, some users note that results can be less effective on a small screen without a keyboard, and caution that easy remote access may make it harder to disconnect from work.
-
-**Tags**: `#AI coding assistant`, `#ChatGPT`, `#mobile development`, `#developer tools`, `#OpenAI`
-
----
-
-<a id="item-11"></a>
-## [GGUF Format: Single-File LLM Storage and Missing Features](https://nobodywho.ooo/posts/whats-in-a-gguf/) ⭐️ 7.0/10
-
-A technical deep-dive explores the GGUF file format for LLMs, highlighting its single-file advantage over formats like safetensors, and identifies missing features such as tool-calling support. GGUF is widely used in projects like llama.cpp for efficient LLM deployment, and addressing its limitations could streamline model distribution and enable agentic workflows. The article notes that GGUF's single-file design contrasts with safetensors repos that require multiple JSON files, but current GGUF lacks standardized tool-calling metadata, which is crucial for LLM agents.
-
-hackernews · bashbjorn · May 14, 17:21 · [Discussion](https://news.ycombinator.com/item?id=48138332)
-
-**Background**: GGUF (GPT-Generated Unified Format) is a binary format optimized for quick loading and saving of LLMs, developed as an evolution of GGML. It is primarily used by llama.cpp and supported on Hugging Face Hub. Tool calling allows LLMs to invoke external functions with structured JSON arguments, enabling agentic behavior.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Llama.cpp">llama.cpp - Wikipedia</a></li>
-<li><a href="https://huggingface.co/docs/hub/gguf">GGUF · Hugging Face</a></li>
-<li><a href="https://blog.promptlayer.com/tool-calling-with-llms-how-and-when-to-use-it/">Tool Calling with LLMs: How and when to use it?</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Philpax, a GGUF designer, regrets that projection models ended up separate from the main file, contradicting the single-file ethos. Commenters appreciate the analysis and emphasize GGUF's importance for open-source ML, with sbinnee noting that tool-calling support would be a milestone for transitioning from LLMs to agents.
-
-**Tags**: `#GGUF`, `#LLM`, `#machine learning`, `#file format`, `#open source`
-
----
-
-<a id="item-12"></a>
-## [World Labs' image-blaster turns single images into 3D worlds](https://twitter.com/drfeifei/status/tweet-2055022392569905411) ⭐️ 7.0/10
-
-World Labs, co-founded by Fei-Fei Li, released image-blaster, a tool that converts a single image into a fully meshed 3D world in minutes. This tool significantly lowers the barrier for 3D content creation, enabling rapid prototyping and immersive experiences from everyday photos, which could impact gaming, VR, and digital twin industries. Image-blaster uses World Labs' Marble model (marble-1.1) to generate explorable environments, along with nano-banana for image cleanup and reference handling.
+World Labs has released 'image-blaster', a tool that converts a single image into a fully meshed 3D world in minutes, built by a team member and combining multiple generation models. This innovation significantly accelerates 3D reconstruction from a single image, potentially impacting computer vision, graphics, and spatial AI applications by enabling rapid creation of explorable 3D environments. The tool uses World Labs' Marble model (marble-1.1) to generate the explorable environment and a nano-banana model for source cleanup and reference images. It is available on GitHub under the repository 'neilsonnn/image-blaster'.
 
 twitter · Fei-Fei Li · May 14, 20:28
 
-**Background**: Single-image 3D reconstruction is a challenging computer vision task that traditionally requires multiple views or depth sensors. Recent AI models like One-2-3-45 and Hunyuan 3D have made progress, but World Labs' approach focuses on generating fully meshed worlds rather than just objects.
+**Background**: Traditional 3D reconstruction from a single image is challenging because depth information is lost during projection. Recent advances like LRM and SAM 3D have improved single-image 3D, but World Labs' approach combines multiple models for a complete meshed world in minutes.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://github.com/neilsonnn/image-blaster">GitHub - neilsonnn/ image - blaster : An image-to- world skillset for...</a></li>
 <li><a href="https://www.worldlabs.ai/">World Labs</a></li>
+<li><a href="https://fastcompany.co.za/impact/2025-11-13-discover-how-fei-fei-lis-world-labs-is-revolutionising-3d-environments-with-ai/">Discover how Fei-Fei Li's World Labs is revolutionising...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#3D reconstruction`, `#computer vision`, `#AI`, `#image processing`
+**Tags**: `#3D reconstruction`, `#computer vision`, `#AI`, `#graphics`
 
 ---
 
-<a id="item-13"></a>
-## [Coding Agents Reduce Platform Lock-In Risk](https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything) ⭐️ 6.0/10
+<a id="item-11"></a>
+## [Codex Now Available in ChatGPT Mobile App](https://openai.com/index/work-with-codex-from-anywhere/) ⭐️ 7.0/10
 
-A tech leader shared an anecdote about a company using coding agents to rewrite both iPhone and Android apps into React Native, arguing that the cost of switching back to native is now low enough to make platform lock-in less of a concern. This suggests that AI-assisted coding agents are fundamentally changing technology decisions by reducing the risk of long-term commitment to a specific framework or language, potentially accelerating adoption of cross-platform solutions. The company had legacy iPhone and Android apps that were rewritten using coding agents to React Native, which the team found covered all their needs. They believe that if the decision proves wrong, they can simply port back to native with the help of coding agents.
+OpenAI has integrated its Codex AI coding agent into the ChatGPT mobile app, allowing users to perform AI-assisted coding directly from their smartphones. This move extends Codex's availability beyond desktop and CLI to mobile devices. This integration makes AI-powered coding more accessible, enabling developers to work on code while on the go without needing a full desktop setup. It also popularizes the 'vibe coding' trend, where developers use natural language prompts to generate code iteratively. Codex is available for free on the ChatGPT free plan, though interactions may be used for training. The mobile app supports agentic coding with built-in worktrees and cloud environments, allowing parallel work across projects.
 
-rss · Simon Willison · May 14, 22:53
+hackernews · OpenAI Blog · May 14, 20:06 · [Discussion](https://news.ycombinator.com/item?id=48140529)
 
-**Background**: Platform lock-in occurs when a company becomes dependent on a specific technology, making it costly to switch. Coding agents are AI tools that can automatically generate or modify code, reducing the human effort required for large-scale rewrites. React Native is a framework that allows building mobile apps using JavaScript and React, sharing code across iOS and Android.
+**Background**: OpenAI Codex is a large language model that translates natural language prompts into source code. It was originally released as a standalone tool and later integrated into ChatGPT. 'Vibe coding' refers to an AI-assisted development practice where developers describe tasks in plain language and accept AI-generated code with minimal manual intervention.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/senaiverse/claude-code-reactnative-expo-agent-system">GitHub - senaiverse/claude- code - reactnative -expo- agent -system...</a></li>
-<li><a href="https://reactnative.dev/">React Native · Learn once, write anywhere</a></li>
-<li><a href="https://thecodersblog.com/bun-runtime-migration-from-zig-to-rust-2026/">Bun 's Rust Pivot: What the Zig - to - Rust Migration Means for...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model)">OpenAI Codex (language model ) - Wikipedia</a></li>
+<li><a href="https://openai.com/codex/">Codex | AI Coding Partner from OpenAI | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vibe_coding">Vibe coding - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#React Native`, `#coding agents`, `#technology decisions`, `#lock-in`
+**Discussion**: Community comments show mixed reactions: some users appreciate the free access and convenience, while others report that mobile coding yields lower quality results due to screen size and lack of keyboard. There is also discussion about 'vibe coding' workflows, with some users experimenting with remote agents and voice-to-text setups.
+
+**Tags**: `#AI coding`, `#ChatGPT`, `#Codex`, `#mobile development`, `#vibe coding`
+
+---
+
+<a id="item-12"></a>
+## [Coding Agents Reduce Technology Lock-In](https://simonwillison.net/2026/May/14/not-so-locked-in/#atom-everything) ⭐️ 6.0/10
+
+A blog post by Simon Willison reports that a medium-sized company used coding agents to rewrite both their iPhone and Android apps into React Native, and the team noted that if it turns out to be the wrong decision, they could easily port back to native in the future. This anecdote illustrates how AI-powered coding agents are lowering the cost of rewriting software, making technology choices less permanent and reducing vendor or platform lock-in. It signals a shift in software engineering where flexibility and reversibility become more feasible. The company had legacy iPhone and Android apps that were rewritten to React Native using coding agents. The decision was based on React Native's improvements and the ability to revert to native if needed, echoing Mitchell Hashimoto's observation that programming languages are increasingly not lock-in.
+
+rss · Simon Willison · May 14, 22:53
+
+**Background**: Technology lock-in occurs when a company becomes dependent on a specific technology, making switching costly or difficult. Coding agents are AI tools that can autonomously generate, modify, or rewrite code, reducing the effort required for large-scale rewrites. React Native is a cross-platform framework that allows building mobile apps using JavaScript and React, sharing code between iOS and Android.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.brilworks.com/blog/agentic-ai-software-development/">AI Coding Agents: Benefits, Risks & Best Practices</a></li>
+<li><a href="https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here">New Architecture is here - React Native</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#coding agents`, `#React Native`, `#technology lock-in`, `#software engineering`
 
 ---
