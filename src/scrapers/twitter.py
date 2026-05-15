@@ -72,7 +72,7 @@ class TwitterScraper(BaseScraper):
             "source_mode": "profiles",
             "profile_urls": users,
             "search_sort": "Latest",
-            "max_items": max(100, self.config.fetch_limit),
+            "max_items": max(100, self.config.fetch_limit) * len(users),
         }
         url = f"{_APIFY_BASE}/acts/{self.config.actor_id}/runs?token={token}"
         try:
