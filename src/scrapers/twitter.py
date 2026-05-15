@@ -43,27 +43,33 @@ class TwitterScraper(BaseScraper):
             )
             return []
 
-        logger.info(f"Fetching Twitter (Apify) for users: {users}")
+        # Batch profiles to avoid a single account hogging the per-run item cap.
+        # Free plan caps each run at ~100 items; batches of 5 give ~20 tweets/account.
+        BATCH_SIZE = 5
+        batches = [users[i:i + BATCH_SIZE] for i in range(0, len(users), BATCH_SIZE)]
+        logger.info(f"Fetching Twitter (Apify) for {len(users)} users in {len(batches)} batches")
 
-        run_id, dataset_id = await self._start_run(token, users)
-        if not run_id:
-            return []
-
-        succeeded = await self._wait_for_run(token, run_id)
-        if not succeeded:
-            return []
-
-        raw_items = await self._fetch_dataset(token, dataset_id)
-        items = []
-        for raw in raw_items:
-            if isinstance(raw, dict) and raw.get("noResults"):
+        all_items: List[ContentItem] = []
+        seen_ids: set = set()
+        for batch_idx, batch in enumerate(batches):
+            logger.info(f"  Batch {batch_idx + 1}/{len(batches)}: {batch}")
+            run_id, dataset_id = await self._start_run(token, batch)
+            if not run_id:
                 continue
-            parsed = self._parse_item(raw, since)
-            if parsed:
-                items.append(parsed)
+            succeeded = await self._wait_for_run(token, run_id)
+            if not succeeded:
+                continue
+            raw_items = await self._fetch_dataset(token, dataset_id)
+            for raw in raw_items:
+                if isinstance(raw, dict) and raw.get("noResults"):
+                    continue
+                parsed = self._parse_item(raw, since)
+                if parsed and parsed.id not in seen_ids:
+                    seen_ids.add(parsed.id)
+                    all_items.append(parsed)
 
-        logger.info(f"Fetched {len(items)} tweets via Apify.")
-        return items
+        logger.info(f"Fetched {len(all_items)} tweets via Apify ({len(batches)} batches).")
+        return all_items
 
     async def _start_run(
         self, token: str, users: List[str]
@@ -72,7 +78,7 @@ class TwitterScraper(BaseScraper):
             "source_mode": "profiles",
             "profile_urls": users,
             "search_sort": "Latest",
-            "max_items": max(100, self.config.fetch_limit) * len(users),
+            "max_items": max(100, self.config.fetch_limit) * len(users),  # len(users) == batch size here
         }
         url = f"{_APIFY_BASE}/acts/{self.config.actor_id}/runs?token={token}"
         try:
