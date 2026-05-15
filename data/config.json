@@ -40,7 +40,7 @@
         "https://x.com/RodmanAi",
         "https://x.com/AndrewYNg"
       ],
-      "fetch_limit": 150,
+      "fetch_limit": 20,
       "fetch_reply_text": false,
       "max_replies_per_tweet": 3,
       "max_tweets_to_expand": 10,
