@@ -50,19 +50,19 @@
       {
         "name": "OpenAI Blog",
         "url": "https://openai.com/blog/rss.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "ai"
       },
       {
         "name": "DeepMind Blog",
         "url": "https://deepmind.google/blog/rss.xml",
-        "enabled": true,
+        "enabled": false,
         "category": "ai"
       },
       {
         "name": "Simon Willison",
         "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
+        "enabled": false,
         "category": "ai-tools"
       }
     ]
