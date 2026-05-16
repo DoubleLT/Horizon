@@ -127,28 +127,34 @@ class TwitterScraper(BaseScraper):
         self, handles: List[str], since: datetime, auth_token: str, ct0: str
     ) -> List[ContentItem]:
         ct0 = await _bootstrap_ct0(auth_token, ct0)
+        print(f"[DIAG] Twitter: ct0 len={len(ct0)}, since={since.isoformat()}", flush=True)
         headers = _build_headers(ct0)
         cookies = {"auth_token": auth_token, "ct0": ct0}
         per_user = max(20, self.config.fetch_limit)
         items: List[ContentItem] = []
+        _diag_done = False
 
         for handle in handles:
             try:
                 user_id = await self._gql_get_user_id(handle, headers, cookies)
                 if not user_id:
-                    logger.warning("Twitter: could not resolve user_id for @%s", handle)
+                    print(f"[DIAG] @{handle}: could not resolve user_id", flush=True)
                     continue
-                tweets = await self._gql_get_tweets(user_id, per_user, headers, cookies)
+                tweets = await self._gql_get_tweets(user_id, per_user, headers, cookies, diag=not _diag_done)
+                _diag_done = True
                 count = 0
                 for t in tweets:
                     parsed = self._parse_gql_tweet(t, since)
                     if parsed:
                         items.append(parsed)
                         count += 1
-                logger.debug("@%s: %d recent tweets (of %d fetched)", handle, count, len(tweets))
+                    elif tweets and not _diag_done:
+                        leg = t.get("legacy", {})
+                        print(f"[DIAG] @{handle}: tweet filtered – created_at={leg.get('created_at')}", flush=True)
+                print(f"[DIAG] @{handle}: fetched={len(tweets)} parsed={count}", flush=True)
                 await asyncio.sleep(3.0)
             except Exception as exc:
-                logger.warning("Twitter GraphQL: failed @%s – %s", handle, exc)
+                print(f"[DIAG] @{handle}: exception – {exc}", flush=True)
 
         logger.info(
             "Twitter GraphQL: %d items within 48h across %d accounts", len(items), len(handles)
@@ -177,7 +183,7 @@ class TwitterScraper(BaseScraper):
             return None
 
     async def _gql_get_tweets(
-        self, user_id: str, count: int, headers: dict, cookies: dict
+        self, user_id: str, count: int, headers: dict, cookies: dict, diag: bool = False
     ) -> list:
         variables = json.dumps(
             {
@@ -198,19 +204,30 @@ class TwitterScraper(BaseScraper):
                 break
             if resp.status_code == 429:
                 wait = 30 * (attempt + 1)
-                logger.warning(
-                    "UserTweets %s → 429 (attempt %d/3), waiting %ds", user_id, attempt + 1, wait
-                )
+                print(f"[DIAG] UserTweets {user_id} → 429 (attempt {attempt+1}/3), waiting {wait}s", flush=True)
                 await asyncio.sleep(wait)
             else:
-                logger.warning(
-                    "UserTweets %s → HTTP %d: %s", user_id, resp.status_code, resp.text[:200]
-                )
+                print(f"[DIAG] UserTweets {user_id} → HTTP {resp.status_code}: {resp.text[:300]}", flush=True)
                 return []
         else:
-            logger.error("UserTweets %s → 429 after 3 retries, giving up", user_id)
+            print(f"[DIAG] UserTweets {user_id} → 429 after 3 retries, giving up", flush=True)
             return []
         data = resp.json()
+        if diag:
+            # Dump top-level keys and first instruction type to diagnose response shape
+            d = data.get("data", {})
+            u = d.get("user", {})
+            r = u.get("result", {})
+            tl = r.get("timeline_v2", r.get("timeline", {}))
+            instrs = tl.get("timeline", {}).get("instructions", []) if "timeline" in tl else tl.get("instructions", [])
+            print(f"[DIAG] resp keys: data.user.result keys={list(r.keys())[:8]}", flush=True)
+            print(f"[DIAG] instructions count={len(instrs)}, types={[i.get('type') for i in instrs[:4]]}", flush=True)
+            if instrs:
+                first = instrs[0]
+                entries = first.get("entries", [])
+                print(f"[DIAG] first instruction entries={len(entries)}", flush=True)
+                if entries:
+                    print(f"[DIAG] entry[0] keys={list(entries[0].keys())}", flush=True)
         return self._extract_tweet_entries(data)
 
     @staticmethod
