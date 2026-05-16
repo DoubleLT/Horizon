@@ -235,9 +235,11 @@ class TwitterScraper(BaseScraper):
         """Walk the GraphQL timeline and collect raw tweet legacy dicts."""
         entries = []
         try:
-            timeline = (
-                data["data"]["user"]["result"]["timeline_v2"]["timeline"]["instructions"]
-            )
+            result = data["data"]["user"]["result"]
+            # Twitter changed timeline_v2 → timeline; support both
+            tl_outer = result.get("timeline_v2") or result.get("timeline") or {}
+            inner = tl_outer.get("timeline") or tl_outer
+            timeline = inner.get("instructions", [])
         except (KeyError, TypeError):
             return entries
         for instruction in timeline:
