@@ -141,7 +141,7 @@ class TwitterScraper(BaseScraper):
                 tweets = await self._gql_get_tweets(user_id, per_user, headers, cookies)
                 count = 0
                 for t in tweets:
-                    parsed = self._parse_gql_tweet(t, since)
+                    parsed = self._parse_gql_tweet(t, since, fallback_handle=handle)
                     if parsed:
                         items.append(parsed)
                         count += 1
@@ -246,7 +246,7 @@ class TwitterScraper(BaseScraper):
                 entries.append({"legacy": legacy, "user_legacy": user_legacy})
         return entries
 
-    def _parse_gql_tweet(self, entry: dict, since: datetime) -> Optional[ContentItem]:
+    def _parse_gql_tweet(self, entry: dict, since: datetime, fallback_handle: str = "") -> Optional[ContentItem]:
         try:
             legacy = entry.get("legacy", {})
             user_legacy = entry.get("user_legacy", {})
@@ -269,7 +269,7 @@ class TwitterScraper(BaseScraper):
             if not tweet_id:
                 return None
 
-            screen_name = user_legacy.get("screen_name") or "unknown"
+            screen_name = user_legacy.get("screen_name") or fallback_handle or "unknown"
             author = user_legacy.get("name") or screen_name
             text = unescape(
                 (legacy.get("full_text") or legacy.get("text") or "").strip()
