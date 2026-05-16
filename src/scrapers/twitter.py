@@ -1,9 +1,8 @@
-"""Twitter scraper: twikit (primary) or Apify altimis/scweet (fallback)."""
+"""Twitter scraper: Scweet (primary, no Apify) with Apify batched fallback."""
 
 import asyncio
 import logging
 import os
-import re
 from datetime import datetime, timezone
 from html import unescape
 from typing import List, Optional
@@ -16,14 +15,13 @@ from ..models import ContentItem, SourceType, TwitterConfig
 
 logger = logging.getLogger(__name__)
 
-# ── Apify constants (fallback path) ──────────────────────────────────────────
 _APIFY_BASE = "https://api.apify.com/v2"
 _POLL_INTERVAL = 3.0
 _MAX_WAIT = 180
 
 
 def _extract_handle(user_entry: str) -> str:
-    """Extract bare @-free handle from 'https://x.com/foo', '@foo', or 'foo'."""
+    """Turn 'https://x.com/foo', '@foo', or 'foo' → 'foo'."""
     s = user_entry.strip()
     if s.startswith("http"):
         s = s.rstrip("/").split("/")[-1]
@@ -31,15 +29,13 @@ def _extract_handle(user_entry: str) -> str:
 
 
 class TwitterScraper(BaseScraper):
-    """Fetch tweets via twikit (cookie auth) with Apify as fallback."""
+    """Fetch tweets via Scweet Python lib (cookie auth). Falls back to Apify."""
 
     def __init__(self, config: TwitterConfig, http_client: httpx.AsyncClient):
         super().__init__(config, http_client)
         self.config = config
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # Public interface
-    # ─────────────────────────────────────────────────────────────────────────
+    # ── public entry point ────────────────────────────────────────────────────
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self.config.enabled:
@@ -55,10 +51,10 @@ class TwitterScraper(BaseScraper):
         apify_token = os.environ.get(self.config.apify_token_env, "").strip()
 
         if auth_token and ct0:
-            logger.info("Twitter: using twikit (cookie auth)")
-            return await self._fetch_twikit(handles, since, auth_token, ct0)
+            logger.info("Twitter: using Scweet (cookie auth, no Apify)")
+            return await self._fetch_scweet(handles, since, auth_token, ct0)
         elif apify_token:
-            logger.info("Twitter: TWITTER_AUTH_TOKEN not set, falling back to Apify")
+            logger.info("Twitter: TWITTER_AUTH_TOKEN not set – falling back to Apify (batched)")
             return await self._fetch_apify(handles, since, apify_token)
         else:
             logger.warning(
@@ -67,59 +63,74 @@ class TwitterScraper(BaseScraper):
             )
             return []
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # twikit path
-    # ─────────────────────────────────────────────────────────────────────────
+    # ── Scweet path ───────────────────────────────────────────────────────────
 
-    async def _fetch_twikit(
+    async def _fetch_scweet(
         self, handles: List[str], since: datetime, auth_token: str, ct0: str
     ) -> List[ContentItem]:
         try:
-            from twikit import Client  # type: ignore
+            from Scweet.client import Scweet  # type: ignore
         except ImportError:
-            logger.error("twikit is not installed. Run: pip install twikit")
+            logger.error("Scweet is not installed. Run: pip install Scweet")
             return []
 
-        client = Client("en-US")
-        client.set_cookies({"auth_token": auth_token, "ct0": ct0})
+        per_user = max(20, self.config.fetch_limit)
+        client = Scweet(
+            auth_token=auth_token,
+            cookies={"auth_token": auth_token, "ct0": ct0},
+        )
+
+        try:
+            raw_tweets = await client.aget_profile_tweets(
+                users=handles,
+                limit=per_user * len(handles),
+            )
+        except Exception as exc:
+            logger.error(f"Scweet fetch failed: {exc}")
+            return []
 
         items: List[ContentItem] = []
-        per_user = max(20, self.config.fetch_limit)
+        for raw in raw_tweets:
+            parsed = self._parse_scweet_tweet(raw, since)
+            if parsed:
+                items.append(parsed)
 
-        for handle in handles:
-            try:
-                user = await client.get_user_by_screen_name(handle)
-                tweets = await client.get_user_tweets(user.id, "Tweets", count=per_user)
-                for tweet in tweets:
-                    parsed = self._parse_twikit_tweet(tweet, since)
-                    if parsed:
-                        items.append(parsed)
-                logger.debug(f"@{handle}: fetched {len(tweets)} tweets")
-                await asyncio.sleep(1.5)  # gentle rate-limit throttle
-            except Exception as exc:
-                logger.warning(f"twikit: failed to fetch @{handle}: {exc}")
-
-        logger.info(f"twikit: {len(items)} tweets pass 48h filter across {len(handles)} accounts")
+        logger.info(
+            f"Scweet: {len(raw_tweets)} total tweets → {len(items)} within 48h window"
+        )
         return items
 
-    def _parse_twikit_tweet(self, tweet, since: datetime) -> Optional[ContentItem]:
+    def _parse_scweet_tweet(self, raw: dict, since: datetime) -> Optional[ContentItem]:
         try:
-            # twikit's created_at_datetime is already UTC-aware
-            published_at: datetime = tweet.created_at_datetime
+            timestamp = raw.get("timestamp") or ""
+            if not timestamp:
+                return None
+            try:
+                published_at = isoparse(timestamp)
+            except Exception:
+                return None
             if published_at.tzinfo is None:
                 published_at = published_at.replace(tzinfo=timezone.utc)
             if published_at < since:
                 return None
 
-            tweet_id = str(tweet.id)
-            user = tweet.user
-            screen_name = getattr(user, "screen_name", "unknown")
-            author = getattr(user, "name", screen_name)
-            text = unescape((tweet.full_text or tweet.text or "").strip())
+            tweet_id = str(raw.get("tweet_id") or "")
+            if not tweet_id:
+                return None
+
+            user = raw.get("user") or {}
+            screen_name = (user.get("screen_name") or "unknown") if isinstance(user, dict) else (
+                getattr(user, "screen_name", None) or "unknown"
+            )
+            author = (user.get("name") or screen_name) if isinstance(user, dict) else (
+                getattr(user, "name", None) or screen_name
+            )
+
+            text = unescape((raw.get("text") or raw.get("embedded_text") or "").strip())
             if not text:
                 return None
 
-            url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
+            url = raw.get("tweet_url") or f"https://twitter.com/{screen_name}/status/{tweet_id}"
             title_body = text[:50].replace("\n", " ")
             if len(text) > 50:
                 title_body += "..."
@@ -135,36 +146,31 @@ class TwitterScraper(BaseScraper):
                 metadata={
                     "tweet_id": tweet_id,
                     "conversation_id": tweet_id,
-                    "favorite_count": getattr(tweet, "favorite_count", 0) or 0,
-                    "retweet_count": getattr(tweet, "retweet_count", 0) or 0,
-                    "reply_count": getattr(tweet, "reply_count", 0) or 0,
-                    "view_count": getattr(tweet, "view_count", None),
-                    "is_reply": bool(getattr(tweet, "in_reply_to", None)),
+                    "favorite_count": int(raw.get("likes") or 0),
+                    "retweet_count": int(raw.get("retweets") or 0),
+                    "reply_count": int(raw.get("comments") or 0),
+                    "view_count": None,
+                    "is_reply": False,
                 },
             )
         except Exception as exc:
-            logger.debug(f"Failed to parse twikit tweet: {exc}")
+            logger.debug(f"Scweet tweet parse error: {exc}")
             return None
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # Apify fallback path (batched)
-    # ─────────────────────────────────────────────────────────────────────────
+    # ── Apify fallback path (batched) ─────────────────────────────────────────
 
     async def _fetch_apify(
         self, handles: List[str], since: datetime, token: str
     ) -> List[ContentItem]:
-        # Convert bare handles back to full URLs for altimis~scweet
         users = [f"https://x.com/{h}" for h in handles]
-
         BATCH_SIZE = 5
         batches = [users[i : i + BATCH_SIZE] for i in range(0, len(users), BATCH_SIZE)]
-        logger.info(f"Apify: {len(users)} accounts in {len(batches)} batches of {BATCH_SIZE}")
+        logger.info(f"Apify: {len(users)} accounts in {len(batches)} batches")
 
         all_items: List[ContentItem] = []
         seen_ids: set = set()
-
         for idx, batch in enumerate(batches):
-            logger.info(f"  Batch {idx + 1}/{len(batches)}: {batch}")
+            logger.info(f"  Batch {idx + 1}/{len(batches)}: {[u.split('/')[-1] for u in batch]}")
             run_id, dataset_id = await self._apify_start_run(token, batch)
             if not run_id:
                 continue
@@ -192,8 +198,8 @@ class TwitterScraper(BaseScraper):
         try:
             resp = await self.client.post(url, json=payload, timeout=30.0)
             resp.raise_for_status()
-            data = resp.json()["data"]
-            return data["id"], data["defaultDatasetId"]
+            d = resp.json()["data"]
+            return d["id"], d["defaultDatasetId"]
         except Exception as exc:
             logger.error(f"Apify run start failed: {exc}")
             return None, None
@@ -208,7 +214,7 @@ class TwitterScraper(BaseScraper):
                 if status == "SUCCEEDED":
                     return True
                 if status in ("FAILED", "ABORTED", "TIMED-OUT"):
-                    logger.error(f"Apify run {run_id} ended: {status}")
+                    logger.error(f"Apify run {run_id}: {status}")
                     return False
             except Exception as exc:
                 logger.warning(f"Apify poll error: {exc}")
@@ -229,39 +235,32 @@ class TwitterScraper(BaseScraper):
 
     def _parse_apify_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
         try:
-            created_at_str = item.get("created_at")
-            if not created_at_str:
+            s = item.get("created_at")
+            if not s:
                 return None
             try:
-                published_at = datetime.strptime(created_at_str, "%a %b %d %H:%M:%S %z %Y")
+                published_at = datetime.strptime(s, "%a %b %d %H:%M:%S %z %Y")
             except ValueError:
-                published_at = isoparse(created_at_str)
+                published_at = isoparse(s)
             if published_at.tzinfo is None:
                 published_at = published_at.replace(tzinfo=timezone.utc)
             if published_at < since:
                 return None
-
             tweet_id = str(item.get("id_str") or item.get("id") or "")
             if not tweet_id:
                 return None
-            raw_id = item.get("id") or ""
-            numeric_id = str(raw_id).replace("tweet-", "") if str(raw_id).startswith("tweet-") else tweet_id
-
+            raw_id = str(item.get("id") or "")
+            numeric_id = raw_id.replace("tweet-", "") if raw_id.startswith("tweet-") else tweet_id
             user = item.get("user") or {}
-            screen_name = (
-                user.get("screen_name") or user.get("username") or user.get("handle")
-                or item.get("handle") or "unknown"
-            )
+            screen_name = user.get("screen_name") or user.get("handle") or item.get("handle") or "unknown"
             author = user.get("name") or screen_name
             text = unescape((item.get("full_text") or item.get("text") or "").strip())
             if not text:
                 return None
-
             url = item.get("url") or f"https://twitter.com/{screen_name}/status/{numeric_id}"
             title_body = text[:50].replace("\n", " ")
             if len(text) > 50:
                 title_body += "..."
-
             return ContentItem(
                 id=self._generate_id(SourceType.TWITTER.value, "tweet", numeric_id),
                 source_type=SourceType.TWITTER,
@@ -284,9 +283,7 @@ class TwitterScraper(BaseScraper):
             logger.debug(f"Apify item parse failed: {exc}")
             return None
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # Reply enrichment (twikit not supported; Apify only)
-    # ─────────────────────────────────────────────────────────────────────────
+    # ── reply enrichment (Apify only) ────────────────────────────────────────
 
     async def fetch_replies_for_item(self, item: ContentItem) -> List[str]:
         if not self.config.fetch_reply_text:
@@ -298,24 +295,22 @@ class TwitterScraper(BaseScraper):
         if not conversation_id:
             return []
         max_replies = max(self.config.max_replies_per_tweet, 0)
-        if max_replies == 0:
+        if not max_replies:
             return []
-        max_items = max(100, max_replies * 5)
         payload = {
             "source_mode": "search",
             "search_query": f"conversation_id:{conversation_id}",
             "search_sort": "Latest",
-            "max_items": max_items,
+            "max_items": max(100, max_replies * 5),
         }
         url = f"{_APIFY_BASE}/acts/{self.config.actor_id}/runs?token={token}"
         try:
             resp = await self.client.post(url, json=payload, timeout=30.0)
             resp.raise_for_status()
-            data = resp.json()["data"]
-            run_id = data["id"]
-            dataset_id = data["defaultDatasetId"]
+            d = resp.json()["data"]
+            run_id, dataset_id = d["id"], d["defaultDatasetId"]
         except Exception as exc:
-            logger.warning(f"Reply run start failed: {exc}")
+            logger.warning(f"Reply run failed: {exc}")
             return []
         if not await self._apify_wait(token, run_id):
             return []
@@ -335,7 +330,7 @@ class TwitterScraper(BaseScraper):
                 continue
             user = row.get("user") or {}
             handle = user.get("handle") or row.get("handle") or "unknown"
-            if handle and own_author and handle.lower() == own_author.lower():
+            if own_author and handle.lower() == own_author.lower():
                 continue
             text = unescape((row.get("text") or "").strip())
             if not text:
