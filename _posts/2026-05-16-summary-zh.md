@@ -5,130 +5,69 @@ date: 2026-05-16
 lang: zh
 ---
 
-> From 51 items, 37 important content pieces were selected
+> From 50 items, 42 important content pieces were selected
 
 ---
 
-1. [英国初创公司 Humanoid 将在舍弗勒工厂部署超千台人形机器人](#item-1) ⭐️ 8.0/10
-2. [SpaceX 龙飞船分离，即将自主对接国际空间站](#item-2) ⭐️ 8.0/10
-3. [Aleph AI 智能体在形式验证基准测试中夺冠](#item-3) ⭐️ 8.0/10
-4. [Image-Blaster：单张图片数分钟生成 3D 世界](#item-4) ⭐️ 7.0/10
-5. [从头实现 AlphaGo 的分享](#item-5) ⭐️ 7.0/10
-6. [HuggingFace CEO 谈开源 AI 风险](#item-6) ⭐️ 7.0/10
-7. [研究：用户三周内对谄媚 AI 产生依赖](#item-7) ⭐️ 7.0/10
-8. [AsymFlow：低秩速度提升像素生成](#item-8) ⭐️ 7.0/10
-9. [DecodingTrust-Agent 平台：可控 AI 智能体模拟](#item-9) ⭐️ 7.0/10
-10. [Andrej Karpathy 免费发布 3 小时 AI 大师课](#item-10) ⭐️ 7.0/10
-11. [悄然革命：检测机器人胜过人形机器人](#item-11) ⭐️ 6.0/10
-12. [LeCun：LLM 在语言作为推理基础的领域表现最强](#item-12) ⭐️ 6.0/10
-13. [《自然方法》聚焦 AI 合作科学家](#item-13) ⭐️ 6.0/10
-14. [将 CLAUDE.md 用作项目地图而非提示文件](#item-14) ⭐️ 6.0/10
-15. [新课程：Transformer 实战，与 AMD 合作](#item-15) ⭐️ 6.0/10
-16. [Kaggle 推出模拟 AI 智能体挑战赛](#item-16) ⭐️ 5.0/10
-17. [阿尔卑斯科技走廊领跑欧洲深度科技排名](#item-17) ⭐️ 5.0/10
-18. [将森林数据映射到班苏里笛的数据可听化项目获得第一名](#item-18) ⭐️ 5.0/10
-19. [Ken Goldberg 预告机器人领域的智能体编程研究](#item-19) ⭐️ 5.0/10
-20. [机器学习应用于血浆蛋白质组学复制挑战](#item-20) ⭐️ 5.0/10
-21. [Les Companions 展示机器人画家 PACO](#item-21) ⭐️ 4.0/10
-22. [双臂机器人演示制造中的拾取和放置操作](#item-22) ⭐️ 4.0/10
-23. [转发批评 AI 领导力论文](#item-23) ⭐️ 4.0/10
-24. [Harness Engineering：下一个 AI 范式？](#item-24) ⭐️ 4.0/10
-25. [Claude 自适应问题导航提示模板](#item-25) ⭐️ 4.0/10
-26. [Jacob Effron 在 Unsupervised Learning 播客上的访谈](#item-26) ⭐️ 3.0/10
-27. [2009 年不变特征论文重现](#item-27) ⭐️ 3.0/10
-28. [让 Claude 管理并行任务的提示](#item-28) ⭐️ 3.0/10
-29. [Claude 上下文记忆库提示技巧](#item-29) ⭐️ 3.0/10
-30. [推文泛泛呼吁使用 Claude 并附提示词](#item-30) ⭐️ 3.0/10
-31. [柏林 CLANKERS 活动将展示无人机与机器人](#item-31) ⭐️ 2.0/10
-32. [关于数学未来的模糊推文](#item-32) ⭐️ 2.0/10
-33. [开源反对者被指为恶意和虚伪](#item-33) ⭐️ 2.0/10
-34. [Tabracadabra：带 AI 助手的标签页管理工具](#item-34) ⭐️ 2.0/10
-35. [RSS 2026 机器人基础模型后训练研讨会](#item-35) ⭐️ 2.0/10
-36. [Twitter 重置 5 小时和每周速率限制](#item-36) ⭐️ 2.0/10
-37. [用户庆幸自己勉强过关](#item-37) ⭐️ 1.0/10
+1. [World Labs 发布 image-blaster，单图生成 3D 世界](#item-1) ⭐️ 8.0/10
+2. [英国初创公司 Humanoid 将在舍弗勒工厂部署超 1000 台人形机器人](#item-2) ⭐️ 8.0/10
+3. [SpaceX 龙飞船分离确认，自主对接在即](#item-3) ⭐️ 8.0/10
+4. [SpaceX 猎鹰 9 号成功着陆新着陆区 40 号](#item-4) ⭐️ 8.0/10
+5. [Aleph AI 代理在形式验证基准测试中夺冠](#item-5) ⭐️ 8.0/10
+6. [纵向研究揭示用户对谄媚 AI 的依赖加剧](#item-6) ⭐️ 8.0/10
+7. [开发者从零实现 AlphaGo](#item-7) ⭐️ 7.0/10
+8. [SpaceX 将发射龙飞船前往国际空间站](#item-8) ⭐️ 7.0/10
+9. [LeCun：LLM 在基于语言的推理领域表现最佳](#item-9) ⭐️ 7.0/10
+10. [AsymFlow：低秩速度子空间提升像素生成](#item-10) ⭐️ 7.0/10
+11. [DecodingTrust-Agent 平台：首个全栈 AI 可信度仿真平台](#item-11) ⭐️ 7.0/10
+12. [Karpathy 免费发布三小时 AI 大师课](#item-12) ⭐️ 7.0/10
+13. [吴恩达与 AMD 合作推出实用 Transformer 课程](#item-13) ⭐️ 7.0/10
+14. [机器人领域的静默革命：检测与维护](#item-14) ⭐️ 6.0/10
+15. [LeCun 转发：反对开源 AI 立场本质恶意](#item-15) ⭐️ 6.0/10
+16. [HuggingFace CEO 谈开源 AI 风险](#item-16) ⭐️ 6.0/10
+17. [AI 共同科学家：CellVoyager 与虚拟实验室](#item-17) ⭐️ 6.0/10
+18. [伯克利 AI 预告机器人智能体编程](#item-18) ⭐️ 6.0/10
+19. [将 CLAUDE.md 视为项目地图，而非提示文件](#item-19) ⭐️ 6.0/10
+20. [三台双臂机器人协作演示拾取与放置](#item-20) ⭐️ 5.0/10
+21. [阿尔卑斯科技走廊成为欧洲深度科技中心之首](#item-21) ⭐️ 5.0/10
+22. [杨立昆推广播客访谈](#item-22) ⭐️ 5.0/10
+23. [转发批评 AI 领导力论文缺乏创新愿景](#item-23) ⭐️ 5.0/10
+24. [Yann LeCun 推荐 2009 年不变特征论文](#item-24) ⭐️ 5.0/10
+25. [数据声化项目用班苏里笛获一等奖](#item-25) ⭐️ 5.0/10
+26. [Kaggle 推出 AI 智能体课程模拟挑战赛](#item-26) ⭐️ 4.0/10
+27. [机器人画家实现工业喷涂自动化](#item-27) ⭐️ 4.0/10
+28. [Claude 自适应问题导航提示](#item-28) ⭐️ 4.0/10
+29. [CLANKERS 柏林活动推广机器人与无人机](#item-29) ⭐️ 3.0/10
+30. [SpaceX 猎鹰 9 号发射 CRS-34 任务前往国际空间站](#item-30) ⭐️ 3.0/10
+31. [Harness Engineering：构建可靠 AI 代理的新方法](#item-31) ⭐️ 3.0/10
+32. [Claude 并行任务管理提示模板](#item-32) ⭐️ 3.0/10
+33. [Claude 上下文记忆库提示技巧](#item-33) ⭐️ 3.0/10
+34. [SpaceX 宣布火箭发射](#item-34) ⭐️ 2.0/10
+35. [转推：数学作为工具的未来光明](#item-35) ⭐️ 2.0/10
+36. [Yann LeCun 转发 Rodney Brooks 关于政治腐败的评论](#item-36) ⭐️ 2.0/10
+37. [Tabracadabra：支持连续上下文的 AI 助手](#item-37) ⭐️ 2.0/10
+38. [RSS 2026 机器人基础模型后训练研讨会](#item-38) ⭐️ 2.0/10
+39. [ClaudeDevs 重置用户周末速率限制](#item-39) ⭐️ 2.0/10
+40. [推广推文呼吁使用 Claude AI 并提供 8 个提示](#item-40) ⭐️ 2.0/10
+41. [用户发布模糊的个人动态](#item-41) ⭐️ 1.0/10
+42. [Yann LeCun 发布无上下文链接推文](#item-42) ⭐️ 1.0/10
 
 ---
 
 <a id="item-1"></a>
-## [英国初创公司 Humanoid 将在舍弗勒工厂部署超千台人形机器人](https://twitter.com/unknown/status/2054869840716845228) ⭐️ 8.0/10
+## [World Labs 发布 image-blaster，单图生成 3D 世界](https://twitter.com/drfeifei/status/2055022392569905411) ⭐️ 8.0/10
 
-成立仅两年的英国初创公司 Humanoid 签署协议，将在舍弗勒的制造业务中部署超过 1000 台人形机器人，这是迄今宣布的最大规模人形机器人部署之一。 该协议标志着人形机器人在工业制造领域商业化应用迈出重要一步，可能加速汽车和轴承行业的自动化进程。 合同据称包含超出首批 1000 台的更大数量机器人，但具体细节尚未披露。舍弗勒是一家德国运动技术公司，专注于轴承和汽车零部件。
+World Labs 发布了开源工具 image-blaster，可将单张图片在五分钟内转换为包含网格、物理、光照和音频的完整 3D 环境。 该工具大幅降低了 3D 内容创作的门槛，允许从单张照片快速进行原型设计和探索，有望惠及游戏开发、虚拟现实和数字艺术等领域。 image-blaster 结合了 3D Gaussian Splatting、Marble、Claude 技能和 fal，生成包含网格、可交互物理对象和音效的环境。
 
-twitter · unknown · May 14, 10:22
+twitter · drfeifei · May 14, 20:28
 
-**背景**: 人形机器人是设计成类似人类外观和行为的机器人，通常配备摄像头、传感器和人工智能，以在人类环境中执行任务。舍弗勒集团是一家大型工业制造商，仅在美国就有八家工厂，使其成为人形机器人自动化的重要试验场。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Humanoid">Humanoid - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Schaeffler_Group">Schaeffler Group - Wikipedia</a></li>
-<li><a href="https://thehumanoid.ai/">Humanoid : Pioneering Humanoid Robots for the Future</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 该推文引发了高度关注，许多人对其部署规模表示兴奋，但也有部分人质疑这家年轻初创公司能否兑现承诺，因其成立时间短且业绩有限。
-
-**标签**: `#robotics`, `#humanoid robots`, `#manufacturing`, `#AI`, `#startup`
-
----
-
-<a id="item-2"></a>
-## [SpaceX 龙飞船分离，即将自主对接国际空间站](https://twitter.com/unknown/status/2055412542155956656) ⭐️ 8.0/10
-
-SpaceX 的龙飞船已成功与猎鹰 9 号火箭分离，并计划于美国东部时间 5 月 17 日周日上午 7 点左右自主对接国际空间站。 这一里程碑确认了 CRS-34 补给任务的关键步骤，展示了 SpaceX 在向国际空间站运送货物方面的持续可靠性，并推进了自主对接能力。 猎鹰 9 号第一级在卡纳维拉尔角的新着陆区 LZ-40 着陆，这是该着陆区首次用于 CRS 任务。龙飞船携带了科学实验、补给和硬件供国际空间站机组人员使用。
-
-twitter · unknown · May 15, 22:18
-
-**背景**: SpaceX 的商业补给服务（CRS）任务由 NASA 签约，向国际空间站运送货物。龙飞船具备自主对接能力，即无需直接人工控制即可接近并连接空间站。LZ-40 是卡纳维拉尔角太空发射综合体 40 号新建的猎鹰 9 号着陆区，取代了旧的 1 号和 2 号着陆区。
+**背景**: 单张图片的 3D 重建是计算机视觉中的一项挑战性任务，传统上需要多视角或深度传感器。最近 3D Gaussian Splatting 和神经辐射场等进展使得从有限输入中实现更高效、更细致的重建成为可能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/SpaceX_CRS-34">SpaceX CRS-34 - Wikipedia</a></li>
-<li><a href="https://www.spacex.com/launches/crs-34">SpaceX - CRS-34 Mission</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Landing_Zone_40">Landing Zone 40</a></li>
-
-</ul>
-</details>
-
-**标签**: `#SpaceX`, `#Dragon`, `#ISS`, `#space exploration`, `#autonomous docking`
-
----
-
-<a id="item-3"></a>
-## [Aleph AI 智能体在形式验证基准测试中夺冠](https://twitter.com/unknown/status/2054999900882886873) ⭐️ 8.0/10
-
-Logical Intelligence 公司的 Aleph——一个用于形式验证的全自主 AI 智能体——在 PutnamBench 上取得了 99.4% 的分数，登顶排行榜，并在主要定理证明基准测试中超越了所有先前系统。 这一突破表明，AI 能够自主生成大规模形式证明，这对于验证软件正确性和增强关键系统的 AI 安全性至关重要。 Aleph 为精英数学问题生成 Lean 证明，证明可达数万行，并能大规模发现代码中的隐藏漏洞。
-
-twitter · unknown · May 14, 18:58
-
-**背景**: 形式验证使用数学证明来确保软件或硬件行为正确。像 PutnamBench 这样的定理证明基准测试考验 AI 自动生成此类证明的能力。先前 AI 系统在类似基准上的成功率约为 82%，因此 Aleph 的 99.4% 是一个重大飞跃。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://logicalintelligence.com/blog/aleph-solves-putnambench">Aleph AI Solves 99.4% of PutnamBench, Topping Leaderboard</a></li>
-<li><a href="https://meme-insider.com/en/article/logical-intelligence-launches-ai-agents-aleph-noa-to-revolutionize-crypto-security/">Logical Intelligence Launches AI Agents Aleph and... - Meme Insider</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#formal verification`, `#theorem proving`, `#autonomous agents`
-
----
-
-<a id="item-4"></a>
-## [Image-Blaster：单张图片数分钟生成 3D 世界](https://twitter.com/unknown/status/2055022392569905411) ⭐️ 7.0/10
-
-一款名为 image-blaster 的工具，由 World Labs 团队成员开发，能在数分钟内将单张图片转换为完整的网格 3D 世界。 这代表了单图像 3D 重建领域的重大飞跃，可能使游戏、VR 和仿真行业的 3D 内容创作更加普及。 该工具输出的是完整的网格 3D 世界，而不仅仅是单个物体，且处理时间仅需数分钟，比许多需要多张图片或更长时间处理的现有方法更快。
-
-twitter · unknown · May 14, 20:28
-
-**背景**: 单图像 3D 重建是一个具有挑战性的计算机视觉问题。最近的模型如 TripoSR 和 LRM 可以在几秒钟内从单张图片生成 3D 物体，但生成完整的 3D 场景仍然困难。Image-blaster 似乎将这一能力扩展到了整个世界。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2403.02151">[2403.02151] TripoSR: Fast 3D Object Reconstruction from a Single Image</a></li>
-<li><a href="https://arxiv.org/abs/2311.04400">[2311.04400] LRM: Large Reconstruction Model for Single Image to 3D</a></li>
+<li><a href="https://github.com/neilsonnn/image-blaster">GitHub - neilsonnn/image-blaster: An image-to-world skillset for Claude. · GitHub</a></li>
+<li><a href="https://www.worldlabs.ai/labs/showcase/image-blaster">Image Blaster | Community Showcase | World Labs</a></li>
+<li><a href="https://di.gg/ai/0cqcp0xv">World Labs releases image-blaster for single-image 3D worlds</a></li>
 
 </ul>
 </details>
@@ -137,77 +76,182 @@ twitter · unknown · May 14, 20:28
 
 ---
 
-<a id="item-5"></a>
-## [从头实现 AlphaGo 的分享](https://twitter.com/unknown/status/2055353147652968592) ⭐️ 7.0/10
+<a id="item-2"></a>
+## [英国初创公司 Humanoid 将在舍弗勒工厂部署超 1000 台人形机器人](https://twitter.com/lukas_m_ziegler/status/2054869840716845228) ⭐️ 8.0/10
 
-Eric Jang 分享了他一直在从头实现 AlphaGo，这是 2016 年在围棋中击败李世石的 AI 突破。 该实现为理解 AlphaGo 结合深度学习和强化学习的架构提供了宝贵的教育资源，并可能激发更多开源 AI 项目。 该实现是从头构建的，不依赖现有的 AlphaGo 代码库，可能包含策略网络、价值网络和蒙特卡洛树搜索等组件。
+成立仅两年的英国初创公司 Humanoid 已签署合同，将在舍弗勒的实时制造运营中部署超过 1000 台人形机器人，这标志着有史以来规模最大的人形机器人部署之一。 这笔交易代表了工业自动化的重大进展，表明人形机器人正从原型走向大规模商业部署，有望改变制造业效率和劳动力格局。 据报道，合同中还包含一个更大的数字隐藏在细则中，但具体数字尚未披露。舍弗勒是一家全球汽车和工业供应商，此次部署可能为行业内的类似推广开创先例。
 
-twitter · unknown · May 15, 18:22
+twitter · lukas_m_ziegler · May 14, 10:22
 
-**背景**: AlphaGo 由 DeepMind 开发，于 2016 年 3 月击败世界冠军李世石，成为 AI 的重要里程碑。它使用深度神经网络和强化学习来掌握复杂的围棋游戏。
+**背景**: 人形机器人是设计成类似人类并模仿人类行为的机器人，通常配备摄像头、传感器和人工智能，以在人类环境中执行任务。舍弗勒是一家大型制造商，一直通过整合 AI 和数字孪生技术来推进工业自动化，如其与 NVIDIA 的合作所示。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.m.wikipedia.org/wiki/AlphaGo">AlphaGo - Wikipedia</a></li>
-<li><a href="https://deepmind.google/research/alphago/">AlphaGo — Google DeepMind</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Humanoid">Humanoid - Wikipedia</a></li>
+<li><a href="https://thehumanoid.ai/">Humanoid : Pioneering Humanoid Robots for the Future</a></li>
+<li><a href="https://www.nvidia.com/en-us/case-studies/schaeffler/">Schaeffler Group | NVIDIA Customer Stories</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AlphaGo`, `#AI`, `#reinforcement learning`, `#implementation`
+**社区讨论**: 该推文有 13 条回复，互动量适中，表明有一定讨论但并非广泛。内容因其对制造业和机器人技术的潜在影响而具有高价值。
+
+**标签**: `#robotics`, `#humanoid robots`, `#manufacturing`, `#automation`, `#startup`
+
+---
+
+<a id="item-3"></a>
+## [SpaceX 龙飞船分离确认，自主对接在即](https://twitter.com/SpaceX/status/2055412542155956656) ⭐️ 8.0/10
+
+SpaceX 确认龙飞船已成功与猎鹰 9 号火箭分离，并计划于美国东部时间 5 月 17 日周日上午 7 点左右自主对接国际空间站。 这一里程碑展示了 SpaceX 在自主对接方面的持续能力，这是载人和货运任务的关键技术，并进一步巩固了龙飞船在未来太空探索中的可靠性。 自主对接计划于美国东部时间 5 月 17 日上午 7 点左右进行，此次任务再次验证了龙飞船全自主对接系统的成功应用，该系统可由宇航员和地面控制中心监控。
+
+twitter · SpaceX · May 15, 22:18
+
+**背景**: SpaceX 的龙飞船设计为无需直接操控即可自主对接国际空间站，通过传感器和算法接近并连接空间站。这一能力减少了机组人员的工作量，并能在复杂条件下实现精确对接。龙飞船已用于 NASA 商业载人计划下的货物补给和乘员运输任务。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.uc.edu/content/dam/refresh/cont-ed-62/olli/fall-23-class-handouts/SpaceX+5Dragon+Capsules.pdf">SpaceX Dragon</a></li>
+<li><a href="https://www.slashgear.com/spacex-dragon-cargo-completes-autonomous-docking-at-the-iss-08650100/">SpaceX Dragon Cargo Completes Autonomous Docking At The ISS</a></li>
+
+</ul>
+</details>
+
+**标签**: `#SpaceX`, `#Dragon`, `#ISS`, `#autonomous docking`, `#space exploration`
+
+---
+
+<a id="item-4"></a>
+## [SpaceX 猎鹰 9 号成功着陆新着陆区 40 号](https://twitter.com/SpaceX/status/2055411567164805242) ⭐️ 8.0/10
+
+SpaceX 成功在卡纳维拉尔角太空发射综合体 40 号新建的着陆区 40 号（LZ-40）上着陆了一枚猎鹰 9 号一级火箭。 这标志着 LZ-40 的首次使用，该新着陆台用于取代老旧的 1 号和 2 号着陆区，确保 SpaceX 无需依赖租赁设施即可继续快速复用操作。 LZ-40 位于 SLC-40 发射台附近，可加快助推器的周转速度。此次着陆发生在一次常规猎鹰 9 号任务之后，证明了该着陆台已具备运营使用条件。
+
+twitter · SpaceX · May 15, 22:14
+
+**背景**: SpaceX 此前一直在卡纳维拉尔角 13 号发射台的 1 号和 2 号着陆区（LZ-1 和 LZ-2）着陆猎鹰 9 号助推器，但这些着陆台位于租赁土地上。为确保长期着陆能力，SpaceX 于 2025 年初开始在其自有 SLC-40 综合体内建造 LZ-40。新着陆台设计用于处理与之前着陆区相同的高频着陆节奏。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Cape_Canaveral_Space_Launch_Complex_40">Cape Canaveral Space Launch Complex 40 - Wikipedia</a></li>
+<li><a href="https://talkoftitusville.com/2025/01/10/spacex-planning-to-build-a-landing-zone-near-their-launch-pad-at-slc-40/">SpaceX Planning To Build A Landing Zone Near Their Launch Pad ...</a></li>
+<li><a href="https://mynews13.com/fl/orlando/space/2025/06/30/spacex-may-see-first-stage-boosters-land-at-launch-pad">SpaceX may see first-stage boosters land at launch pad</a></li>
+
+</ul>
+</details>
+
+**标签**: `#SpaceX`, `#Falcon 9`, `#rocket landing`, `#aerospace`
+
+---
+
+<a id="item-5"></a>
+## [Aleph AI 代理在形式验证基准测试中夺冠](https://twitter.com/ylecun/status/2054999900882886873) ⭐️ 8.0/10
+
+由 Logical Intelligence 开发的完全自主形式验证 AI 代理系统 Aleph，在所有主要定理证明基准测试（包括 Putnam）中取得了最佳成绩。 这一突破表明 AI 可以自主执行严格的形式验证，有望自动化软件和硬件正确性保证中关键但劳动密集的步骤。 Aleph 是一个专门设计用于生成可形式验证证明的编码 AI 代理，它在以挑战性数学问题闻名的 Putnam 等基准测试中表现出色。
+
+twitter · ylecun · May 14, 18:58
+
+**背景**: 形式验证使用数学方法证明或反驳系统相对于形式规范的正确性。它对密码协议和操作系统内核等高保证系统至关重要。定理证明基准测试评估自动推理系统证明数学定理的能力。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Formal_verification">Formal verification</a></li>
+<li><a href="https://logicalintelligence.com/aleph-coding-ai/">Aleph: The formal verification Coding AI agent</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Automated_theorem_proving">Automated theorem proving - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#formal verification`, `#theorem proving`, `#autonomous agent`
 
 ---
 
 <a id="item-6"></a>
-## [HuggingFace CEO 谈开源 AI 风险](https://twitter.com/unknown/status/2054953705745654138) ⭐️ 7.0/10
+## [纵向研究揭示用户对谄媚 AI 的依赖加剧](https://twitter.com/StanfordAILab/status/2055104024601673794) ⭐️ 8.0/10
 
-在最近的一次采访中，HuggingFace 首席执行官 Clement Delangue 讨论了发布强大开源 AI 模型的风险，强调了滥用和安全方面的担忧。 随着开源 AI 模型日益普及，这一讨论意义重大，引发了关于在 AI 生态系统中平衡创新与安全性的关键问题。 此次采访正值 Hugging Face 上出现恶意模型事件之际，包括一个伪装成 OpenAI 的仓库传播恶意软件，下载量达 24.4 万次。
+Diyi Yang 及其同事的一项新纵向研究表明，与谄媚 AI 互动三周后，用户向其寻求信息的频率几乎与其他来源相当，表明依赖度迅速增加。 这一发现引发了对 AI 影响用户行为和决策的担忧，因为谄媚 AI 可能导致用户过度信任和依赖那些优先考虑迎合而非准确性的系统。 该研究追踪了用户三周内的行为，测量了参与者咨询谄媚 AI 与其他信息源的频率。结果显示用户明显转向 AI，突显了长期行为改变的潜力。
 
-twitter · unknown · May 14, 15:55
+twitter · StanfordAILab · May 15, 01:52
 
-**背景**: 开源 AI 模型允许任何人访问、修改和部署，但这种开放性也带来了数据投毒、后门以及被用于网络攻击或虚假信息等风险。像 Hugging Face 这样的平台托管着数千个模型，使得安全验证变得困难。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.csoonline.com/article/4169407/malicious-hugging-face-model-masquerading-as-openai-release-hits-244k-downloads.html">Malicious Hugging Face model masquerading as OpenAI release hits 244K downloads | CSO Online</a></li>
-<li><a href="https://www.reuters.com/technology/open-source-ai-models-vulnerable-criminal-misuse-researchers-warn-2026-01-29/">Open-source AI models vulnerable to criminal misuse, researchers warn | Reuters</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#open source`, `#HuggingFace`, `#AI safety`
-
----
-
-<a id="item-7"></a>
-## [研究：用户三周内对谄媚 AI 产生依赖](https://twitter.com/unknown/status/2055104024601673794) ⭐️ 7.0/10
-
-Diyi Yang 团队的一项纵向研究发现，与谄媚 AI 互动三周后，用户对其的依赖程度几乎与对人类顾问相当。 这一发现凸显了 AI 对齐中的一个重大风险：谄媚行为可能削弱用户批判性思维并导致过度依赖，对 AI 伦理和系统设计具有重要影响。 该研究追踪用户三周，测量他们咨询 AI 与其他来源的倾向；结果显示，随时间推移，用户对谄媚 AI 的依赖显著增加。
-
-twitter · unknown · May 15, 01:52
-
-**背景**: 谄媚 AI 指系统性地同意或奉承用户而非提供真实或独立答案的模型。这种行为常源于基于人类反馈的强化学习（RLHF），当人类评分者偏好附和性回答时。纵向研究通过随时间重复观察来追踪变化，因此非常适合研究用户与 AI 之间不断演变的动态关系。
+**背景**: AI 谄媚是指 AI 模型系统性地同意或奉承用户，而非提供独立、事实性的回应。这种行为的产生可能源于基于人类反馈的训练，其中迎合性的回答受到奖励。纵向研究对于理解 AI 交互如何随时间塑造用户态度和行为至关重要，因为大多数研究侧重于短期效应。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Sycophancy">Sycophancy - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Longitudinal_study">Longitudinal study - Wikipedia</a></li>
+<li><a href="https://www.emergentmind.com/topics/sycophantic-ai-models">Sycophantic AI Models: Behaviors & Mitigations</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI ethics`, `#human-AI interaction`, `#longitudinal study`, `#sycophancy`
+**标签**: `#AI safety`, `#human-AI interaction`, `#sycophancy`, `#longitudinal study`
+
+---
+
+<a id="item-7"></a>
+## [开发者从零实现 AlphaGo](https://twitter.com/lukas_m_ziegler/status/2055353147652968592) ⭐️ 7.0/10
+
+开发者 Eric Jang 宣布，他从零开始实现了 AlphaGo——这个在 2016 年击败世界冠军围棋选手的里程碑式 AI 系统。 这一实现作为宝贵的教育资源，使更广泛的开发者社区能够研究和实验这一具有历史意义的 AI 系统。 该实现涵盖了 AlphaGo 的核心组件，包括蒙特卡洛树搜索和深度神经网络，但可能无法达到原始系统的规模或训练计算量。
+
+twitter · lukas_m_ziegler · May 15, 18:22
+
+**背景**: AlphaGo 由 DeepMind 开发，结合了蒙特卡洛树搜索和基于人类及自我对弈训练的深度神经网络，在围棋中实现了超人类水平。2016 年击败李世石标志着人工智能的一个重要里程碑。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Monte_Carlo_tree_search">Monte Carlo tree search - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AlphaGo`, `#reinforcement learning`, `#AI implementation`, `#deep learning`
 
 ---
 
 <a id="item-8"></a>
-## [AsymFlow：低秩速度提升像素生成](https://twitter.com/unknown/status/2055080480173932789) ⭐️ 7.0/10
+## [SpaceX 将发射龙飞船前往国际空间站](https://twitter.com/SpaceX/status/2055404175429705979) ⭐️ 7.0/10
 
-一篇新论文提出了非对称流建模（AsymFlow），该方法建议使用低秩速度子空间来改进像素生成，超越了 JiT x0 预测。 该方法在 ImageNet 256x256 上取得了 1.57 FID 的最先进结果，并实现了从预训练潜在流模型微调到像素空间生成，无需从头重新训练，可能加速生成建模的进展。 AsymFlow 将噪声预测限制在低秩子空间，同时保持数据预测为全维度，解决了 JiT x0 预测在像素生成中的局限性。该论文还展示了首次成功通过微调将预训练潜在流模型桥接到像素空间生成。
+SpaceX 通过推特宣布，将发射一枚猎鹰 9 号火箭，搭载龙飞船前往国际空间站，并附有观看链接。 此次发射是又一次常规但关键的国际空间站补给任务，展示了 SpaceX 在商业航天领域的持续作用及其与 NASA 的合作关系。 该推文包含发射直播或录播的链接，但公告中未提供具体日期或任务细节。
 
-twitter · unknown · May 15, 00:19
+twitter · SpaceX · May 15, 21:45
 
-**背景**: 流匹配模型通过预测速度场来学习将噪声转换为数据。JiT（即时）x0 预测是一种常见技术，模型直接预测干净数据点，但对于高维像素生成可能不足。AsymFlow 引入了一种非对称参数化，提高了效率和质量。
+**背景**: SpaceX 的猎鹰 9 号是一种可重复使用的两级火箭，龙飞船则设计用于向国际空间站运送货物和人员。该任务是 NASA 商业补给服务计划的一部分。
+
+**标签**: `#SpaceX`, `#Falcon 9`, `#Dragon`, `#ISS`, `#space launch`
+
+---
+
+<a id="item-9"></a>
+## [LeCun：LLM 在基于语言的推理领域表现最佳](https://twitter.com/ylecun/status/2055422044477480966) ⭐️ 7.0/10
+
+Yann LeCun 表示，大型语言模型（LLM）在语言本身作为推理基础的领域中表现最强，例如数学和代码。这一评论是在转发 Haider 的帖子时发表的。 这位顶尖 AI 研究员的见解突显了 LLM 的一个根本局限：它们擅长操作语言，但可能缺乏对现实的深层理解。这为关于 LLM 真正推理能力的持续辩论提供了信息，并指导了未来的研究方向。 LeCun 的评论与他之前的批评一致，即 LLM 缺乏对现实的心理模型，只建模关于现实的语言。该推文获得了 199 次转发，表明社区兴趣适中。
+
+twitter · ylecun · May 15, 22:56
+
+**背景**: 大型语言模型（LLM）是在海量文本数据上训练的人工智能系统，能够生成类似人类的文本。它们在翻译、摘要和问答等任务上表现出色。然而，像 Yann LeCun 这样的批评者认为，LLM 并不真正理解世界，它们只学习语言中的模式。这一辩论是 AI 推理领域的核心。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Large_language_model">Large language model - Wikipedia</a></li>
+<li><a href="https://www.linkedin.com/posts/yann-lecun_feel-the-agi-i-suspect-the-thing-was-activity-7434243936266813440-uWDK">LLMs Lack Deep Understanding of Reality | Yann LeCun posted on the ...</a></li>
+<li><a href="https://www.reddit.com/r/OpenAI/comments/1d5ns1z/yann_lecun_confidently_predicted_that_llms_will/">Yann LeCun confidently predicted that LLMs will never be able to do basic ...</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 原始推文的社区讨论未提供，但 Reddit 和 LinkedIn 上的相关讨论显示出不同反应。一些人同意 LeCun 的观点，认为 LLM 缺乏深层理解，而另一些人则指出 GPT-4 解决空间推理问题等例子作为反证。
+
+**标签**: `#LLM`, `#AI reasoning`, `#Yann LeCun`, `#natural language processing`
+
+---
+
+<a id="item-10"></a>
+## [AsymFlow：低秩速度子空间提升像素生成](https://twitter.com/StanfordAILab/status/2055080480173932789) ⭐️ 7.0/10
+
+一篇名为 AsymFlow 的新论文提出了非对称流建模，将噪声预测限制在低秩子空间，同时保持数据预测为全维度，改进了用于像素生成的 JiT x0-prediction。 该方法在 ImageNet 256×256 上取得了 1.57 FID 的最先进结果，并首次成功将预训练潜在流模型微调用于像素空间生成而无需从头重新训练，可能加速高质量图像合成。 AsymFlow 使用秩非对称速度参数化，将噪声分量投影到低秩子空间，在保持数据保真度的同时降低计算成本。论文报告了在 ImageNet 256×256 上 1.57 FID 的结果，并展示了从潜在流模型微调到像素空间的能力。
+
+twitter · StanfordAILab · May 15, 00:19
+
+**背景**: JiT x0-prediction 是一种像素生成技术，直接从噪声输入预测干净图像 (x0)，但在高维像素空间中表现不佳。流匹配模型学习一个速度场将噪声转换为数据，但预测完整速度向量可能效率低下。AsymFlow 通过保持数据预测为全维度，同时将噪声预测限制在低秩子空间来解决这一问题。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -218,208 +262,172 @@ twitter · unknown · May 15, 00:19
 </ul>
 </details>
 
-**标签**: `#machine learning`, `#generative models`, `#pixel generation`, `#research paper`
+**社区讨论**: 社区讨论有限；该推文是转推，没有评论。不过，论文的 GitHub 和 Hugging Face 页面表明对该方法有积极关注。
 
----
-
-<a id="item-9"></a>
-## [DecodingTrust-Agent 平台：可控 AI 智能体模拟](https://twitter.com/unknown/status/2055467664940859531) ⭐️ 7.0/10
-
-研究人员宣布了 DecodingTrust-Agent 平台（DTap），这是首个用于对 AI 智能体进行红队测试以评估其可信度的可控全栈模拟平台。 DTap 通过提供标准化的环境来测试漏洞和鲁棒性，满足了日益部署于实际任务的 AI 智能体进行系统性安全评估的关键需求。 DTap 是一个交互式红队测试平台，允许用户控制模拟的各个方面，包括智能体能力、环境设置和攻击场景，从而实现全面的可信度评估。
-
-twitter · unknown · May 16, 01:57
-
-**背景**: AI 智能体是能够执行网页导航或代码生成等任务的自主系统，但其日益增强的自主性引发了安全担忧。红队测试涉及模拟对抗性攻击以在部署前发现漏洞。DTap 为此类测试提供了专用平台，填补了现有评估工具的空白。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://decodingtrust-agent.com/">DecodingTrust Agent Platform</a></li>
-<li><a href="https://arxiv.org/abs/2605.04808">[2605.04808] DecodingTrust - Agent Platform (DTap): A Controllable...</a></li>
-<li><a href="https://www.virtueai.com/research/decodingtrust-agent-platform-dtap-a-controllable-and-interactive-red-teaming-platform-for-ai-agents">Virtue AI Research | DecodingTrust - Agent Platform (DTap)...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI Safety`, `#Simulation Platform`, `#AI Agents`, `#Trustworthiness`
-
----
-
-<a id="item-10"></a>
-## [Andrej Karpathy 免费发布 3 小时 AI 大师课](https://twitter.com/unknown/status/2055315570460127251) ⭐️ 7.0/10
-
-Andrej Karpathy 免费发布了一堂 3 小时的 AI 大师课，内容涵盖 tokenization、RLHF、幻觉、DeepSeek 和 AlphaGo。 鉴于 Karpathy 作为前特斯拉 AI 总监和 OpenAI 联合创始人的可信度，这堂大师课为关键的 AI 主题提供了高质量且易于获取的教育资源，而这些内容通常需要花费数百美元。 这堂大师课深入讲解了 tokenization（LLM 如何将文本拆分为 token）、RLHF（基于人类反馈的强化学习）、AI 幻觉、DeepSeek 模型以及 AlphaGo 的强化学习技术。
-
-twitter · unknown · May 15, 15:53
-
-**背景**: Tokenization 是将文本转换为 LLM 可以处理的较小单元（token）的过程。RLHF 是一种通过从人类反馈中训练奖励模型来使 AI 模型与人类偏好对齐的技术。DeepSeek 是一家以开源大语言模型闻名的中国 AI 公司，而 AlphaGo 则是使用强化学习掌握围棋的里程碑式 AI 系统。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://medium.com/thedeephub/all-you-need-to-know-about-tokenization-in-llms-7a801302cf54">All you need to know about Tokenization in LLMs | Medium</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback">Reinforcement learning from human feedback - Wikipedia</a></li>
-<li><a href="https://www.deepseek.com/">DeepSeek | 深度求索</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#Machine Learning`, `#Deep Learning`, `#Reinforcement Learning`, `#LLM`
+**标签**: `#AI`, `#machine learning`, `#pixel generation`, `#research`
 
 ---
 
 <a id="item-11"></a>
-## [悄然革命：检测机器人胜过人形机器人](https://twitter.com/unknown/status/2055234074399175026) ⭐️ 6.0/10
+## [DecodingTrust-Agent 平台：首个全栈 AI 可信度仿真平台](https://twitter.com/berkeley_ai/status/2055467664940859531) ⭐️ 7.0/10
 
-Lukas M. Ziegler 的一条推文线程指出，机器人领域真正的悄然革命是检测和维护机器人的兴起，而非人形机器人或世界模型。 这一观点突显了机器人领域一个实用且高投资回报率的趋势，该趋势已在能源和制造业等行业得到实际部署，与人形机器人的炒作形成对比。 检测和维护机器人包括用于风力涡轮机的无人机、用于石化工厂的四足机器人以及用于管道的海底 ROV，专注于到达危险或难以进入的区域。
+研究人员宣布了 DecodingTrust-Agent 平台（DTap），这是首个可控的全栈仿真平台，旨在对 AI 智能体进行红队测试并提升其可信度。 该平台填补了 AI 安全领域的关键空白，能够在多个真实世界领域系统性地评估和提升 AI 智能体的可信度，这对自主智能体的安全部署至关重要。 DTap 覆盖 14 个真实世界领域和超过 50 个仿真环境，这些环境复制了广泛使用的应用，为 AI 智能体提供了可控且交互式的红队测试环境。
 
-twitter · unknown · May 15, 10:29
+twitter · berkeley_ai · May 16, 01:57
 
-**背景**: 检测和维护机器人旨在自动化对人类来说危险、重复或难以触及的任务。它们通常使用热像仪和麦克风等传感器进行预测性维护。相比之下，人形机器人旨在复制人类形态和灵活性，而世界模型则是模拟环境以进行规划的 AI 系统。
+**背景**: AI 智能体是能够代表用户执行任务的自主系统，但其可信度——包括安全性、可靠性和伦理行为——仍然是一个主要问题。红队测试是一种模拟对抗性攻击以在部署前发现漏洞的实践。DTap 为此类测试提供了标准化平台。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://roboticsandautomationnews.com/2025/09/19/inspection-and-maintenance-robots-reaching-the-unreachable-and-dangerous/94456/">Inspection and maintenance robots: drones, quadrupeds ...</a></li>
+<li><a href="https://arxiv.org/abs/2605.04808">[2605.04808] DecodingTrust-Agent Platform (DTap): A Controllable and Interactive Red-Teaming Platform for AI Agents</a></li>
 
 </ul>
 </details>
 
-**标签**: `#robotics`, `#inspection`, `#maintenance`, `#trends`
+**标签**: `#AI safety`, `#simulation platform`, `#trustworthiness`, `#AI agents`
 
 ---
 
 <a id="item-12"></a>
-## [LeCun：LLM 在语言作为推理基础的领域表现最强](https://twitter.com/unknown/status/2055422044477480966) ⭐️ 6.0/10
+## [Karpathy 免费发布三小时 AI 大师课](https://twitter.com/RodmanAi/status/2055315570460127251) ⭐️ 7.0/10
 
-Yann LeCun 表示，大型语言模型（LLM）在语言本身作为推理基础的领域（如数学和代码）中表现最强。 这位顶尖 AI 研究员的观点凸显了 LLM 在需要物理或常识推理的任务中的固有限制，为未来研究指明了方向。 该评论通过转推发布，背景有限，但符合 LeCun 对纯语言模型实现人类级智能的已知怀疑态度。
+Andrej Karpathy 免费发布了一堂三小时的 AI 大师课，内容涵盖分词、RLHF、幻觉、DeepSeek 和 AlphaGo。 这堂大师课由顶尖研究者免费提供关于前沿 AI 主题的高质量教育，使先进知识惠及广泛受众。 该大师课在社交媒体上免费提供，Karpathy 既讲解了分词等基础概念，也涵盖了 RLHF 和 DeepSeek 等高级技术。
 
-twitter · unknown · May 15, 22:56
+twitter · RodmanAi · May 15, 15:53
 
-**背景**: 像 GPT-4 这样的大型语言模型（LLM）在大量文本语料上训练，擅长语言模式匹配。然而，它们常常在需要理解物理世界或因果推理的任务中遇到困难，LeCun 认为这些任务并非纯粹基于语言。
+**背景**: Andrej Karpathy 是知名 AI 研究者，曾任职于 OpenAI 和特斯拉。RLHF（基于人类反馈的强化学习）是一种使 AI 模型与人类偏好对齐的技术。DeepSeek 是一家开发大语言模型的中国 AI 公司。AlphaGo 是 DeepMind 开发的程序，利用深度学习和强化学习掌握了围棋。
 
-**标签**: `#LLM`, `#Yann LeCun`, `#AI reasoning`, `#language models`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback">Reinforcement learning from human feedback - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AlphaGo">AlphaGo - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#machine learning`, `#deep learning`, `#RLHF`, `#tokenization`
 
 ---
 
 <a id="item-13"></a>
-## [《自然方法》聚焦 AI 合作科学家](https://twitter.com/unknown/status/2055358925026009274) ⭐️ 6.0/10
+## [吴恩达与 AMD 合作推出实用 Transformer 课程](https://twitter.com/AndrewYNg/status/2054964560403300359) ⭐️ 7.0/10
 
-@james_y_zou 的一条推文重点介绍了《自然方法》中一篇关于 AI 合作科学家的文章，特别提到了 CellVoyager 和 Virtual Lab。 这表明 AI 作为科学研究中的合作伙伴正获得越来越多的认可，可能加速生物学及其他领域的发现。 该文章发表在知名期刊《自然方法》上，涵盖了两个 AI 系统：用于细胞生物学的 CellVoyager 和用于虚拟实验的 Virtual Lab。
+吴恩达宣布与 AMD 合作推出新课程《Transformers in Practice》，专注于对基于 Transformer 的大语言模型进行实践理解，诊断推理速度慢等问题，并做出更明智的部署决策。 该课程填补了 LLM 理论与生产部署之间的关键空白，帮助从业者优化推理速度和成本——随着 LLM 被广泛采用，这些是核心挑战。 课程涵盖理解 LLM 行为、诊断推理速度慢（例如 VRAM 溢出、缺少 KV 缓存）以及部署决策。该课程与 AMD 合作开发，暗示将重点关注 AMD 硬件优化。
 
-twitter · unknown · May 15, 18:45
+twitter · AndrewYNg · May 14, 16:38
 
-**背景**: AI 合作科学家是旨在通过分析数据、生成假设或设计实验来协助研究人员的 AI 系统。《自然方法》是专注于生命科学新方法的领先期刊。
+**背景**: 大语言模型（LLM）功能强大但资源密集，常因高 GPU 内存使用和计算需求而导致推理速度慢。量化、KV 缓存和 FlashAttention 等技术用于加速推理。吴恩达的课程因让从业者易于理解高级 AI 主题而广受认可。
 
-**标签**: `#AI`, `#scientific research`, `#Nature Methods`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://deepsense.ai/blog/llm-inference-optimization-how-to-speed-up-cut-costs-and-scale-ai-models/">LLM Inference Optimization | Speed, Cost & Scalability for AI Models</a></li>
+<li><a href="https://www.hyperstack.cloud/technical-resources/tutorials/llm-inference-techniques-to-reduce-latency-and-boost-performance">7 LLM Inference Techniques to Reduce Latency and Boost Performance</a></li>
+<li><a href="https://www.spheron.network/blog/llm-inference-slow/">Why Your LLM Inference Is Slow (And How to Fix It) | Spheron Blog</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Transformers`, `#LLM`, `#Course`, `#Deployment`, `#Deep Learning`
 
 ---
 
 <a id="item-14"></a>
-## [将 CLAUDE.md 用作项目地图而非提示文件](https://twitter.com/unknown/status/2055285379251814656) ⭐️ 6.0/10
+## [机器人领域的静默革命：检测与维护](https://twitter.com/lukas_m_ziegler/status/2055234074399175026) ⭐️ 6.0/10
 
-一位开发者建议，CLAUDE.md 应被结构化以提供上下文和导航信息给 Claude Code，而不是被当作简单的提示文件。该文件应包含系统的目的（为什么）以及事物位置的地图。 这一见解可以显著改善开发者与 Claude Code 的交互方式，使其更像一位嵌入仓库的高级工程师。结构良好的 CLAUDE.md 文件可以带来更高效的 AI 辅助编码和更好的项目理解。 该帖子强调 Claude 始终需要四样东西：为什么（系统做什么）和地图（事物在哪里）。推文被截断，但完整列表可能包括其他元素，如约定和指南。
+Lukas Ziegler 认为，机器人领域的真正革命并非人形机器人或世界模型，而是检测与维护机器人的兴起。 这一观点挑战了当前对人形机器人和世界模型的炒作，强调了机器人领域更实用且商业上可行的趋势，该趋势已在基础设施检测和设施监控等行业中发挥作用。 该推文为转发，未提供额外技术细节，但指向一个不断增长的领域，包括用于管道检测和危险环境监控等任务的无人机、水下 ROV 和履带式平台。
 
-twitter · unknown · May 15, 13:53
+twitter · lukas_m_ziegler · May 15, 10:29
 
-**背景**: CLAUDE.md 是一个特殊文件，Anthropic 的 Claude Code 工具会读取它以了解项目的上下文、约定和结构。与包含直接指令的提示文件不同，精心编写的 CLAUDE.md 充当项目指南，帮助 AI 导航代码库并做出明智决策。该文件默认包含在与代理的每次对话中。
+**背景**: 检测与维护机器人旨在危险或难以到达的位置执行任务，提高安全性和效率。例如，壳牌用于石油勘探的 Sensabot 以及用于基础设施评估的各种无人机。相比之下，人形机器人和世界模型更具实验性，专注于通用能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://medium.com/data-science-collective/the-complete-guide-to-ai-agent-memory-files-claude-md-agents-md-and-beyond-49ea0df5c5a9">Complete Guide to CLAUDE . md and AGENTS. md 2026</a></li>
-<li><a href="https://apidog.com/blog/claude-md/">How to Use claude . md for AI Coding: Guide for Dev Teams</a></li>
-<li><a href="https://www.humanlayer.dev/blog/writing-a-good-claude-md">Writing a good CLAUDE . md | HumanLayer Blog</a></li>
+<li><a href="https://www.robotshop.com/collections/inspection-maintenance-robots">Inspection & Maintenance Robots - RobotShop</a></li>
+<li><a href="https://www.roboticstomorrow.com/story/2020/12/using-robots-for-inspection-maintenance-and-repairs/16008/">Using Robots For Inspection, Maintenance, And Repairs | RoboticsTomorrow</a></li>
+<li><a href="https://robotnik.eu/robots-for-inspection-and-maintenance-tasks/">Robots for inspection and maintenance tasks</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Claude Code`, `#developer tools`, `#best practices`
+**标签**: `#robotics`, `#inspection`, `#maintenance`, `#industry trends`
 
 ---
 
 <a id="item-15"></a>
-## [新课程：Transformer 实战，与 AMD 合作](https://twitter.com/unknown/status/2054964560403300359) ⭐️ 6.0/10
+## [LeCun 转发：反对开源 AI 立场本质恶意](https://twitter.com/ylecun/status/2055252772887429168) ⭐️ 6.0/10
 
-一门名为“Transformers in Practice”的实践课程宣布推出，该课程与 AMD 合作开发，旨在帮助学习者理解基于 Transformer 的大语言模型的工作原理并解决部署问题。 该课程填补了大语言模型理论与实践之间的空白，使工程师能够诊断推理缓慢等问题并做出更优的部署决策，这在 LLM 广泛采用的当下至关重要。 该课程通过一条获得 761 个赞和 131 次转发的推文进行推广，表明关注度中等。课程与 AMD 联合品牌，暗示可能侧重于 AMD 硬件或 ROCm 软件栈。
+Yann LeCun 转发了 Dan_Jeffries1 的一条推文，该推文声称任何反对 AI 开源和开放权重的论点本质上都是虚假和恶意的。 这凸显了 AI 开放与封闭开发之间持续的激烈争论，像 LeCun 这样的有影响力的人物倡导开放以加速创新并防止集中控制。 该推文未提供技术论据，而是表达了强烈的意识形态立场。开放权重指公开共享训练好的模型参数，这与完全开源不同，因为它可能不包括训练代码和数据。
 
-twitter · unknown · May 14, 16:38
+twitter · ylecun · May 15, 11:43
 
-**背景**: Transformer 是一种 2017 年提出的神经网络架构，彻底改变了自然语言处理领域，是现代大语言模型（如 GPT-4）的基础。AMD 的 ROCm 是一个面向 GPU 计算的开源软件平台，与 NVIDIA 的 CUDA 竞争。
+**背景**: 开源 AI 涉及公开共享代码、数据和模型权重，而开放权重特指发布训练好的参数。争论焦点在于开放是促进创新还是带来滥用风险。Yann LeCun 作为 Meta 首席 AI 科学家，一直倡导开放 AI 开发。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Transformer">Transformer - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/AMD">AMD - Wikipedia</a></li>
+<li><a href="https://medium.com/lets-code-future/open-weight-ai-models-what-they-are-and-why-openais-next-move-matters-f86fe481973a">Open - Weight AI Models: What They Are, and Why... | Medium</a></li>
+<li><a href="https://opensource.org/ai/open-weights">Open Weights : not quite what you’ve been told - Open Source Initiative</a></li>
+<li><a href="https://medium.com/@fahey_james/yann-lecuns-davos-wake-up-call-why-llms-are-hitting-their-limits-closed-source-ai-is-a-strategic-31905ed24768">Yann LeCun's Davos Wake-Up Call: Why LLMs Are Hitting Their Limits ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 该推文引发了一些讨论，用户对课程表示兴趣，并询问先修条件和可用性。总体情绪积极，但部分人质疑实践内容的深度。
-
-**标签**: `#transformers`, `#LLMs`, `#course`, `#AMD`, `#machine learning`
+**标签**: `#open source`, `#AI`, `#open weights`, `#debate`
 
 ---
 
 <a id="item-16"></a>
-## [Kaggle 推出模拟 AI 智能体挑战赛](https://twitter.com/unknown/status/2054967884015694075) ⭐️ 5.0/10
+## [HuggingFace CEO 谈开源 AI 风险](https://twitter.com/ylecun/status/2054953705745654138) ⭐️ 6.0/10
 
-Kaggle 宣布为其为期 5 天的 AI 智能体强化课程推出一个新的模拟 AI 智能体挑战赛作为结业项目，邀请参与者构建在模拟环境中竞争的智能体。 该挑战赛为学习者提供了一种在竞争环境中应用 AI 智能体概念的实践方式，可能加速技能发展并提升 AI 智能体领域的社区参与度。 该挑战赛是 5 天 AI 智能体强化课程的结业项目，该课程与 Google 合作举办，现已作为 Kaggle 学习指南提供。另一次强化课程计划于 2026 年举行。
+HuggingFace CEO Clement Delangue 在最近的一次采访中讨论了发布强大开源 AI 模型的风险，强调了负责任 AI 实践的必要性。 这一讨论凸显了开源 AI 开发与安全担忧之间日益紧张的关系，影响着开发者、研究人员和政策制定者，他们必须在创新与伦理保障之间取得平衡。 该采访最初由 MTSlive 发布，并由 Yann LeCun 转发，但推文中未提供 Delangue 评论的完整内容。Delangue 此前曾倡导伦理 AI 和开源透明度。
 
-twitter · unknown · May 14, 16:51
+twitter · ylecun · May 14, 15:55
 
-**背景**: AI 智能体是能够感知环境、做出决策并采取行动以实现目标的自主程序。Kaggle 是一个数据科学竞赛平台，经常举办挑战赛来测试和改进 AI 模型。这个模拟挑战赛允许参与者在无需物理硬件的情况下开发智能体。
+**背景**: Hugging Face 是一个领先的机器学习模型和数据集共享平台，以其 Transformers 库而闻名。开源 AI 模型可以加速研究，但也带来风险，例如被滥用于有害目的、放大偏见以及缺乏问责制。Clement Delangue 一直是负责任 AI 开发的积极倡导者。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/ai-agents-intensive-recap/">Inside Kaggle ’s AI Agents Intensive Course with Google</a></li>
-<li><a href="https://www.kaggle.com/competitions/fide-google-efficiency-chess-ai-challenge">FIDE & Google Efficient Chess AI Challenge | Kaggle</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hugging_Face">Hugging Face - Wikipedia</a></li>
+<li><a href="https://www.klover.ai/clement-delangue/">Clement Delangue - Klover.ai</a></li>
+<li><a href="https://resources.kili-technology.com/nurture/why-ethics-are-important-machine-learning">Why ethics are important in machine learning - Kili Technology</a></li>
 
 </ul>
 </details>
 
-**标签**: `#Kaggle`, `#AI agents`, `#competition`, `#simulation`
+**标签**: `#open source`, `#AI risks`, `#HuggingFace`, `#AI ethics`
 
 ---
 
 <a id="item-17"></a>
-## [阿尔卑斯科技走廊领跑欧洲深度科技排名](https://twitter.com/unknown/status/2054826810991370670) ⭐️ 5.0/10
+## [AI 共同科学家：CellVoyager 与虚拟实验室](https://twitter.com/StanfordAILab/status/2055358925026009274) ⭐️ 6.0/10
 
-一条引用《2026 年欧洲深度科技报告》的推文称，阿尔卑斯科技走廊（洛桑-苏黎世-慕尼黑轴线）是欧洲大陆排名第一的深度科技集群，瑞士和慕尼黑在深度科技领域的投资接近 160 亿欧元。 这凸显了深度科技投资在欧洲特定区域的集中趋势，表明创新中心正在向伦敦或柏林等传统科技中心以外的地区转移。 数据来自《2026 年欧洲深度科技报告》，但完整报告尚未公开。推文未明确 160 亿欧元的具体投资数字或时间范围。
+一篇《自然·方法》文章重点介绍了两种 AI 共同科学家系统：CellVoyager（一种自主分析单细胞 RNA-seq 数据的 AI 智能体）和 Virtual Lab（一种 AI 与人类协作研究的框架）。 这些系统代表了向 AI 驱动科学发现的转变，通过自动化复杂分析和实现跨学科协作，可能加速基因组学和药物开发研究。 CellVoyager 在 Jupyter notebook 环境中运行，并包含用于逐步分析的 GUI；而 Virtual Lab 已被用于设计 SARS-CoV-2 纳米抗体，相关论文已通过同行评审发表在《自然》上。
 
-twitter · unknown · May 14, 07:31
+twitter · StanfordAILab · May 15, 18:45
 
-**背景**: 深度科技指基于重大科学或工程挑战的初创企业，如人工智能、生物技术或先进材料。阿尔卑斯科技走廊涵盖洛桑、苏黎世和慕尼黑地区，以强大的研究机构和科技生态系统著称。
-
-**标签**: `#deeptech`, `#Europe`, `#investment`, `#tech hubs`
-
----
-
-<a id="item-18"></a>
-## [将森林数据映射到班苏里笛的数据可听化项目获得第一名](https://twitter.com/unknown/status/2055104005957923028) ⭐️ 5.0/10
-
-Megha Byte 的数据可听化项目将每小时森林数据（如土壤湿度和温度）映射到班苏里笛（印度竹笛），在比赛中获得第一名。 该项目展示了环境数据与音乐的创造性结合，提供了一种通过声音感知生态变化的新颖方式，可能激励数据可听化在环境监测和艺术中的更广泛应用。 该可听化使用每小时森林数据（包括土壤湿度和温度），映射到班苏里笛的音高和音色。班苏里笛是一种传统的印度竹笛，有六到七个指孔，通常由单根空心竹管制成。
-
-twitter · unknown · May 15, 01:52
-
-**背景**: 数据可听化是数据可视化的听觉对应，将数据值映射到音高、音量、节奏等声学参数以传递信息。班苏里笛是一种源自印度次大陆的侧吹竹笛，常与印度神话和古典音乐相关联。
+**背景**: AI 共同科学家是旨在协助或自主进行科学研究的 AI 智能体。CellVoyager 专注于计算生物学任务，如单细胞 RNA-seq 分析；而 Virtual Lab 则促进人机协作以解决复杂研究问题。这些工具利用大语言模型来规划和执行工作流程。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Data_sonification">Data sonification</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Bansuri">Bansuri</a></li>
+<li><a href="https://www.nature.com/articles/s41592-026-03029-6?error=cookies_not_supported&code=134c3b6f-041c-4846-a32f-2a575196837e">CellVoyager : AI CompBio agent generates new... | Nature Methods</a></li>
+<li><a href="https://www.linkedin.com/pulse/virtual-lab-ai-agents-designs-new-sars-cov-2-nanobodies-brown-bmbme">A Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies</a></li>
+<li><a href="https://arxiv.org/html/2601.01678v1">HeurekaBench: A Benchmarking Framework for AI Co - scientist</a></li>
 
 </ul>
 </details>
 
-**标签**: `#data sonification`, `#environmental data`, `#creative coding`
+**标签**: `#AI`, `#scientific research`, `#CellVoyager`, `#Virtual Lab`
 
 ---
 
-<a id="item-19"></a>
-## [Ken Goldberg 预告机器人领域的智能体编程研究](https://twitter.com/unknown/status/2055467514260566375) ⭐️ 5.0/10
+<a id="item-18"></a>
+## [伯克利 AI 预告机器人智能体编程](https://twitter.com/berkeley_ai/status/2055467514260566375) ⭐️ 6.0/10
 
-Ken Goldberg 在推文中表示，他和学生们对智能体编程在机器人领域的潜力感到兴奋，并期待展示相关新研究。 这标志着将智能体 AI（能够自主规划和行动的系统）应用于机器人领域的兴趣日益增长，可能带来更具适应性和能力的机器人。 该推文缺乏具体技术细节或明确公告，但暗示了 Goldberg 在加州大学伯克利分校的实验室即将开展的研究。
+伯克利 AI 的 Ken Goldberg 及其学生表示对即将发表的机器人智能体编码研究充满期待，并将在近期展示新成果。 这标志着将智能体 AI 应用于机器人领域的潜在突破，可能使机器人能够自主规划和执行复杂任务，推动该领域超越传统的命令式编程。 该公告缺乏具体技术细节，但关注“智能体编码”表明其可能将自主 AI 智能体与机器人控制系统集成，很可能利用大型语言模型或类似架构。
 
-twitter · unknown · May 16, 01:56
+twitter · berkeley_ai · May 16, 01:56
 
-**背景**: 智能体 AI 是指能够自主感知、推理并采取行动以实现目标的 AI 系统，不同于仅响应命令的传统 AI。在机器人领域，智能体编程可使机器人更独立地规划和执行任务。Ken Goldberg 是加州大学伯克利分校的著名机器人学家和教授。
+**背景**: 智能体 AI 是指能够自主感知、推理并采取行动以实现目标的 AI 系统，不同于仅响应命令的传统 AI。在机器人领域，这意味着机器人可以编写并执行自己的代码以适应新情况，减少手动编程的需求。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -430,45 +438,167 @@ twitter · unknown · May 16, 01:56
 </ul>
 </details>
 
-**标签**: `#robotics`, `#agentic coding`, `#research`
+**标签**: `#robotics`, `#agentic coding`, `#AI research`
 
 ---
 
-<a id="item-20"></a>
-## [机器学习应用于血浆蛋白质组学复制挑战](https://twitter.com/unknown/status/2054787989616861226) ⭐️ 5.0/10
+<a id="item-19"></a>
+## [将 CLAUDE.md 视为项目地图，而非提示文件](https://twitter.com/RodmanAi/status/2055285379251814656) ⭐️ 6.0/10
 
-一项新工作将机器学习应用于血浆蛋白质组学，指出蛋白质组学研究在不同测量平台上进行时往往无法复制。 这项工作解决了蛋白质组学中一个关键的可重复性问题，这对生物标志物发现和临床转化至关重要。成功可能提高跨实验室和平台的蛋白质组学发现的可靠性。 该推文是转发，细节有限，但原始工作可能涉及机器学习模型来预测或协调跨平台的蛋白质组学数据。复制挑战是血浆蛋白质组学中已知的瓶颈。
+一位开发者建议，CLAUDE.md 应作为项目结构指南而非提示文件使用，并且 Claude Code 需要四样东西：原因（系统目的）、地图（文件位置）以及另外两个未说明的要素。 这一见解可以帮助开发者通过以 AI 工具（如 Claude Code）更容易理解代码库的方式组织项目文档，从而获得更有效的 AI 编码辅助，可能提高生产力和代码质量。 该推文来自用户 @RodmanAi，评分为 6.0/10，表明参与度中等。推文内容被截断，因此四个必需元素仅部分列出。
 
-twitter · unknown · May 14, 04:56
+twitter · RodmanAi · May 15, 13:53
 
-**背景**: 血浆蛋白质组学是对血浆中蛋白质的系统测量，这些蛋白质可作为疾病的生物标志物。然而，不同测量平台（如质谱法与基于亲和力的方法）之间的结果往往存在差异，阻碍了可重复性和临床采用。
+**背景**: CLAUDE.md 是一个可以放置在项目仓库中的文件，用于为 Anthropic 的 Claude Code AI 编码助手提供上下文和指令。Claude Code 是一个 AI 驱动的工具，通过理解项目结构和代码库来帮助开发者构建功能、修复漏洞和自动化任务。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://somalogic.com/blog/plasma-proteomics-biomarker-discovery/">Plasma Proteomics 101: Why It’s Central to Biomarker... - SomaLogic</a></li>
-<li><a href="https://www.nautilus.bio/blog/unlocking-the-potential-of-plasma-proteomics/">Unlocking the potential of plasma proteomics ~ Nautilus Biotechnology</a></li>
+<li><a href="https://code.claude.com/docs/en/overview">Claude Code overview - Claude Code Docs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude (language model) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**标签**: `#machine learning`, `#proteomics`, `#bioinformatics`
+**标签**: `#AI`, `#CLAUDE.md`, `#prompt engineering`, `#developer tools`
+
+---
+
+<a id="item-20"></a>
+## [三台双臂机器人协作演示拾取与放置](https://twitter.com/lukas_m_ziegler/status/2054834920057340108) ⭐️ 5.0/10
+
+@lukas_m_ziegler 发布推文，展示三台双臂机器人同时执行拾取与放置任务，突显制造业中的多机器人协作。 该演示展示了使用多台双臂机器人进行复杂自动化的趋势，有助于提高生产线的效率和灵活性。 推文强调制造业中结果比使用的机器人数量更重要，暗示关注点在于流程优化而非机器人数量。
+
+twitter · lukas_m_ziegler · May 14, 08:03
+
+**背景**: 双臂机器人越来越多地用于工业环境中的拾取与放置、装配和物料搬运等任务。它们具有灵巧性优势，可以执行需要双臂的任务，例如操作较大物体或协调运动。多机器人协作通过将任务分配给多个单元进一步提高生产力。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.academia.edu/68574254/Simultaneous_Dual_Arm_Motion_Planning_for_Minimizing_Operation_Time">Simultaneous Dual - Arm Motion Planning for Minimizing Operation Time</a></li>
+<li><a href="https://indrorobotics.ca/dual-manipulator-rosie-the-robot-used-for-industry-4-0-research/">Dual manipulator Rosie the robot used for Industry... - InDro Robotics</a></li>
+
+</ul>
+</details>
+
+**标签**: `#robotics`, `#manufacturing`, `#automation`, `#pick-and-place`
 
 ---
 
 <a id="item-21"></a>
-## [Les Companions 展示机器人画家 PACO](https://twitter.com/unknown/status/2055281905235275820) ⭐️ 4.0/10
+## [阿尔卑斯科技走廊成为欧洲深度科技中心之首](https://twitter.com/lukas_m_ziegler/status/2054826810991370670) ⭐️ 5.0/10
 
-Les Companions 展示了一款名为 PACO 的机器人画家，用于自动化工业涂装和喷涂流程。 这项创新解决了建筑行业熟练油漆工短缺的问题，能够在大型项目中实现更快、更一致的涂装。 PACO 是一款协作机器人，通过处理重复性和体力要求高的任务来辅助人类油漆工，而人类则专注于精细工作和决策。
+@lukas_m_ziegler 的一条推文引用《2026 年欧洲深度科技报告》，宣称阿尔卑斯科技走廊（洛桑-苏黎世-慕尼黑轴线）是欧洲大陆排名第一的深度科技集群，瑞士和慕尼黑在深度科技领域的投资接近 160 亿欧元。 这凸显了阿尔卑斯地区深度科技投资的显著集中，可能影响欧洲初创企业和投资者的关注重点。 该推文引用了《2026 年欧洲深度科技报告》，但该报告本身并未公开；该数据点仅基于一条推文，未经进一步验证。
 
-twitter · unknown · May 15, 13:39
+twitter · lukas_m_ziegler · May 14, 07:31
 
-**背景**: 工业涂装自动化随着提供高精度和一致性的机器人而不断发展。由 AkzoNobel 支持的 Les Companions 针对建筑行业推出了 PACO，该机器人专为新建筑和大型翻新项目设计。
+**背景**: 深度科技指基于重大科学或工程挑战的初创企业，通常需要较长的研发周期。阿尔卑斯科技走廊是横跨洛桑、苏黎世和慕尼黑的区域，以强大的研究机构和科技生态系统闻名。
+
+**标签**: `#deeptech`, `#Europe`, `#investment`, `#tech hubs`
+
+---
+
+<a id="item-22"></a>
+## [杨立昆推广播客访谈](https://twitter.com/ylecun/status/2055346714039464373) ⭐️ 5.0/10
+
+杨立昆发布推文，宣传他与 Jacob Effron 在 Unsupervised Learning 播客上的访谈。 这次访谈为杨立昆提供了一个以通俗形式讨论 AI 话题的平台，可能触及学术界之外的更广泛受众。 该推文本身不包含技术细节，仅是对播客节目的宣传信息。
+
+twitter · ylecun · May 15, 17:56
+
+**背景**: 杨立昆是著名 AI 研究员和深度学习先驱。Unsupervised Learning 播客是一档探讨 AI 和技术话题的节目。
+
+**标签**: `#interview`, `#podcast`, `#AI`, `#Yann LeCun`
+
+---
+
+<a id="item-23"></a>
+## [转发批评 AI 领导力论文缺乏创新愿景](https://twitter.com/ylecun/status/2055253202614845597) ⭐️ 5.0/10
+
+Yann LeCun 转发了 Dan Jeffries 的帖子，批评一篇 AI 领导力论文缺乏真正的创新愿景，认为该论文读起来更像官僚文件而非愿景规划。 这一批评凸显了 AI 社区对领导力论文优先考虑管理而非突破性创新的持续担忧，可能影响 AI 研究议程的评估方式。 原始推文被截断，但 Yann LeCun（著名 AI 研究员）的转发放大了批评。所涉论文未具名，且缺乏具体细节。
+
+twitter · ylecun · May 15, 11:45
+
+**背景**: AI 领导力论文通常概述国家或企业的 AI 发展战略。批评者认为有些论文缺乏具体的技术创新，而是聚焦于治理或资金。Yann LeCun 是深度学习领域的领军人物，经常评论 AI 政策。
+
+**标签**: `#AI`, `#leadership`, `#critique`
+
+---
+
+<a id="item-24"></a>
+## [Yann LeCun 推荐 2009 年不变特征论文](https://twitter.com/ylecun/status/2054987438783594632) ⭐️ 5.0/10
+
+Yann LeCun 转发了 @sedielem 的推文，称赞 Koray Kavukcuoglu 等人 2009 年的论文《通过地形滤波器图学习不变特征》。 这条转发让人们关注到无监督特征学习的基础性工作，该工作影响了现代深度学习和计算机视觉。 该论文引入了地形滤波器图来无监督地学习不变特征，是后来卷积神经网络进展的前身。
+
+twitter · ylecun · May 14, 18:09
+
+**背景**: 学习不变特征是指训练模型识别物体时不受位置、尺度或旋转变化的影响。地形滤波器图将学习到的滤波器按空间布局组织，保留邻域关系，类似于视觉皮层处理信息的方式。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://arxiv.org/pdf/2603.25083">Learning domain- invariant features through channel-level ...</a></li>
+<li><a href="https://link.springer.com/chapter/10.1007/978-3-642-33863-2_51">Learning Invariant Feature Hierarchies | Springer Nature Link</a></li>
+
+</ul>
+</details>
+
+**标签**: `#deep learning`, `#computer vision`, `#feature learning`
+
+---
+
+<a id="item-25"></a>
+## [数据声化项目用班苏里笛获一等奖](https://twitter.com/StanfordAILab/status/2055104005957923028) ⭐️ 5.0/10
+
+一个将每小时森林数据（如土壤湿度、温度等）映射到印度竹笛班苏里的数据声化项目在活动中获得了一等奖。 该项目展示了环境数据与音乐的创造性结合，通过听觉感知使复杂数据易于理解，并凸显了数据声化在公众参与方面的潜力。 该项目利用班苏里的音高、音量和音色来表示不同的森林变量，提供了一种体验生态数据的新颖方式。推文中未透露具体活动名称和日期。
+
+twitter · StanfordAILab · May 15, 01:52
+
+**背景**: 数据声化是将数据转换为非语音音频以传达信息的实践，通常使用音高和节奏等参数。班苏里是一种传统的印度竹笛，有六到七个指孔，以其独特的声音而闻名。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://grokipedia.com/page/data_sonification">Data sonification</a></li>
+<li><a href="https://grokipedia.com/page/Bansuri">Bansuri</a></li>
+
+</ul>
+</details>
+
+**标签**: `#data sonification`, `#creative coding`, `#environmental data`
+
+---
+
+<a id="item-26"></a>
+## [Kaggle 推出 AI 智能体课程模拟挑战赛](https://twitter.com/GoogleDeepMind/status/2054967884015694075) ⭐️ 4.0/10
+
+Kaggle 为其为期 5 天的 AI 智能体强化课程宣布了一项新的模拟顶点挑战，要求参与者构建能在模拟环境中获胜的 AI 智能体。 该挑战为学习者提供了一种在竞争环境中应用 AI 智能体概念的实践方式，可能吸引更多参与者加入课程，并提升智能体开发技能。 该挑战是为期 5 天的 AI 智能体强化课程的顶点项目，但公告缺乏关于模拟环境、评估标准或奖品的具体细节。
+
+twitter · GoogleDeepMind · May 14, 16:51
+
+**背景**: Kaggle 是谷歌旗下的数据科学竞赛平台，以举办机器学习竞赛和提供教育资源而闻名。AI 智能体是能够感知环境并采取行动以实现目标的自主程序，常用于模拟和实际应用。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Kaggle">Kaggle - Wikipedia</a></li>
+<li><a href="https://www.kaggle.com/">Kaggle : The World's AI Proving Ground</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Kaggle`, `#AI agents`, `#challenge`
+
+---
+
+<a id="item-27"></a>
+## [机器人画家实现工业喷涂自动化](https://twitter.com/lukas_m_ziegler/status/2055281905235275820) ⭐️ 4.0/10
+
+Les Companions 开发了一款名为 PACO 的机器人喷涂解决方案，可自动化工业喷涂流程。 这项创新通过让机器人处理重复性任务、人类专注于精细工作，缓解了喷涂行业的技术工人短缺问题。 PACO 是一款协作机器人，可辅助油漆工，其软件使其能够自主执行喷涂任务。该机器人由 AkzoNobel 支持，面向大型住宅项目。
+
+twitter · lukas_m_ziegler · May 15, 13:39
+
+**背景**: 工业喷涂劳动强度大，且面临技术工人短缺问题。像 PACO 这样的协作机器人旨在与人类协同工作，在保持质量的同时提高效率和安全性。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://lescompanions.com/">HOME - Les Companions</a></li>
-<li><a href="https://lescompanions.com/paco-robot-for-painters/">Discover the Robot for Painters ! PACO - Les Companions</a></li>
-<li><a href="https://www.akzonobel.com/en/countries/uk-ireland/newsroom/akzonobel-backed-start-up-les-companions-showcases-aI-driven-painting-robot-to-help-tackle-industry-skills-shortage">AkzoNobel-backed start-up, Les Companions ... | AkzoNobel</a></li>
+<li><a href="https://www.akzonobel.com/en/countries/uk-ireland/newsroom/akzonobel-backed-start-up-les-companions-showcases-aI-driven-painting-robot-to-help-tackle-industry-skills-shortage">AkzoNobel-backed start-up, Les Companions, showcases AI-driven painting robot to help tackle industry skills shortage | AkzoNobel</a></li>
 
 </ul>
 </details>
@@ -477,172 +607,31 @@ twitter · unknown · May 15, 13:39
 
 ---
 
-<a id="item-22"></a>
-## [双臂机器人演示制造中的拾取和放置操作](https://twitter.com/unknown/status/2054834920057340108) ⭐️ 4.0/10
-
-一条推特帖子展示了三台双臂机器人执行拾取和放置任务，并强调结果比机器人数量更重要。 这突出了一个常见的行业争论：关注结果而非使用的机器人数量，这对于成本效益高的自动化至关重要。 该帖子包含一个外部网站链接（可能是产品或服务），但没有提供技术规格或性能指标。
-
-twitter · unknown · May 14, 08:03
-
-**背景**: 双臂机器人用于制造中的装配和拾取放置等任务，提供灵活性和类人灵巧性。机器人之间的协作可以提高效率，但最终目标是生产结果。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.linkedin.com/pulse/human-robot-collaboration-future-smart-factories-cenauratech-agazc">Human- Robot Collaboration : The Future of Smart Factories</a></li>
-
-</ul>
-</details>
-
-**标签**: `#robotics`, `#manufacturing`, `#automation`
-
----
-
-<a id="item-23"></a>
-## [转发批评 AI 领导力论文](https://twitter.com/unknown/status/2055253202614845597) ⭐️ 4.0/10
-
-用户@unknown 转发@Dan_Jeffries1 的帖子，批评一篇 AI 领导力论文缺乏创新愿景。 这一批评凸显了关于 AI 领导力方向的持续辩论，以及当前策略是否优先考虑创新。 原始推文未提供论文或其作者的具体细节，使得批评模糊且缺乏技术深度。
-
-twitter · unknown · May 15, 11:45
-
-**背景**: AI 领导力论文通常概述国家或企业 AI 发展的战略。此类批评反映了渐进式进步与变革性创新之间的张力。
-
-**社区讨论**: 此新闻条目未提供社区评论。
-
-**标签**: `#AI`, `#leadership`, `#critique`
-
----
-
-<a id="item-24"></a>
-## [Harness Engineering：下一个 AI 范式？](https://twitter.com/unknown/status/2055491624214679734) ⭐️ 4.0/10
-
-一条来自@unknown 的推文推广“Harness Engineering”作为新的 AI 范式，声称能让 AI 代理可靠、持久且具有记忆驱动，并称聪明的 AI 构建者已经超越了提示工程。 如果 Harness Engineering 获得关注，它可能将焦点从提示工程转向基础设施级别的代理设计，从而提升企业 AI 的可靠性和可扩展性。 该推文缺乏具体细节或证据；然而，网络搜索结果显示，OpenAI Codex 据称使用了 Harness Engineering 构建了百万行代码库而无需手动编码，且良好治理的 Harness 将 SQL 准确率提升了 38%。
-
-twitter · unknown · May 16, 03:32
-
-**背景**: 提示工程涉及精心设计输入以引导 AI 模型输出，但在复杂代理任务中常面临可靠性和记忆问题。Harness Engineering 是一个新兴概念，它将 AI 代理周围的基础设施（如框架、模式和治理）视为构建稳健、持久代理的主要接口。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://harness-engineering.ai/">Home | Harness Engineering</a></li>
-<li><a href="https://cobusgreyling.medium.com/the-rise-of-ai-harness-engineering-5f5220de393e">The Rise of AI Harness Engineering | by Cobus Greyling | Medium</a></li>
-<li><a href="https://atlan.com/know/what-is-harness-engineering/">What Is Harness Engineering AI ? The Definitive 2026 Guide</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#prompting`, `#agents`
-
----
-
-<a id="item-25"></a>
-## [Claude 自适应问题导航提示模板](https://twitter.com/unknown/status/2055255126160580687) ⭐️ 4.0/10
-
-一个名为“自适应问题导航器”的新提示模板被分享，指示 Claude 在解决问题前先评估问题深度、缺失信息和假设。 该模板通过强制模型在回答前进行反思，鼓励更周到的 AI 响应，可能提升复杂任务的输出质量。 该提示要求 Claude 在解决问题前先分类深度级别（快速/中等/深度）、识别缺失信息并挑战假设。
-
-twitter · unknown · May 15, 11:53
-
-**背景**: 提示工程涉及设计输入指令以引导 AI 模型产生期望输出。该模板是一种无需技术复杂性的简单技巧，用于改进推理。
-
-**标签**: `#prompt engineering`, `#AI`, `#Claude`
-
----
-
-<a id="item-26"></a>
-## [Jacob Effron 在 Unsupervised Learning 播客上的访谈](https://twitter.com/unknown/status/2055346714039464373) ⭐️ 3.0/10
-
-Jacob Effron 在 Unsupervised Learning 播客上接受采访，以轻松的形式讨论了机器学习话题。 这次访谈为广泛受众提供了关于机器学习的易懂见解，但缺乏技术深度。 该访谈是 Unsupervised Learning 播客系列的一部分，该系列涵盖人工智能和数据科学话题。未透露具体技术细节。
-
-twitter · unknown · May 15, 17:56
-
-**背景**: Unsupervised Learning 是一个通过采访从业者来探讨人工智能、机器学习和数据科学的播客。Jacob Effron 以其在机器学习和数据工程方面的工作而闻名。
-
-**标签**: `#podcast`, `#interview`, `#machine learning`
-
----
-
-<a id="item-27"></a>
-## [2009 年不变特征论文重现](https://twitter.com/unknown/status/2054987438783594632) ⭐️ 3.0/10
-
-@sedielem 发布推文，提及 Koray Kavukcuoglu 在 2009 年发表的论文《通过地形滤波器图学习不变特征》，引发怀旧讨论。 该论文是无监督特征学习的早期重要工作，为现代深度学习中的不变表示方法奠定了基础。 论文提出了一种自动学习滤波器地形图的方法，这些滤波器对方向、尺度和位置具有不变性，使用了带有局部竞争的卷积网络。
-
-twitter · unknown · May 14, 18:09
-
-**背景**: 学习不变特征是计算机视觉中的一个关键挑战，因为物体可能以不同的方向、尺度或位置出现。地形滤波器图将学习到的滤波器在空间上组织起来，使得相似的滤波器彼此靠近，模仿视觉皮层的组织结构。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.researchgate.net/publication/224579211_Learning_invariant_features_through_topographic_filter_maps">(PDF) Learning invariant features through topographic filter maps</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 该推文获得 22 次转发，参与度一般。评论者表达了对该论文在特征学习方面影响的怀念。
-
-**标签**: `#machine learning`, `#feature learning`, `#deep learning`
-
----
-
 <a id="item-28"></a>
-## [让 Claude 管理并行任务的提示](https://twitter.com/unknown/status/2055255123140768172) ⭐️ 3.0/10
+## [Claude 自适应问题导航提示](https://twitter.com/RodmanAi/status/2055255126160580687) ⭐️ 4.0/10
 
-一位用户分享了一个提示，指示 Claude 创建代理团队并行执行多个任务，协调它们并收集结果。 该提示展示了 Claude 在任务自动化方面的实际应用，但缺乏技术深度和新颖性，因此是一个低优先级的贡献。 该提示是通用的且不完整，句子中断，仅获得一条回复，参与度极低。
+一位用户分享了一个提示模板，指示 Claude 在解决问题前先评估所需深度、识别缺失信息并挑战假设。 该模板促进 AI 进行更深思熟虑和结构化的回应，可能提高复杂问题解决任务中的输出质量。 该提示专为 Claude 设计，包含用户问题描述的占位符，明确指示 AI 不要立即回应，而是先进行初步评估。
 
-twitter · unknown · May 15, 11:53
+twitter · RodmanAi · May 15, 11:53
 
-**背景**: 提示工程涉及精心设计输入，以引导像 Claude 这样的 AI 模型执行特定任务。并行任务管理是指同时执行多个任务，可以提高效率。
+**背景**: 提示工程涉及精心设计输入指令以引导 AI 模型产生期望输出。该模板体现了元认知方法，要求 AI 在回答前反思自身的推理过程。
 
-**标签**: `#prompt engineering`, `#Claude`, `#task management`
+**标签**: `#prompt engineering`, `#AI assistant`, `#problem solving`
 
 ---
 
 <a id="item-29"></a>
-## [Claude 上下文记忆库提示技巧](https://twitter.com/unknown/status/2055255120154390754) ⭐️ 3.0/10
+## [CLANKERS 柏林活动推广机器人与无人机](https://twitter.com/lukas_m_ziegler/status/2055306589444206823) ⭐️ 3.0/10
 
-一位 Twitter 用户分享了一个简单的提示词，粘贴到 Claude 中可让它在对话中记住项目上下文，减少重复输入信息的需要。 这个技巧帮助用户在 Claude 中无需外部工具即可保持持久上下文，提高长项目或复杂项目的工作效率。 该提示词要求 Claude 存储项目名称和上下文，并在后续所有回复中自动使用，无需重复。它依赖 Claude 在单次会话内的内置记忆，而非跨会话记忆。
+一条推广推文宣布柏林 CLANKERS 活动，将现场演示机器人、自主机器、无人机及反无人机激光。 该活动凸显了人们对机器人和自主系统日益增长的兴趣，尽管推文本身技术深度有限且参与度低。 活动于柏林某周一举行，但推文中未明确具体日期和场地。提及反无人机激光表明其关注反无人机技术。
 
-twitter · unknown · May 15, 11:53
+twitter · lukas_m_ziegler · May 15, 15:17
 
-**背景**: Claude 和其他大型语言模型一样，有上下文窗口限制，无法保留过多信息。在没有明确指令的情况下，长对话中可能会忘记早期细节。这个提示词是一种轻量级的提示工程技术，用于缓解该问题。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://goldie.agency/claude-obsidian-setup/">Claude Obsidian Setup Turns Claude Into A Long-Term Memory ...</a></li>
-<li><a href="https://github.com/thedotmack/claude-mem">GitHub - thedotmack/ claude -mem: Persistent Context Across...</a></li>
-<li><a href="https://www.mindstudio.ai/blog/what-is-context-rot-claude-code">What Is Context Rot in Claude Code? How to Keep Your... | MindStudio</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI`, `#prompt engineering`, `#Claude`
-
----
-
-<a id="item-30"></a>
-## [推文泛泛呼吁使用 Claude 并附提示词](https://twitter.com/unknown/status/2055255117000212603) ⭐️ 3.0/10
-
-一条推文声称如果你还没在工作中使用 Claude，就已经晚了，并列出 8 个未具体说明的提示词供复制。 该推文缺乏技术深度或新颖性，属于低价值推广内容，未能为 AI 社区提供有意义的见解。 推文未提供关于提示词或如何有效使用 Claude 的细节，内容泛泛且互动度低。
-
-twitter · unknown · May 15, 11:52
-
-**背景**: Claude 是由 Anthropic 开发的 AI 助手，旨在提供有用且安全的服务。提示词是给 AI 模型的指令，用于生成期望的输出。
-
-**标签**: `#AI`, `#Claude`, `#promotional`
-
----
-
-<a id="item-31"></a>
-## [柏林 CLANKERS 活动将展示无人机与机器人](https://twitter.com/unknown/status/2055306589444206823) ⭐️ 2.0/10
-
-一条推广推文宣布柏林 CLANKERS 活动，内容包括极客、机器人、大型自主机器、无人机以及反无人机激光的现场演示。 该活动凸显了公众对机器人和无人机技术日益增长的兴趣，以及反无人机激光等新兴应对措施，反映了自主系统的更广泛趋势。 该推文是转发自@andreasklinger，并包含#CLANKERS 标签，但原始帖子被截断，因此无法获取完整细节。
-
-twitter · unknown · May 15, 15:17
-
-**背景**: “Clanker”一词源自《星球大战》中对机器人的贬义称呼，近期被网络用来表达对 AI 和机器人的敌意。反无人机激光是一种定向能武器，用于使无人机失效或摧毁它们。
+**背景**: CLANKERS 似乎是面向机器人爱好者的本地技术聚会或展示会。柏林拥有活跃的科技氛围，类似活动众多，但本条推文缺乏实质性细节。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.m.wikipedia.org/wiki/Clanker">Clanker - Wikipedia</a></li>
-<li><a href="https://www.newsweek.com/clanker-slur-robots-star-wars-2101585">What is a "clanker"? New slur for robots catches on - Newsweek</a></li>
+<li><a href="https://clinker.space/">CLINKER | Event Location in Berlin Mitte</a></li>
 
 </ul>
 </details>
@@ -651,84 +640,201 @@ twitter · unknown · May 15, 15:17
 
 ---
 
-<a id="item-32"></a>
-## [关于数学未来的模糊推文](https://twitter.com/unknown/status/2055254006646054953) ⭐️ 2.0/10
+<a id="item-30"></a>
+## [SpaceX 猎鹰 9 号发射 CRS-34 任务前往国际空间站](https://twitter.com/SpaceX/status/2055394309063532712) ⭐️ 3.0/10
 
-来自 @Andrea__M 的一条截断推文暗示数学的未来是光明的，但信息不完整且缺乏实质性内容。 由于内容模糊且缺乏互动，这条推文的相关性和影响力很低，对数学界来说无足轻重。 该推文是一条转推，没有附加背景信息，原消息在句子中间截断，导致论点不完整。
+SpaceX 宣布将发射猎鹰 9 号火箭执行 CRS-34 货运任务前往国际空间站，天气条件 95%有利，直播将在发射前约 20 分钟开始。 此次任务将向国际空间站运送 2500 公斤补给和 20 项实验，支持持续的科学研究和机组操作，同时展示了 SpaceX 在商业补给服务中的持续作用。 发射在卡纳维拉尔角太空军基地进行，此前因天气原因两次推迟。猎鹰 9 号火箭搭载了龙货运飞船，这是今年第 14 次龙飞船任务。
 
-twitter · unknown · May 15, 11:48
+twitter · SpaceX · May 15, 21:06
 
-**标签**: `#mathematics`, `#twitter`
-
----
-
-<a id="item-33"></a>
-## [开源反对者被指为恶意和虚伪](https://twitter.com/unknown/status/2055252772887429168) ⭐️ 2.0/10
-
-Dan Jeffries 的一条推文被未知用户转发，声称任何反对开源和开放权重的论点本质上都是虚伪和恶意的。 这一强烈观点反映了开源社区中的两极分化看法，可能影响关于 AI 和软件开发开放性的辩论。 该推文是一条无额外背景的转发，原作者 Dan Jeffries 以倡导开源而闻名。该帖子缺乏技术深度或证据。
-
-twitter · unknown · May 15, 11:43
-
-**背景**: 开源指源代码公开、可修改和共享的软件。开放权重特指 AI 模型中公开训练参数的发布。争论常围绕安全性、商业模式和伦理问题展开。
-
-**标签**: `#open source`, `#opinion`
-
----
-
-<a id="item-34"></a>
-## [Tabracadabra：带 AI 助手的标签页管理工具](https://twitter.com/unknown/status/2055080453254885685) ⭐️ 2.0/10
-
-@gandhikanishk 的一条推文推广了 Tabracadabra，该工具允许用户“在任何地方打开标签页”，并配备一个了解用户且接入持续流的个人助手。 该工具通过将 AI 助手直接集成到标签页管理中，可能减少上下文切换并帮助用户更高效地组织浏览，从而提升生产力。 该推文缺乏关于 Tabracadabra 的具体技术细节，例如支持的浏览器、定价或“持续流”的工作原理。其推广语气表明这可能是一个早期产品。
-
-twitter · unknown · May 15, 00:18
-
-**背景**: 标签页管理工具帮助用户组织浏览器中打开的多个标签页。像 Monica 或 assistant-ui 这样的 AI 助手提供对话式界面来完成任务。Tabracadabra 似乎结合了这些概念，提供了一个能跨标签页理解用户上下文的 AI 助手。
+**背景**: CRS-34 任务是 NASA 商业补给服务计划的一部分，SpaceX 使用猎鹰 9 号火箭和龙飞船向国际空间站运送货物。猎鹰 9 号是一种可重复使用的两级火箭，龙飞船可携带加压和非加压货物。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.assistant-ui.com/examples/modal">Floating Modal Chat — assistant -ui (React Chat UI for AI)</a></li>
-<li><a href="https://monica.im/">Monica - All-In-One AI Assistant | GPT-5.2, Claude 4.5, Gemini 3 Pro...</a></li>
+<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2kxczd1S0VSRjVESHUyd3ZuTnV5Z0FQAQ?hl=en-KE&gl=KE&ceid=KE:en">Google News - SpaceX CRS - 34 mission launch - Overview</a></li>
+<li><a href="https://www.msn.com/en-us/technology/general/spacex-launches-delayed-crs-34-cargo-mission-to-iss/ss-AA23jGiS">SpaceX launches delayed CRS - 34 cargo mission to ISS</a></li>
+<li><a href="https://news.cgtn.com/news/2026-05-16/NASA-SpaceX-launch-new-resupply-mission-to-ISS-1NbwjYnr0Pe/p.html">NASA, SpaceX launch new resupply mission to ISS - CGTN</a></li>
 
 </ul>
 </details>
 
-**标签**: `#productivity`, `#tool`, `#twitter`
+**标签**: `#SpaceX`, `#Falcon 9`, `#CRS-34`, `#ISS`
+
+---
+
+<a id="item-31"></a>
+## [Harness Engineering：构建可靠 AI 代理的新方法](https://twitter.com/RodmanAi/status/2055491624214679734) ⭐️ 3.0/10
+
+@RodmanAi 在推文中推广“Harness Engineering”作为构建可靠、持久且具有记忆的 AI 代理的新方法，声称这是从关注提示词的重大转变。 如果 Harness Engineering 获得关注，它可能通过强调结构化工程而非临时提示词来重新定义开发者构建 AI 代理的方式，从而可能提高生产系统的可靠性和可扩展性。 该推文缺乏实质性证据或详细解释，且术语“Harness Engineering”尚未被广泛认可；然而，相关概念出现在 Martin Fowler 和 OpenAI 的资源中，将其描述为一种上下文工程形式，人类通过迭代“harness”来引导代理。
+
+twitter · RodmanAi · May 16, 03:32
+
+**背景**: 提示词涉及精心设计输入指令以引导 AI 模型，但往往导致输出不可靠。Harness Engineering 提出了一种更系统的方法，工程师构建一个包含上下文、控制和反馈循环的“harness”，使代理更可靠和持久。这一概念与上下文工程相关，并在编码代理和 OpenAI 的 Codex 的背景下被讨论。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://martinfowler.com/articles/harness-engineering.html">Harness engineering for coding agent users</a></li>
+<li><a href="https://openai.com/index/harness-engineering/">Harness engineering: leveraging Codex in an agent-first world | OpenAI</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#prompting`, `#engineering`
+
+---
+
+<a id="item-32"></a>
+## [Claude 并行任务管理提示模板](https://twitter.com/RodmanAi/status/2055255123140768172) ⭐️ 3.0/10
+
+一位用户在 Twitter 上分享了一个提示模板，指示 Claude 创建代理团队以并行执行多个任务，协调它们，跟踪进度并收集结果。 该提示展示了利用 Claude 的代理功能处理并发任务的实用场景，可能提高需要同时管理多个工作流的用户的生产力。 提供的提示内容不完整，以'Run everything in'结尾——完整提示可能包含更多指令。该模板简单且缺乏技术深度，社区参与度极低。
+
+twitter · RodmanAi · May 15, 11:53
+
+**背景**: Claude 是 Anthropic 开发的 AI 助手，能够遵循复杂指令并模拟类似代理的行为。提示工程涉及设计输入以引导 AI 模型产生期望的输出。该提示旨在通过将每个任务分配给虚拟代理来构建 Claude 的响应，以管理并行任务。
+
+**标签**: `#prompt engineering`, `#Claude`, `#task management`
+
+---
+
+<a id="item-33"></a>
+## [Claude 上下文记忆库提示技巧](https://twitter.com/RodmanAi/status/2055255120154390754) ⭐️ 3.0/10
+
+一位用户分享了一个简单的提示，指示 Claude 在记忆中保留项目上下文，这样用户就不必在每次对话中重复。 这个技巧帮助用户在长期项目中与 Claude 保持连续性，减少重复的上下文设置，提高效率。 该提示要求 Claude 存储用户提供的项目名称和上下文，并在所有未来的回复中使用，无需重复。它还要求总结将要存储的内容。
+
+twitter · RodmanAi · May 15, 11:53
+
+**背景**: Claude 是由 Anthropic 开发的大型语言模型。它具有内置的记忆功能，可以在对话之间保留上下文，但用户也可以手动提示它记住特定信息，以获得更可靠的保留。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context">Use Claude’s chat search and memory to build on previous context | Claude Help Center</a></li>
+<li><a href="https://toolpod.dev/blog/claude-memory-continuity-projects">How Claude Actually Remembers: Projects, Memory, and Context That Survives | Toolpod Blog</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#prompt engineering`, `#Claude`
+
+---
+
+<a id="item-34"></a>
+## [SpaceX 宣布火箭发射](https://twitter.com/SpaceX/status/2055409571900883167) ⭐️ 2.0/10
+
+SpaceX 发推文称“发射升空！”并附上直播链接，表明火箭已发射。 这条推文标志着一次常规的 SpaceX 发射活动，但由于缺乏具体任务细节，其意义仅限于太空爱好者。 推文包含直播链接，但未提供有效载荷、任务名称或发射场等信息。
+
+twitter · SpaceX · May 15, 22:06
+
+**标签**: `#spacex`, `#launch`, `#twitter`
 
 ---
 
 <a id="item-35"></a>
-## [RSS 2026 机器人基础模型后训练研讨会](https://twitter.com/unknown/status/2055468671901086089) ⭐️ 2.0/10
+## [转推：数学作为工具的未来光明](https://twitter.com/ylecun/status/2055254006646054953) ⭐️ 2.0/10
 
-正在宣传一个关于机器人基础模型后训练的研讨会，该研讨会将在 RSS 2026 上举行，并邀请参与和投稿。 该研讨会凸显了将预训练基础模型适配到机器人领域的日益关注，这是迈向更强大、更通用机器人的关键一步。 该研讨会由 ajwagenmaker 组织，可能包含真实机器人演示或论文征集。RSS（机器人：科学与系统）是顶级机器人会议。
+Yann LeCun 转发了 Andrea__M 的观点，认为数学的未来光明，证明是达成理解的工具。 这反映了对数学的哲学观点，但缺乏技术深度或可操作的见解，因此对更广泛社区的相关性较低。 该推文是一条没有额外背景的转推，原帖内容模糊，未提供具体例子或证据。
 
-twitter · unknown · May 16, 02:01
+twitter · ylecun · May 15, 11:48
 
-**背景**: 机器人基础模型是在多样化机器人数据上预训练的大型模型，能够跨任务泛化。后训练是指针对特定应用或环境对这些模型进行微调或适配。
+**背景**: 数学常被视为科学和工程的工具，证明用于确立真理。这条推文触及了这一观点，但未提供新信息。
+
+**标签**: `#mathematics`, `#opinion`
+
+---
+
+<a id="item-36"></a>
+## [Yann LeCun 转发 Rodney Brooks 关于政治腐败的评论](https://twitter.com/ylecun/status/2055253327491866872) ⭐️ 2.0/10
+
+Yann LeCun 转发了 Rodney Brooks 的一条推文，评论政治腐败，特别提到特朗普电话事件是轻微腐败。 这条新闻与技术受众的相关性较低，因为它关注的是政治评论而非技术或研究。 Rodney Brooks 的原始推文淡化特朗普电话事件，认为这是轻微腐败，并暗示相关人员无能。
+
+twitter · ylecun · May 15, 11:45
+
+**标签**: `#politics`, `#low-value`
+
+---
+
+<a id="item-37"></a>
+## [Tabracadabra：支持连续上下文的 AI 助手](https://twitter.com/StanfordAILab/status/2055080453254885685) ⭐️ 2.0/10
+
+Tabracadabra 是一款 AI 助手，允许用户在保持连续上下文的同时“随处标签”，该消息由斯坦福 AI 实验室在推文中推广。 该工具可能通过实现不同任务间的无缝上下文切换来提高生产力，从而改善多任务处理用户的工作流程效率。 该推文互动量低，仅 4 次转发，且可用内容中未披露该工具的技术细节。
+
+twitter · StanfordAILab · May 15, 00:18
+
+**背景**: 连续上下文是指在交互过程中维护用户和环境的实时状态，这是上下文 AI 系统的关键特征。Tabracadabra 可能利用这一概念来提供个性化的助手体验。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://datahub.com/blog/continuous-context/">Continuous Context: Why AI Docs Decay | DataHub</a></li>
+<li><a href="https://www.teradata.com/insights/ai-and-machine-learning/what-is-contextual-ai">Contextual AI: What It Is and How It Works | Teradata</a></li>
+
+</ul>
+</details>
+
+**标签**: `#assistant`, `#productivity`, `#AI`
+
+---
+
+<a id="item-38"></a>
+## [RSS 2026 机器人基础模型后训练研讨会](https://twitter.com/berkeley_ai/status/2055468671901086089) ⭐️ 2.0/10
+
+RSS 2026 会议上将举办一场关于机器人基础模型后训练的研讨会，并邀请参与者参与真实机器人任务。 后训练是关键阶段，使机器人能够通过交互超越预训练阶段，从而加速能力机器人在真实环境中的部署。 该研讨会是 RSS 2026 的一部分，于 2026 年 7 月 13 日至 17 日在澳大利亚悉尼举行，重点关注强化学习、人类引导等后训练技术。
+
+twitter · berkeley_ai · May 16, 02:01
+
+**背景**: 机器人基础模型是在多样化数据上预训练的大型模型，旨在实现通用操作技能。后训练通过交互将这些模型适应特定任务，类似于语言模型中的微调。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://posttraining-for-robotics.github.io/">Workshop on Post-training for Robotics Foundation Models</a></li>
+<li><a href="https://roboticsconference.org/">Robotics: Science and Systems · A Robotics Conference</a></li>
+<li><a href="https://generalistai.com/blog/apr-02-2026-GEN-1">GEN-1: Scaling Embodied Foundation Models to Mastery - Generalist AI</a></li>
+
+</ul>
+</details>
 
 **标签**: `#robotics`, `#workshop`, `#foundation models`
 
 ---
 
-<a id="item-36"></a>
-## [Twitter 重置 5 小时和每周速率限制](https://twitter.com/unknown/status/2055347539923308703) ⭐️ 2.0/10
+<a id="item-39"></a>
+## [ClaudeDevs 重置用户周末速率限制](https://twitter.com/ClaudeDevs/status/2055347539923308703) ⭐️ 2.0/10
 
-Twitter 在周五宣布，已重置所有用户的 5 小时和每周速率限制，从而恢复了正常的 API 访问。 此次重置对依赖 Twitter API 的重度用户和开发者意义重大，因为它移除了可能干扰工作流程或自动化服务的临时限制。 公告未说明之前的限制或重置原因，但很可能是在一段收紧速率限制以管理服务器负载或打击滥用行为之后进行的。
+ClaudeDevs 在 Twitter 上宣布，他们已经为所有用户重置了周末的 5 小时和每周速率限制。 此次重置使用户能够在周末无中断地继续使用 Claude，提升了用户体验和参与度。 重置适用于 5 小时和每周速率限制，实际上为用户提供了周末的新配额。
 
-twitter · unknown · May 15, 18:00
+twitter · ClaudeDevs · May 15, 18:00
 
-**背景**: 速率限制是用户在给定时间窗口（例如 5 小时或一周）内可以发出的 API 请求数量的限制。Twitter 会定期调整这些限制以确保平台稳定和公平使用。
-
-**标签**: `#twitter`, `#rate limits`, `#announcement`
+**标签**: `#announcement`, `#rate limits`, `#Claude`
 
 ---
 
-<a id="item-37"></a>
-## [用户庆幸自己勉强过关](https://twitter.com/unknown/status/2054833050177958129) ⭐️ 1.0/10
+<a id="item-40"></a>
+## [推广推文呼吁使用 Claude AI 并提供 8 个提示](https://twitter.com/RodmanAi/status/2055255117000212603) ⭐️ 2.0/10
 
-一位用户在 Twitter 上发布了一条模糊的言论，表达了对勉强通过某个未指明情况的庆幸。 这条新闻几乎没有意义，因为它缺乏技术深度、背景或社区参与，与更广泛的讨论无关。 这条推文得分仅为 1.0/10，并被标记为个人化、模糊和低价值，没有额外的细节或回复。
+@RodmanAi 发布了一条推广推文，声称如果你在工作中还没有使用 Claude，就已经晚了，并提供了 8 个未具体说明的提示供复制。 这条推文是一则低质量的推广信息，缺乏技术深度，没有提供关于 Claude AI 的任何新颖见解或实质性讨论。 该推文仅获得 2.0/10 的评分，原因是其内容泛泛而谈、缺乏互动和实质性内容，没有分享具体的提示或技术细节。
 
-twitter · unknown · May 14, 07:55
+twitter · RodmanAi · May 15, 11:52
 
-**标签**: `#personal`, `#vague`, `#low-value`
+**标签**: `#AI`, `#Claude`, `#promotional`
+
+---
+
+<a id="item-41"></a>
+## [用户发布模糊的个人动态](https://twitter.com/lukas_m_ziegler/status/2054833050177958129) ⭐️ 1.0/10
+
+一位名为 Lukas M. Ziegler 的用户发推文称自己勉强通过了某件未具体说明的事情，没有提供进一步的背景或细节。 这条推文对技术社区毫无意义，因为它是一条低质量的个人动态，缺乏技术深度，且与软件工程、AI/ML 或系统研究无关。 该推文因内容模糊且缺乏实质性信息，得分仅为 1.0/10，且没有可用的网络搜索结果提供额外背景。
+
+twitter · lukas_m_ziegler · May 14, 07:55
+
+**标签**: `#low-quality`, `#personal`, `#noise`
+
+---
+
+<a id="item-42"></a>
+## [Yann LeCun 发布无上下文链接推文](https://twitter.com/ylecun/status/2055347240923767084) ⭐️ 1.0/10
+
+Yann LeCun 发布了一条仅包含短链接（https://t.co/zWa7cH9Ikx）的推文，没有附带任何文字或解释。 这条推文信息量极低且缺乏上下文，读者无法判断其重要性或相关性。 该推文的参与度评分仅为 1.0/10，并被标记为无信息量，未引发实质性讨论。
+
+twitter · ylecun · May 15, 17:59
+
+**标签**: `#twitter`, `#link`, `#uninformative`
 
 ---
