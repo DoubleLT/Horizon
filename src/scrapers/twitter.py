@@ -190,11 +190,25 @@ class TwitterScraper(BaseScraper):
             separators=(",", ":"),
         )
         params = {"variables": variables, "features": _TIMELINE_FEATURES}
-        resp = await self.client.get(
-            _TIMELINE_URL, params=params, headers=headers, cookies=cookies, timeout=20.0
-        )
-        if resp.status_code != 200:
-            logger.warning("UserTweets %s → HTTP %d: %s", user_id, resp.status_code, resp.text[:200])
+        for attempt in range(3):
+            resp = await self.client.get(
+                _TIMELINE_URL, params=params, headers=headers, cookies=cookies, timeout=20.0
+            )
+            if resp.status_code == 200:
+                break
+            if resp.status_code == 429:
+                wait = 30 * (attempt + 1)
+                logger.warning(
+                    "UserTweets %s → 429 (attempt %d/3), waiting %ds", user_id, attempt + 1, wait
+                )
+                await asyncio.sleep(wait)
+            else:
+                logger.warning(
+                    "UserTweets %s → HTTP %d: %s", user_id, resp.status_code, resp.text[:200]
+                )
+                return []
+        else:
+            logger.error("UserTweets %s → 429 after 3 retries, giving up", user_id)
             return []
         data = resp.json()
         return self._extract_tweet_entries(data)
