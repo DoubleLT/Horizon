@@ -63,6 +63,31 @@ def _build_headers(ct0: str) -> dict:
     }
 
 
+
+async def _bootstrap_ct0(auth_token: str, stored_ct0: str) -> str:
+    """Visit x.com/home to refresh ct0 from auth_token. Falls back to stored_ct0."""
+    try:
+        async with httpx.AsyncClient(follow_redirects=True, timeout=20.0) as client:
+            resp = await client.get(
+                "https://x.com/home",
+                cookies={"auth_token": auth_token},
+                headers={
+                    "User-Agent": (
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/122.0.0.0 Safari/537.36"
+                    )
+                },
+            )
+            fresh = resp.cookies.get("ct0") or ""
+            if fresh and fresh != stored_ct0:
+                logger.info("Twitter: refreshed ct0 via x.com/home bootstrap")
+                return fresh
+    except Exception as exc:
+        logger.warning("Twitter: ct0 bootstrap failed (%s), using stored value", exc)
+    return stored_ct0
+
+
 class TwitterScraper(BaseScraper):
     """Fetch tweets via X GraphQL API (httpx + cookies). Falls back to Apify."""
 
@@ -101,6 +126,7 @@ class TwitterScraper(BaseScraper):
     async def _fetch_graphql(
         self, handles: List[str], since: datetime, auth_token: str, ct0: str
     ) -> List[ContentItem]:
+        ct0 = await _bootstrap_ct0(auth_token, ct0)
         headers = _build_headers(ct0)
         cookies = {"auth_token": auth_token, "ct0": ct0}
         per_user = max(20, self.config.fetch_limit)
@@ -120,7 +146,7 @@ class TwitterScraper(BaseScraper):
                         items.append(parsed)
                         count += 1
                 logger.debug("@%s: %d recent tweets (of %d fetched)", handle, count, len(tweets))
-                await asyncio.sleep(1.0)
+                await asyncio.sleep(3.0)
             except Exception as exc:
                 logger.warning("Twitter GraphQL: failed @%s – %s", handle, exc)
 
